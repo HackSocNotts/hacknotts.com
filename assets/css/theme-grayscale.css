@@ -149,13 +149,7 @@ a:focus {
     text-align: center;
     color: #fff;
     background-image: url(../img/background.jpg);
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-
-    background-color: #1a2a2b;
+    background-color: #fff;
     background-size: cover;
     height: 100%;
     position: relative;
