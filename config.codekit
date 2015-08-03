@@ -42,8 +42,8 @@
 		},
 	"\/assets\/js\/ie\/html5shiv.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/assets\/js\/ie\/html5shiv.js",
 		"outputAbbreviatedPath": "\/assets\/js\/ie\/min\/html5shiv-ck.js",
 		"outputPathIsOutsideProject": 0,
@@ -53,8 +53,8 @@
 		},
 	"\/assets\/js\/ie\/respond.min.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/assets\/js\/ie\/respond.min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/ie\/min\/respond.min-ck.js",
 		"outputPathIsOutsideProject": 0,
@@ -64,8 +64,8 @@
 		},
 	"\/assets\/js\/jquery.dropotron.min.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/assets\/js\/jquery.dropotron.min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/jquery.dropotron.min-ck.js",
 		"outputPathIsOutsideProject": 0,
@@ -75,8 +75,8 @@
 		},
 	"\/assets\/js\/jquery.min.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/assets\/js\/jquery.min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/jquery.min-ck.js",
 		"outputPathIsOutsideProject": 0,
@@ -86,8 +86,8 @@
 		},
 	"\/assets\/js\/jquery.scrollgress.min.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/assets\/js\/jquery.scrollgress.min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/jquery.scrollgress.min-ck.js",
 		"outputPathIsOutsideProject": 0,
@@ -97,8 +97,8 @@
 		},
 	"\/assets\/js\/main.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/assets\/js\/main.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/main-ck.js",
 		"outputPathIsOutsideProject": 0,
@@ -108,8 +108,8 @@
 		},
 	"\/assets\/js\/skel.min.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/assets\/js\/skel.min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/skel.min-ck.js",
 		"outputPathIsOutsideProject": 0,
@@ -119,8 +119,8 @@
 		},
 	"\/assets\/js\/util.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/assets\/js\/util.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/util-ck.js",
 		"outputPathIsOutsideProject": 0,
@@ -224,15 +224,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/contact.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/contact.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/elements.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -242,20 +233,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/generic.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/generic.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/images\/banner.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 106067,
+		"initialSize": 105180,
 		"inputAbbreviatedPath": "\/images\/banner.jpg",
 		"outputAbbreviatedPath": "\/images\/banner.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -266,7 +248,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 16963,
+		"initialSize": 7056,
 		"inputAbbreviatedPath": "\/images\/long-hacknotts-white.png",
 		"outputAbbreviatedPath": "\/images\/long-hacknotts-white.png",
 		"outputPathIsOutsideProject": 0,
@@ -284,11 +266,22 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/images\/pic01-bak.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31343,
+		"inputAbbreviatedPath": "\/images\/pic01-bak.jpg",
+		"outputAbbreviatedPath": "\/images\/pic01-bak.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/images\/pic01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 32232,
+		"initialSize": 75802,
 		"inputAbbreviatedPath": "\/images\/pic01.jpg",
 		"outputAbbreviatedPath": "\/images\/pic01.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -299,7 +292,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 10648,
+		"initialSize": 9742,
 		"inputAbbreviatedPath": "\/images\/pic02.jpg",
 		"outputAbbreviatedPath": "\/images\/pic02.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -310,7 +303,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 10897,
+		"initialSize": 9990,
 		"inputAbbreviatedPath": "\/images\/pic03.jpg",
 		"outputAbbreviatedPath": "\/images\/pic03.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -321,7 +314,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 7030,
+		"initialSize": 6190,
 		"inputAbbreviatedPath": "\/images\/pic04.jpg",
 		"outputAbbreviatedPath": "\/images\/pic04.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -332,7 +325,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1974,
+		"initialSize": 1135,
 		"inputAbbreviatedPath": "\/images\/pic05.jpg",
 		"outputAbbreviatedPath": "\/images\/pic05.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -347,6 +340,18 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/README.md",
+		"outputAbbreviatedPath": "\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
@@ -356,8 +361,8 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "html5up-alpha",
-	"displayValueWasSetByUser": 0,
+	"displayValue": "2015.hacknotts.com",
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_orange"
 	},
 "projectSettings": {
