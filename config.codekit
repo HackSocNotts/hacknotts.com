@@ -11,15 +11,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/assets\/css\/bootstrap.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/css\/bootstrap.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/assets\/css\/bootstrap.min.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -47,11 +38,22 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/img\/background-old.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 131093,
+		"inputAbbreviatedPath": "\/assets\/img\/background-old.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/background-old.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/background.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 131120,
+		"initialSize": 865872,
 		"inputAbbreviatedPath": "\/assets\/img\/background.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/background.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -190,6 +192,105 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/assets\/img\/sponsors\/bloomberg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29973,
+		"inputAbbreviatedPath": "\/assets\/img\/sponsors\/bloomberg.png",
+		"outputAbbreviatedPath": "\/assets\/img\/sponsors\/bloomberg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/assets\/img\/sponsors\/bloomberg2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29872,
+		"inputAbbreviatedPath": "\/assets\/img\/sponsors\/bloomberg2.png",
+		"outputAbbreviatedPath": "\/assets\/img\/sponsors\/bloomberg2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/assets\/img\/sponsors\/braintree.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32682,
+		"inputAbbreviatedPath": "\/assets\/img\/sponsors\/braintree.png",
+		"outputAbbreviatedPath": "\/assets\/img\/sponsors\/braintree.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/assets\/img\/sponsors\/braintree2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 62515,
+		"inputAbbreviatedPath": "\/assets\/img\/sponsors\/braintree2.png",
+		"outputAbbreviatedPath": "\/assets\/img\/sponsors\/braintree2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/assets\/img\/sponsors\/capitalone.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 63021,
+		"inputAbbreviatedPath": "\/assets\/img\/sponsors\/capitalone.png",
+		"outputAbbreviatedPath": "\/assets\/img\/sponsors\/capitalone.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/assets\/img\/sponsors\/capitalone2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29973,
+		"inputAbbreviatedPath": "\/assets\/img\/sponsors\/capitalone2.png",
+		"outputAbbreviatedPath": "\/assets\/img\/sponsors\/capitalone2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/assets\/img\/sponsors\/mlh.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60172,
+		"inputAbbreviatedPath": "\/assets\/img\/sponsors\/mlh.png",
+		"outputAbbreviatedPath": "\/assets\/img\/sponsors\/mlh.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/assets\/img\/sponsors\/mlh2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 61004,
+		"inputAbbreviatedPath": "\/assets\/img\/sponsors\/mlh2.png",
+		"outputAbbreviatedPath": "\/assets\/img\/sponsors\/mlh2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/assets\/img\/sponsors\/twilio.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30859,
+		"inputAbbreviatedPath": "\/assets\/img\/sponsors\/twilio.png",
+		"outputAbbreviatedPath": "\/assets\/img\/sponsors\/twilio.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/assets\/js\/bootstrap.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -244,132 +345,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/sponsors\/bloomberg.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 29973,
-		"inputAbbreviatedPath": "\/assets\/sponsors\/bloomberg.png",
-		"outputAbbreviatedPath": "\/assets\/sponsors\/bloomberg.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/assets\/sponsors\/bloomberg2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 29872,
-		"inputAbbreviatedPath": "\/assets\/sponsors\/bloomberg2.png",
-		"outputAbbreviatedPath": "\/assets\/sponsors\/bloomberg2.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/assets\/sponsors\/braintree.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 32682,
-		"inputAbbreviatedPath": "\/assets\/sponsors\/braintree.png",
-		"outputAbbreviatedPath": "\/assets\/sponsors\/braintree.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/assets\/sponsors\/braintree2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 62515,
-		"inputAbbreviatedPath": "\/assets\/sponsors\/braintree2.png",
-		"outputAbbreviatedPath": "\/assets\/sponsors\/braintree2.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/assets\/sponsors\/capitalone.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 63021,
-		"inputAbbreviatedPath": "\/assets\/sponsors\/capitalone.png",
-		"outputAbbreviatedPath": "\/assets\/sponsors\/capitalone.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/assets\/sponsors\/capitalone2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 29973,
-		"inputAbbreviatedPath": "\/assets\/sponsors\/capitalone2.png",
-		"outputAbbreviatedPath": "\/assets\/sponsors\/capitalone2.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/assets\/sponsors\/mlh.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 60172,
-		"inputAbbreviatedPath": "\/assets\/sponsors\/mlh.png",
-		"outputAbbreviatedPath": "\/assets\/sponsors\/mlh.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/assets\/sponsors\/mlh2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 61004,
-		"inputAbbreviatedPath": "\/assets\/sponsors\/mlh2.png",
-		"outputAbbreviatedPath": "\/assets\/sponsors\/mlh2.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/assets\/sponsors\/twilio.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 30859,
-		"inputAbbreviatedPath": "\/assets\/sponsors\/twilio.png",
-		"outputAbbreviatedPath": "\/assets\/sponsors\/twilio.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/assets\/stylesheets\/github-light.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/stylesheets\/github-light.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/stylesheets\/normalize.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/stylesheets\/normalize.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/stylesheets\/stylesheet.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/stylesheets\/stylesheet.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/images\/long-hacknotts-white.png": {
 		"fileType": 32768,

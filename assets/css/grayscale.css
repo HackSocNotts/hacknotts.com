@@ -137,6 +137,7 @@ a:focus {
 
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255,255,255,.3);
+        background-color: #000;
     }
 }
 
@@ -178,7 +179,7 @@ a:focus {
     text-decoration: none;
     padding-bottom: 2px;
     border-bottom: 3px groove #fff;
-    color: #fff;
+    color: #54B526;
 }
 
 @media(min-width:767px) {
@@ -237,7 +238,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0 {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -254,7 +255,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0 {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -271,7 +272,7 @@ a:focus {
     }
 }
 
-@-webkit-keyframes pulse2 {    
+@-webkit-keyframes pulse2 {
     0 {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -288,7 +289,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse2 {    
+@-moz-keyframes pulse2 {
     0 {
         -moz-transform: scale(1);
         transform: scale(1);
