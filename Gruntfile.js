@@ -36,7 +36,7 @@ module.exports = function (grunt) {
         src: ['assets/js/jquery.min.js',
         'assets/js/jquery.easing.min.js',
         'assets/js/bootstrap.min.js',
-        'assets/js/grayscale.js'],
+        'assets/js/main.js'],
         dest: 'assets/main.min.js'
       }
     },
