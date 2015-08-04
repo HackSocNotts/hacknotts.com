@@ -168,7 +168,7 @@ COVER
 
 .intro {
     background-color: #fff;
-    background-image: url('../img/background.jpg');
+    background-image: url('img/background.jpg');
     background-size: cover;
     color: #fff;
     display: table;
@@ -272,7 +272,7 @@ UNSORTED
 }
 
 .download-section {
-    background: url('../img/downloads-bg2.jpg') no-repeat center center scroll;
+    background: url('img/downloads-bg2.jpg') no-repeat center center scroll;
     background-color: #000;
     background-position: fixed;
     -moz-background-size: cover;

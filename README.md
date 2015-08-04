@@ -13,6 +13,15 @@ The website for Hacksoc's hackathon in November 2015.
 - Staging Build Status: [![Staging Build Status](https://magnum.travis-ci.com/HackSocNotts/hacknotts.com.svg?token=quY7a4xnvykmQZx9AwhA&branch=master)](https://magnum.travis-ci.com/HackSocNotts/hacknotts.com)
 - Production Build Status: [![Production Build Status](https://magnum.travis-ci.com/HackSocNotts/hacknotts.com.svg?token=quY7a4xnvykmQZx9AwhA&branch=prod)](https://magnum.travis-ci.com/HackSocNotts/hacknotts.com)
 
+
+## How to Build
+
+- Uses GruntJS
+- Run 'sudo npm install' in main directory
+- Run 'grunt watch' to watch folders so that SCSS compiles to CSS & others
+- Run (in a new terminal window) 'grunt serve' to test locally at http://localhost:9000/index.html
+
+
 ## Inspiration
 
 - [HackNotts 2014](https://github.com/tfogo/hacknotts-for-luke)
