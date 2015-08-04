@@ -43,7 +43,6 @@ var mapOptions = {center: { lat: 52.951659, lng: -1.186477}, zoom: 12,
 };
 
 
-
 function mapInit() {
   var map = new google.maps.Map(document.getElementById('map'),mapOptions);
   map.setOptions({'scrollwheel': false}); // Disable zoom on scroll
@@ -54,7 +53,7 @@ function mapInit() {
     title: 'HackNotts 2015'
   });
 
-  var contentString = '<div id="content" style="color:#555;padding:15px;"><div id="container">';
+  var contentString = '<div id="content"><div id="container">';
   var endContentString = '</div></div>';
   var infowindow = new google.maps.InfoWindow({
     content: contentString + addressTitle + address + mapsLink + endContentString
