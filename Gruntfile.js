@@ -28,13 +28,35 @@ module.exports = function (grunt) {
       }
     },
 
-    concat: {
+    concat: { // JS Concat
       options: {
         separator: ';'
       },
       dist: {
-        src: ['assets/js/jquery.min.js', 'assets/js/jquery.easing.min.js', 'assets/js/bootstrap.min.js', 'assets/js/grayscale.js'],
+        src: ['assets/js/jquery.min.js',
+        'assets/js/jquery.easing.min.js',
+        'assets/js/bootstrap.min.js',
+        'assets/js/grayscale.js'],
         dest: 'assets/main.min.js'
+      }
+    },
+
+    concatHTML: { // HTML Concat
+      options: {
+        separator: '\n'
+      },
+      dist: {
+        src: ['assets/html-parts/html-head.html',
+        'assets/html-parts/cover.html',
+        'assets/html-parts/faq.html',
+        'assets/html-parts/schedule.html',
+        'assets/html-parts/prizes.html',
+        'assets/html-parts/venue.html',
+        'assets/html-parts/register.html',
+        'assets/html-parts/footer.html',
+        'assets/html-parts/sponsors.html',
+        'assets/html-parts/html-foot.html'],
+        dest: 'assets/development.html'
       }
     },
 
@@ -59,8 +81,8 @@ module.exports = function (grunt) {
       },
 
       html: {
-        files: ['assets/development.html'],
-        tasks: ['htmlmin']
+        files: ['assets/html-parts/*.html'],
+        tasks: ['concatHTML', 'htmlmin']
       },
 
       javascript: {
@@ -71,7 +93,14 @@ module.exports = function (grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-htmlmin'); // Minify HTML
-  grunt.loadNpmTasks('grunt-contrib-concat'); // Concatenate JS
+
+  // Concatenate JS/HTML
+  // Hack: https://github.com/gruntjs/grunt-contrib-concat/issues/113
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.renameTask('concat', 'concatHTML');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+
+
   grunt.loadNpmTasks('grunt-contrib-uglify'); // Minify JS
   grunt.loadNpmTasks('grunt-contrib-sass'); // Process Sass files
   grunt.loadNpmTasks('grunt-contrib-watch'); // On file update, do task
