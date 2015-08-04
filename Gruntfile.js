@@ -113,4 +113,7 @@ module.exports = function (grunt) {
     'sass'
   ]); // Set no default task atm
 
+  var heroku_grunt_tasks = 'concatHTML htmlmin concat uglify sass';
+
+  grunt.registerTask('heroku:development', heroku_grunt_tasks);
 };

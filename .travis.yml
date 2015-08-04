@@ -1,4 +1,4 @@
-language: php
+language: node_js
 # as we're not running unittests, force success return status
 script: "/bin/true"
 # always want to know when we've had a failed build, or if the status has changed (i.e. a failed build is now passing)
@@ -18,3 +18,8 @@ deploy:
     # we want a staging and a production site - so we can check changes before they go live
     master: hacknotts-staging
     prod: hacknotts-prod
+
+before_install:
+  - gem install sass
+  - npm install
+  - grunt

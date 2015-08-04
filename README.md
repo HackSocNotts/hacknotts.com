@@ -1,6 +1,6 @@
 # HackNotts.com
 
-The website for Hacksoc's hackathon in November 2015.
+The website for Hacksoc's official hackathon in November 2015.
 
 ## Website URLs
 
