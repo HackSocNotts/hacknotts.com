@@ -53,9 +53,9 @@ module.exports = function (grunt) {
         'assets/html-parts/schedule.html',
         'assets/html-parts/prizes.html',
         'assets/html-parts/venue.html',
+        'assets/html-parts/sponsors.html',
         'assets/html-parts/register.html',
         'assets/html-parts/footer.html',
-        'assets/html-parts/sponsors.html',
         'assets/html-parts/html-foot.html'],
         dest: 'assets/development.html'
       }
@@ -107,6 +107,10 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch'); // On file update, do task
   grunt.loadNpmTasks('grunt-serve'); // Local server
 
-  grunt.registerTask('default', []); // Set no default task atm
+  grunt.registerTask('default', [
+    'concatHTML', 'htmlmin',
+    'concat', 'uglify',
+    'sass'
+  ]); // Set no default task atm
 
 };
