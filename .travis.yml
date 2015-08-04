@@ -6,6 +6,9 @@ script: "/bin/true"
 notifications:
   on_success: change
   on_failure: always
+  email:
+    - jamie@jamietanna.co.uk
+    - harrymt@me.com
 # currently deploying to Jamie Tanna's heroku account
 # references:
 # - http://blog.travis-ci.com/2013-07-09-introducing-continuous-deployment-to-heroku/
