@@ -47,6 +47,7 @@ module.exports = function (grunt) {
       },
       dist: {
         src: ['assets/html-parts/html-head.html',
+        'assets/html-parts/navbar.html',
         'assets/html-parts/cover.html',
         'assets/html-parts/faq.html',
         'assets/html-parts/schedule.html',
