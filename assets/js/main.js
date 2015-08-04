@@ -29,9 +29,11 @@ $('.navbar-collapse ul li a').click(function() {
 //
 // Config values
 var LOCATION = {lat: 52.951659, lng: -1.186477};
-var addressTitle = '<h3 style="margin-bottom:25px;font-size:20px;">Business School South</h3>';
-var address = '<p style="margin:0;font-size:11px;"><b>Address:</b> Jubilee Campus, Wollaton Rd, Nottingham NG8 1BB</p>';
-var mapsLink = '<p style="margin:0;"><a style="text-decoration: underline; font-size: 15px;" href="https://www.google.co.uk/maps/place/Business+School+(South)/@52.951659,-1.186477,15z/data=!4m2!3m1!1s0x0:0x4da28c4722953e75?sa=X&ei=ci5dVKiyO6Kv7AbAw4GQAQ&ved=0CI0BEPwSMAs">Google Maps Link</a></p>';
+
+var addressTitle = '<h3>Business School South</h3>';
+var address = '<p><b>Address:</b> Jubilee Campus, Wollaton Rd, Nottingham NG8 1BB</p>';
+var mapURL = 'https://www.google.co.uk/maps/place/Business+School+(South)/@52.951659,-1.186477,15z/data=!4m2!3m1!1s0x0:0x4da28c4722953e75?sa=X&ei=ci5dVKiyO6Kv7AbAw4GQAQ&ved=0CI0BEPwSMAs';
+var mapsLink = '<p><a href="' + mapURL + '" target="_blank">Show me on a Map</a></p>';
 
 var mapOptions = {center: { lat: 52.951659, lng: -1.186477}, zoom: 12,
   panControl: false, zoomControl: true, mapTypeControl: true, scaleControl: false, streetViewControl: false, overviewMapControl: false,

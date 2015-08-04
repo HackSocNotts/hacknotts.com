@@ -57,8 +57,67 @@ a:focus {
     text-decoration: none;
 }
 
+table {
+    margin: 0 auto;
+    width: 90%;
+
+    tr {
+        th {
+            background: #59bb1a;
+            color: #000;
+            font-size: 20px;
+            padding: 10px;
+            text-align: center;
+            width: 50%;
+        }
+
+        td {
+            font-size: 20px;
+            padding: 15px 10px;
+            text-align: left;
+
+            span {
+                display: inline-block;
+                min-width: 80px;
+                text-align: left;
+            }
+        }
+    }
+
+    tr:nth-child(odd) td:first-child,
+    tr:nth-child(odd) td:last-child {
+        background: #333;
+    }
+}
+
+.clear {
+    clear: both;
+}
+
 .light {
     font-weight: 400;
 }
 
+.btn {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    background-color: transparent;
+    border: 1px solid #219ab3;
+    color: #219ab3;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    background-color: #219ab3;
+    border: 1px solid #219ab3;
+    color: #000;
+    outline: 0;
+}
 
