@@ -4,18 +4,41 @@
 // --------
 
 footer {
-    padding: 50px 0;
-
-    p {
-        margin: 0;
-    }
+    background: #aaa;
 
     a {
         color: #fff;
     }
 
-    a:hover {
-        color: #fff;
-        text-decoration: underline;
+    p {
+        margin-top: 10px;
+    }
+
+    h3 {
+        line-height: 120%;
+        margin: 0 auto;
+        text-shadow: 0 4px 0 rgba(0, 0, 0, .1);
+        text-transform: uppercase;
+        width: 50%;
+    }
+
+    .container {
+        padding: 100px 0 0;
+    }
+
+    .copy {
+        font-size: 90%;
+        margin-top: 50px;
+    }
+
+    .social {
+        font-size: 50px;
+        margin-bottom: 50px;
+        padding-left: 0;
+
+        li {
+            display: inline-block;
+            padding: 15px;
+        }
     }
 }
