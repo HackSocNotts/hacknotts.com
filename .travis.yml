@@ -25,5 +25,10 @@ deploy:
 
 before_install:
   - gem install sass
+  # - npm install
+  # - grunt
+
+install:
   - npm install
+  - npm install -g npm@latest
   - grunt
