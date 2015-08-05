@@ -74,7 +74,7 @@ module.exports = function (grunt) {
 
     watch: {
       css: { // On .SCSS file change, process scss files
-        files: ['assets/scss/*.scss'],
+        files: ['assets/scss/**/*.scss'],
         tasks: ['sass'],
         options: {
           spawn: false

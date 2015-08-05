@@ -4,7 +4,6 @@
 // --------
 
 .navbar-custom {
-    background-color: #000;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     margin-bottom: 0;
@@ -35,6 +34,7 @@
 
     a {
         color: #fff;
+        text-decoration: none;
     }
 
     .nav {
@@ -52,6 +52,8 @@
                 -moz-transition: background .3s ease-in-out;
                 -webkit-transition: background .3s ease-in-out;
                 transition: background .3s ease-in-out;
+
+                text-decoration: none;
             }
 
             a:hover,
