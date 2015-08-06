@@ -1,5 +1,7 @@
 # HackNotts.com
 
+**NOTE: This repo has been superceded by the fork https://github.com/jamietanna/hacknotts.com.**
+
 The website for Hacksoc's official hackathon in November 2015.
 
 ## Website URLs
