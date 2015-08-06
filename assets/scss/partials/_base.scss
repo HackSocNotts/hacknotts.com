@@ -102,23 +102,27 @@ table {
 .btn {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
+    padding: 8px 25px;
+    text-decoration: none;
     text-transform: uppercase;
-    -moz-transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
 }
 
-.btn-default {
-    background-color: transparent;
-    border: 1px solid #219ab3;
-    color: #219ab3;
+.btn-success {
+    background-color: #66cc36;
+    border-color: #5ace5a;
 }
 
-.btn-default:hover,
-.btn-default:focus {
-    background-color: #219ab3;
-    border: 1px solid #219ab3;
-    color: #000;
-    outline: 0;
-}
+// .btn-default {
+//     background-color: transparent;
+//     border: 1px solid #219ab3;
+//     color: #219ab3;
+// }
+
+// .btn-default:hover,
+// .btn-default:focus {
+//     background-color: #219ab3;
+//     border: 1px solid #219ab3;
+//     color: #000;
+//     outline: 0;
+// }
 
