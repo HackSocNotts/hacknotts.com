@@ -27,7 +27,7 @@ The website for Hacksoc's official hackathon in November 2015.
 - [HackNotts 2014](https://github.com/tfogo/hacknotts-for-luke)
 - [Spotify's Diversify Hackathon](http://diversify.confetti.events/)
 - [HackTheNorth - Good above the fold content](http://hackthenorth.com/)
-- [Pennapps - Good FAQ section (needs map tho)](http://2015f.pennapps.com/)
+- [Pennapps - Good FAQ section (needs map)](http://2015f.pennapps.com/)
 - [Pennapps Sponsorship table - Loving this sponsorship table](http://2015f.pennapps.com/files/pennapps_sponsor_general_f15.pdf)
 - [WuHack - I like how they use typeform for registering](http://wuhack.com/register.html)
 - [Medx io - Nice overall design](http://www.medx.io/)
