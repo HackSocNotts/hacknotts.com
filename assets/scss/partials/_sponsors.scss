@@ -1,0 +1,43 @@
+
+a.image:hover {
+    opacity: .8;
+}
+
+// Sponsor
+.image img {
+    border-radius: 0.5em;
+    display: block;
+    width: 100%;
+}
+
+.image.fit {
+    display: block;
+    width: 100%;
+}
+
+// So important - This is the Grid system, move this over to Bootstrap
+.\34 u,
+.\34 u\24 {
+    clear: none;
+    margin-left: 0;
+    width: 33.3333333333%;
+}
+
+.sponsors {
+    padding: 3.5em 20px;
+
+    // Align Sponsors
+    .row {
+        border-bottom: solid 1px transparent;
+        margin: -25px 0 -1px -25px;
+
+        > * {
+            float: left;
+            padding: 25px 0 0 25px;
+        }
+    }
+
+    h2 {
+        padding-bottom: 50px;
+    }
+}

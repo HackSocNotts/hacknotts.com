@@ -50,12 +50,12 @@ module.exports = function (grunt) {
         'assets/html-parts/navbar.html',
         'assets/html-parts/cover.html',
         'assets/html-parts/description.html',
-        'assets/html-parts/faq.html',
-        'assets/html-parts/schedule.html',
-        'assets/html-parts/prizes.html',
         'assets/html-parts/venue.html',
+        'assets/html-parts/schedule.html',
         'assets/html-parts/sponsors.html',
+        'assets/html-parts/prizes.html',
         'assets/html-parts/register.html',
+        'assets/html-parts/faq.html',
         'assets/html-parts/footer.html',
         'assets/html-parts/html-foot.html'], // In order of concat
         dest: 'assets/development.html'

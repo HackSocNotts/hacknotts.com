@@ -54,8 +54,9 @@ a:hover {
 }
 
 section {
-    padding-top: 70px;
     padding-bottom: 70px;
+    padding-top: 70px;
+    width: 100%;
 }
 
 table {
@@ -95,6 +96,10 @@ table {
     clear: both;
 }
 
+.row {
+    margin: 0;
+}
+
 .light {
     font-weight: 400;
 }
@@ -112,17 +117,17 @@ table {
     border-color: #5ace5a;
 }
 
-// .btn-default {
-//     background-color: transparent;
-//     border: 1px solid #219ab3;
-//     color: #219ab3;
-// }
+.cta {
+    background-color: #fff;
+    color: #222;
+    margin-bottom: 100px;
+    padding: 75px;
+}
 
-// .btn-default:hover,
-// .btn-default:focus {
-//     background-color: #219ab3;
-//     border: 1px solid #219ab3;
-//     color: #000;
-//     outline: 0;
-// }
-
+@media(min-width: 960px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px !important;
+  }
+}
