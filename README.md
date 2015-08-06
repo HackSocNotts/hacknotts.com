@@ -12,8 +12,8 @@ The website for Hacksoc's official hackathon in November 2015.
 
 ## Travis CI Status
 
-- Staging Build Status: [![Staging Build Status](https://magnum.travis-ci.com/HackSocNotts/hacknotts.com.svg?token=quY7a4xnvykmQZx9AwhA&branch=master)](https://magnum.travis-ci.com/HackSocNotts/hacknotts.com)
-- Production Build Status: [![Production Build Status](https://magnum.travis-ci.com/HackSocNotts/hacknotts.com.svg?token=quY7a4xnvykmQZx9AwhA&branch=prod)](https://magnum.travis-ci.com/HackSocNotts/hacknotts.com)
+- Staging Build Status: [![Staging Build Status](https://magnum.travis-ci.com/jamietanna/hacknotts.com.svg?token=quY7a4xnvykmQZx9AwhA&branch=master)](https://magnum.travis-ci.com/jamietanna/hacknotts.com)
+- Production Build Status: [![Production Build Status](https://magnum.travis-ci.com/jamietanna/hacknotts.com.svg?token=quY7a4xnvykmQZx9AwhA&branch=prod)](https://magnum.travis-ci.com/jamietanna/hacknotts.com)
 
 
 ## How to Build
