@@ -53,11 +53,10 @@ module.exports = function (grunt) {
         'assets/html-parts/venue.html',
         'assets/html-parts/schedule.html',
         'assets/html-parts/sponsors.html',
-        'assets/html-parts/prizes.html',
-        'assets/html-parts/register.html',
         'assets/html-parts/faq.html',
+        'assets/html-parts/register.html',
         'assets/html-parts/footer.html',
-        'assets/html-parts/html-foot.html'], // In order of concat
+        'assets/html-parts/html-foot.html'], // In order of concat. 'assets/html-parts/prizes.html',
         dest: 'assets/development.html'
       }
     },

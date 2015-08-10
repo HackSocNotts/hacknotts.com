@@ -45,24 +45,24 @@ function mapInit() {
   var map = new google.maps.Map(document.getElementById('map'),mapOptions);
   map.setOptions({'scrollwheel': false}); // Disable zoom on scroll
 
-  var marker = new google.maps.Marker({
-    position: LOCATION,
-    map: map,
-    title: 'HackNotts 2015'
-  });
+  // var marker = new google.maps.Marker({
+  //   position: LOCATION,
+  //   map: map,
+  //   title: 'HackNotts 2015'
+  // });
 
-  var contentString = '<div id="content"><div id="container">';
-  var endContentString = '</div></div>';
-  var infowindow = new google.maps.InfoWindow({
-    content: contentString + addressTitle + address + mapsLink + endContentString
-  });
+  // var contentString = '<div id="content"><div id="container">';
+  // var endContentString = '</div></div>';
+  // var infowindow = new google.maps.InfoWindow({
+  //   content: contentString + addressTitle + address + mapsLink + endContentString
+  // });
 
-  infowindow.open(map, marker); // Open on page load
+  // infowindow.open(map, marker); // Open on page load
 
-  // Add marker click event so Address popup gets displayed
-  google.maps.event.addListener(marker, 'click', function() {
-    infowindow.open(map,marker);
-  });
+  // // Add marker click event so Address popup gets displayed
+  // google.maps.event.addListener(marker, 'click', function() {
+  //   infowindow.open(map,marker);
+  // });
 }
 
 // Set map to be created on load

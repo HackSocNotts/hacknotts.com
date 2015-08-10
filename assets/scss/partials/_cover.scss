@@ -20,6 +20,10 @@
         display: table-cell;
         vertical-align: middle;
 
+        img {
+            width: 60%;
+        }
+
         .brand-heading {
             font-size: 40px;
         }
@@ -53,6 +57,15 @@
             .intro-text {
                 font-size: 28px;
             }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .intro .intro-body {
+
+        img {
+            width: 80%;
         }
     }
 }
