@@ -41,6 +41,14 @@
                 text-decoration: none;
             }
         }
+
+        .intro-buttons {
+            padding-top: 75px;
+
+            a {
+                margin: 10px;
+            }
+        }
     }
 }
 
@@ -55,7 +63,8 @@
             }
 
             .intro-text {
-                font-size: 28px;
+                font-size: 21px;
+                padding: 0 150px;
             }
         }
     }

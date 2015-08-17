@@ -112,9 +112,20 @@ table {
     text-transform: uppercase;
 }
 
+.btn-alt {
+    background-color: #454646;
+    border-color: #3e3e3e;
+    color: #fff;
+}
+
+.btn-alt:hover {
+    background-color: #333;
+    color: #fff;
+}
+
 .btn-success {
-    background-color: #66cc36;
-    border-color: #5ace5a;
+    background-color: #5db932;
+    border-color: #388238;
 }
 
 .cta {
