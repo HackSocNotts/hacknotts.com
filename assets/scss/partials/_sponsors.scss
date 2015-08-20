@@ -21,6 +21,7 @@ a.image:hover {
     clear: none;
     margin-left: 0;
     width: 33.3333333333%;
+    padding: 25px 0 0 25px;
 }
 
 .sponsors {
@@ -29,11 +30,10 @@ a.image:hover {
     // Align Sponsors
     .row {
         border-bottom: solid 1px transparent;
-        margin: -25px 0 -1px -25px;
+        margin-left: -12px;
 
         > * {
             float: left;
-            padding: 25px 0 0 25px;
         }
     }
 
