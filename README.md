@@ -18,7 +18,7 @@ The website for Hacksoc's official hackathon in November 2015.
 
 ## How to Build
 
-- Uses GruntJS
+- Uses Grunt
 - Run 'sudo npm install' in main directory
 - Run 'grunt watch' to watch folders so that SCSS compiles to CSS & others
 - Run (in a new terminal window) 'grunt serve' to test locally at http://localhost:9000/index.html
