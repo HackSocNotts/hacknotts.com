@@ -118,12 +118,14 @@ table {
     color: #fff;
 }
 
-.btn-alt:hover {
+.btn-alt:hover,
+.btn-alt:focus {
     background-color: #333;
     color: #fff;
 }
 
-.btn-success {
+.btn-success,
+.btn-success:focus {
     background-color: #5db932;
     border-color: #388238;
 }

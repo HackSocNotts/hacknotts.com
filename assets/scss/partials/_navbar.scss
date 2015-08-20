@@ -31,14 +31,9 @@
             padding: 4px 6px;
         }
 
-        .navbar-toggle:active,
-        .navbar-toggle:focus {
+        .navbar-toggle:active {
             outline: 0;
         }
-    }
-
-    .navbar-brand:focus {
-        outline: 0;
     }
 
     a {
@@ -65,14 +60,17 @@
                 text-decoration: none;
             }
 
-            a:hover,
-            a:focus,
-            a.active {
+            a:hover {
                 background-color: rgba(0, 0, 0, .3);
+            }
+
+            a:focus {
+                background-color: transparent;
             }
         }
     }
 }
+
 
 @media(min-width: 767px) {
     .navbar {
