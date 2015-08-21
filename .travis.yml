@@ -21,7 +21,7 @@ deploy:
     secure: "JN1NwvJqCPlcSd8t6pCzzDVJwrNfNGwd76UBDVbbZJGQlMb4OdydI5aE65lhFDuHYcT/B2CA4bKUnHHRc2ZTRz9OdKGbDaLjb0vBidpnihUDvIAdCQ/xJerSNlnnhCBvLv/XhUqHivIURCbXFQMMQBeECbOUWsheFa1QYiKpAEPRpi6o600cjGStjPTveNAn/K0AvcbKzhLO8etKga7eD0aJvgA+bwoWszLonNJOFCJV/nHCGZKyptqHEAYbZWc5Y3AFJeKnj7Z8QAL0Mj9UE/LAmdsxnVhQ3h0Yt/9wqXiFKZX6akWM9o2unSYWdbmzTNRGoHSJ82hya/fSY58jgHCmr8/uSPoC28TyeMa1vm9Vu0ZilO/97gifETVkAUl4yPiUxyCU1E82O0H1SuvKYpj8BFiioHjlFnxfLXqjzt3NqSENdPmxmdwikQUov/V3NsJeDJMlnboxdQXjfQ0I2V6pPOiWk7fnwygQtqTv3Tbb8mQZ8CatMc9Mcw6jHHlFIcr4KIKqm2m10y2Jhq4vxsgXJDhoMufvGbCwf+AE2n6/Y7I70juTdcS/gpa9W1zMifL3wFrG3Rs+MhoaM6zAiLjzp1Zeo6ygqvlh/Oxif0k15gZHVUj7JLjUk0ZKt8bvOlEGhb5ijf52yJq2bMFPtSMlJSHOp9txwubKC/sNujY="
   bucket: "hacknotts.com"
   acl: public_read
-  region: eu-central-1
+  region: eu-west-1
   on:
     branch: prod
 
