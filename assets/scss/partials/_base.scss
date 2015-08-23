@@ -44,6 +44,12 @@ p {
     }
 }
 
+@media(max-width: 767px) {
+    h2 {
+        font-size: 25px;
+    }
+}
+
 a {
     color: #59bb1a;
     text-decoration: underline;
