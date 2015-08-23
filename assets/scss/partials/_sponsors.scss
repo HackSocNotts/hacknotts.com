@@ -22,6 +22,12 @@ a.image:hover {
     margin-left: 0;
     width: 33.3333333333%;
     padding: 25px 0 0 25px;
+	/* required so that we can have the push_ class */
+	position: relative;
+}
+
+.push_\34u {
+	left: 33.3333333333%;
 }
 
 .sponsors {
