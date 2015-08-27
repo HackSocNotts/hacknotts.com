@@ -72,4 +72,20 @@ google.maps.event.addDomListener(window, 'load', mapInit);
 // Typeform code
 (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()
 
+// Photo gallery
+$('.photoset-grid-custom').photosetGrid({
+  // Set the gutter between columns and rows
+  gutter: '5px',
+  // Manually set the grid layout
+  layout: '212', // 3 images on first row, 2 images on second row etc
+  // Wrap the images in links
+  highresLinks: true,
+  // Asign a common rel attribute
+  rel: 'print-gallery',
 
+  onInit: function(){},
+  onComplete: function(){
+    // Show the grid after it renders
+    $('.photoset-grid-custom').attr('style', '');
+  }
+});

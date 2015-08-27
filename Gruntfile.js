@@ -36,6 +36,7 @@ module.exports = function (grunt) {
         src: ['assets/js/jquery.min.js',
         'assets/js/jquery.easing.min.js',
         'assets/js/bootstrap.min.js',
+        'assets/js/photoset-grid.min.js',
         'assets/js/main.js'], // In order of concat
         dest: 'assets/main.min.js'
       }
