@@ -2,7 +2,6 @@ language: node_js
 # as we're not running unittests, force success return status
 script: "/bin/true"
 # always want to know when we've had a failed build, or if the status has changed (i.e. a failed build is now passing)
-# TODO ensure that this only emails exec!
 notifications:
   on_success: change
   on_failure: always
