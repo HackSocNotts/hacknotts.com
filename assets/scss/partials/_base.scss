@@ -146,6 +146,15 @@ table {
     margin-bottom: 50px;
 }
 
+span.line:after {
+    background: #59bb1a;
+    color: transparent;
+    content: ' |';
+    display: inline-block;
+    height: 100%;
+    width: 10px;
+}
+
 @media(min-width: 960px) {
     .container {
         margin-left: auto;
