@@ -35,7 +35,9 @@ var address = '<p><b>Address</b><br>Jubilee Campus, Wollaton Road,<br>Nottingham
 var mapURL = 'https://www.google.co.uk/maps/place/School+of+Computer+Science/@52.953357,-1.18736,15z/data=!4m2!3m1!1s0x0:0xaf426646771a25ac';
 var mapsLink = '<p><br><a href="' + mapURL + '" target="_blank">Open in Google Maps</a></p>';
 
-var mapOptions = {center: LOCATION, zoom: 12,
+var centered_location = {lat: LOCATION.lat + 0.01, lng: LOCATION.lng}; // Move map down to counteract the marker popup
+
+var mapOptions = {center: centered_location, zoom: 12,
   panControl: false, zoomControl: true, mapTypeControl: true, scaleControl: false, streetViewControl: false, overviewMapControl: false,
   styles: [{"stylers":[{"saturation":-100}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#0099dd"}]},{"elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#aadd55"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"road.arterial","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"road.local","elementType":"labels.text","stylers":[{"visibility":"on"}]},{}]
 };
