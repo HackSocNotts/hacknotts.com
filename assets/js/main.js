@@ -28,14 +28,14 @@ $('.navbar-collapse ul li a').click(function() {
 // Google Map!
 //
 // Config values
-var LOCATION = {lat: 52.951659, lng: -1.186477};
+var LOCATION = {lat: 52.953357, lng: -1.18736};
 
-var addressTitle = '<h3>Business School South</h3>';
-var address = '<p><b>Address:</b> Jubilee Campus, Wollaton Rd, Nottingham NG8 1BB</p>';
-var mapURL = 'https://www.google.co.uk/maps/place/Business+School+(South)/@52.951659,-1.186477,15z/data=!4m2!3m1!1s0x0:0x4da28c4722953e75?sa=X&ei=ci5dVKiyO6Kv7AbAw4GQAQ&ved=0CI0BEPwSMAs';
-var mapsLink = '<p><a href="' + mapURL + '" target="_blank">Open in Google Maps</a></p>';
+var addressTitle = '<h3>School of Computer Science</h3>';
+var address = '<p><b>Address</b><br>Jubilee Campus, Wollaton Road,<br>Nottingham, NG8 1BB</p>';
+var mapURL = 'https://www.google.co.uk/maps/place/School+of+Computer+Science/@52.953357,-1.18736,15z/data=!4m2!3m1!1s0x0:0xaf426646771a25ac';
+var mapsLink = '<p><br><a href="' + mapURL + '" target="_blank">Open in Google Maps</a></p>';
 
-var mapOptions = {center: { lat: 52.951659, lng: -1.186477}, zoom: 12,
+var mapOptions = {center: LOCATION, zoom: 12,
   panControl: false, zoomControl: true, mapTypeControl: true, scaleControl: false, streetViewControl: false, overviewMapControl: false,
   styles: [{"stylers":[{"saturation":-100}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#0099dd"}]},{"elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#aadd55"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"road.arterial","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"road.local","elementType":"labels.text","stylers":[{"visibility":"on"}]},{}]
 };
@@ -45,28 +45,47 @@ function mapInit() {
   var map = new google.maps.Map(document.getElementById('map'),mapOptions);
   map.setOptions({'scrollwheel': false}); // Disable zoom on scroll
 
-  // var marker = new google.maps.Marker({
-  //   position: LOCATION,
-  //   map: map,
-  //   title: 'HackNotts 2015'
-  // });
+  var marker = new google.maps.Marker({
+    position: LOCATION,
+    map: map,
+    title: 'HackNotts 2015'
+  });
 
-  // var contentString = '<div id="content"><div id="container">';
-  // var endContentString = '</div></div>';
-  // var infowindow = new google.maps.InfoWindow({
-  //   content: contentString + addressTitle + address + mapsLink + endContentString
-  // });
+  var contentString = '<div id="content"><div id="container">';
+  var endContentString = '</div></div>';
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString + addressTitle + address + mapsLink + endContentString
+  });
 
-  // infowindow.open(map, marker); // Open on page load
 
-  // // Add marker click event so Address popup gets displayed
-  // google.maps.event.addListener(marker, 'click', function() {
-  //   infowindow.open(map,marker);
-  // });
+  // If the user isn't on a mobile
+  if(!IsMobile()) {
+    infowindow.open(map, marker); // Open on page load
+  }
+
+  // Add marker click event so Address popup gets displayed
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
 }
 
 // Set map to be created on load
 google.maps.event.addDomListener(window, 'load', mapInit);
+
+
+//
+// Utility function to see if the user is on a mobile or not
+//
+function IsMobile() {
+ return ( navigator.userAgent.match(/Android/i) ||
+     navigator.userAgent.match(/webOS/i) ||
+     navigator.userAgent.match(/iPhone/i) ||
+     navigator.userAgent.match(/iPad/i) ||
+     navigator.userAgent.match(/iPod/i) ||
+     navigator.userAgent.match(/BlackBerry/i) ||
+     navigator.userAgent.match(/Windows Phone/i)
+ );
+}
 
 
 // Typeform code
