@@ -1,8 +1,4 @@
 
-// 3rd party styles
-@import 'vendor/bootstrap';
-@import 'vendor/animate';
-
 @import 'partials/base'; // Base Styles, e.g. body
 @import 'partials/navbar'; // Navigation bar at top of site
 @import 'partials/cover'; // Above the fold content
@@ -10,11 +6,6 @@
 @import 'partials/sponsors';
 @import 'partials/faq';
 @import 'partials/venue';
-
-
-@import 'theme-grayscale';
-
-
 
 // Unsorted...probably should be removed / moved
 

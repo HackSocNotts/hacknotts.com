@@ -33,7 +33,7 @@ module.exports = function (grunt) {
         separator: ';'
       },
       dist: {
-        src: ['assets/js/jquery.min.js',
+        src: [
         'assets/js/jquery.easing.min.js',
         'assets/js/bootstrap.min.js',
         'assets/js/photoset-grid.min.js',
