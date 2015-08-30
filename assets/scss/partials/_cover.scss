@@ -40,8 +40,22 @@
             }
         }
 
+        .intro-venue {
+            background-color: rgba(255, 255, 255, .82);
+            border-radius: 2px;
+            color: #4e4e4e;
+            display: block;
+            font-size: 15px;
+            line-height: 1.2em;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            text-decoration: none;
+            width: 30%;
+        }
+
         .intro-buttons {
-            padding-top: 75px;
+            padding-top: 15px;
 
             a {
                 margin: 10px;
@@ -78,6 +92,10 @@
 
         .intro-buttons {
             padding-top: 0;
+        }
+
+        .intro-venue {
+            width: 55%;
         }
     }
 
