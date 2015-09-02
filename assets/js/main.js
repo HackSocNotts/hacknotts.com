@@ -111,4 +111,65 @@ $(function() {
       $('.photoset-grid-custom').attr('style', '');
     }
   });
+
+  // MLH signup code
+  // See https://my.mlh.io/docs for details
+  var app_id = '64443453892783e1412443a33a121326a570a9cc67d87cc2d0dd50ff82077463';
+  var app_redirect_url = 'http://www.hacknotts.com';
+  var url = encodeURI('//my.mlh.io/oauth/authorize?client_id=' + app_id + '&redirect_uri=' + app_redirect_url + '&response_type=token');
+  $('#js-mlh-signup').attr('href', url);
+
+
+  // MLH signup code show success message after signup
+  // http://hacknotts.com/#access_token=...&token_type=bearer
+ if(window.location.hash) { // Hash found
+    if(getHashValue('access_token') == -1) { // No access token found, assume failure
+
+      var error_message = getHashValue('error');
+      var error_description = getHashValue('error_description');
+
+      if(error_message != -1 && error_description != -1) {
+        console.log(error_description);
+        mlhDisplayError(error_message + '<br>' + error_description.replace(/\+/g, ' '));
+      }
+
+    } else { // Success
+      // Assume they are validated as they have an access token.
+      mlhDisplaySuccess();
+    }
+  }
+
+  function getHashValue(hash_target) {
+    var hashes = window.location.hash.substring(1).split('&'); // Puts hash in
+    for (var h = 0; h < hashes.length; h++) {
+      var hash_name = hashes[h].split('=')[0];
+      var hash_value = hashes[h].split('=')[1];
+      if (hash_name == hash_target) {
+        return hash_value;
+      }
+    }
+    return -1;
+  }
+
+  // MLH signup code show failure message after signup
+  // Returns this if you click no I dont wanna. http://hacknotts.com/#error=access_denied&error_description=The+resource+owner+or+authorization+server+denied+the+request.
+  function mlhDisplayError(message) {
+    location.hash = '#register'; // Scroll to register
+
+    // Show error message
+    $('#js-mlh-signup-users-info').text('You need to validate with MLH to register your ticket.').append(
+      $('<p>').html(message).css('color', '#555')
+    );
+  }
+
+  // MLH signup display success message
+  function mlhDisplaySuccess() {
+    location.hash = '#register'; // Scroll to register
+
+    // Set registered button to be disabled
+    $('#js-mlh-signup').text('Registered').attr('disabled', 'true');
+
+    // Show success message
+    $('#js-mlh-signup-users-info').text('Thank you for registering!');
+  }
 });
