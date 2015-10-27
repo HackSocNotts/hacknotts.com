@@ -10,25 +10,21 @@
 
     <title>HackNotts 2015 is coming</title>
 
-    <!-- Font awesome -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-    <!-- Custom Fonts Google fonts -->
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <!-- Bootstrap from CDN to improve load times -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesnt work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <!-- CSS -->
     <link href="/assets/style.css" rel="stylesheet">
   </head>
 
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <a id="mlh-trust-badge" style="position:fixed;top:0;right:50px;max-width:100px;width:10%;min-width: 60px;display:block;z-index:10000" href="//mlh.io/?utm_campaign=Trust%20Badge" target="_blank"><img src="//s3.amazonaws.com/logged-assets/trust-badge/f2015.png" alt="MLH Official - Fall 2015" style="width:100%;" ></a>
 
 
     <!-- Navigation -->
@@ -44,24 +40,16 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <div class="collapse navbar-collapse navbar-left navbar-main-collapse">
           <ul class="nav navbar-nav">
             <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
             <li class="hidden">
               <a href="#page-top"></a>
             </li>
-            <li>
-              <a class="page-scroll" href="#faq">FAQ</a>
-            </li>
-            <li>
-              <a class="page-scroll" href="#schedule">Schedule</a>
-            </li>
-            <li>
-              <a class="page-scroll" href="#sponsors">Sponsors</a>
-            </li>
-            <li>
-              <a class="page-scroll" href="#register">Register</a>
-            </li>
+            <li><a class="page-scroll" href="#venue">Venue</a></li>
+            <li><a class="page-scroll" href="#schedule">Schedule</a></li>
+            <li><a class="page-scroll" href="#faq">FAQ</a></li>
+            <li><a class="page-scroll" href="#register">Register</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -73,9 +61,16 @@
   <header class="intro">
     <div class="intro-body">
       <div class="container">
-        <img src="/assets/img/logo.original.png" style="width:60%;margin-top:-100px;" alt="HackNotts" />
+        <img src="/assets/img/logo.original.png"alt="HackNotts" />
         <p class="intro-text">
-          A 24 hour <a target="_blank" href="https://en.wikipedia.org/wiki/Hackathon">Hackathon</a> in Nottingham.
+          A 24 hour <a target="_blank" href="https://en.wikipedia.org/wiki/Hackathon">Hackathon</a> at the University of Nottingham, brought to you by <a target="_blank" href="http://www.hacksocnotts.co.uk">HackSoc</a>.
+        </p>
+        <a class="intro-venue page-scroll" href="#venue">
+          University of Nottingham, UK
+        </a>
+        <p class="intro-buttons">
+          <a href="#sponsors" class="page-scroll btn btn-alt">Sponsor</a>
+          <a href="#register" class="page-scroll btn btn-success">Register</a>
         </p>
       </div>
     </div>
@@ -86,33 +81,47 @@
     <div class="container">
       <div class="col-lg-10 col-lg-offset-1">
         <h2>Build incredible projects in 24 hours <span class="line"></span></h2>
-        <p>HackNotts is a 24 hour Hackathon from {DATE} at {LOCATION}. Students will team up to learn about tech and create cool stuff.</p>
+        <p>HackNotts is a 24 hour Hackathon in Nottingham. Students will team up to learn about tech and create cool stuff.</p>
       </div>
     </div>
-    <div  class=" container">
+    <div class="container">
       <div class="col-lg-10 col-lg-offset-1">
         <h2>HackNotts 2015 is coming <span class="line"></span></h2>
-        <p>Last year HackNotts 2014 was a huge success! <a href="//www.flickr.com/photos/manoj-nathwani/sets/72157649562295241" target="_blank">See photos of HackNotts 2014</a></p>
-        <img src="/assets/img/hacknotts-2014.jpg" style="width:100%;">
+        <p>Last year HackNotts 2014 was a huge success!</p>
+
+        <div class="photoset-grid-custom" style="visibility: hidden;">
+          <img src="/assets/img/hacknotts-2014-3.jpg" data-highres="/assets/img/hacknotts-2014-3.jpg">
+          <img src="/assets/img/hacknotts-2014-2.jpg" data-highres="/assets/img/hacknotts-2014-2.jpg">
+          <img src="/assets/img/hacknotts-2014-1.jpg" data-highres="/assets/img/hacknotts-2014-1.jpg">
+          <img src="/assets/img/hacknotts-2014-0.jpg" data-highres="/assets/img/hacknotts-2014-0.jpg">
+          <img src="/assets/img/hacknotts-2014-4.jpg" data-highres="/assets/img/hacknotts-2014-4.jpg">
+        </div>
+        <p><a href="//www.flickr.com/photos/manoj-nathwani/sets/72157649562295241" target="_blank">See more photos of HackNotts 2014</a></p>
       </div>
     </div>
   </section>
 
  <!-- Venue Section -->
-    <section id="venue" class="content-section text-center">
+    <section id="venue" class="text-center">
       <h2>Hackathon Venue <span class="line"></span></h2>
-      <p style="opacity: 0.5">{LOCATION}</p>
+        <a target="_blank" href="https://www.google.co.uk/maps/place/School+of+Computer+Science/@52.953357,-1.18736,15z/data=!4m2!3m1!1s0x0:0xaf426646771a25ac"><p>
+          School of Computer Science<br>
+          Jubilee Campus<br>
+          Wollaton Road, NG8 1BB<br>
+          Nottingham, UK
+        </p></a>
       <div id="map"></div>
     </section>
 
 
  <!-- Schedule Section -->
-    <section id="schedule" class="container content-section text-center">
+    <section id="schedule" class="container text-center">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
 
-         <h2>Hackathon Schedule <span class="line"></span> <a href="https://docs.google.com/spreadsheets/d/1gUMnVy52e4JAv7Zm9nG7QR77aqZZoM6f5RKGdKFFezA/edit?usp=sharing">Click here</a></h2>
-
+            <h2>Hackathon Schedule <span class="line"></span></h2>
+            <p>Schedule to be announced 2 weeks before the event</p>
+            <!-- <p><a href="//docs.google.com/...">View HackNotts 2015 schedule</a></p> -->
         </div>
       </div>
     </section>
@@ -123,179 +132,88 @@
       <div class="row cta">
         <h1>We LOVE our sponsors</h1>
           <p>Thanks to our sponsors and partners below, we're able to run HackNotts for free.</p>
-          <p>Want to be a sponsor / get some love too?</p>
-          <a href="#" class="btn btn-success">Sponsor HackNotts</a>
+          <p></p>
+          <p>Contact <a href="mailto:sponsorship@hacknotts.com">sponsorship@hacknotts.com</a> and read our <a href="/sponsorship-deck.pdf">sponsorship deck</a> for more information about how to be a sponsor.</p>
+          <a href="mailto:sponsorship@hacknotts.com" class="btn btn-success">Sponsor HackNotts</a>
+      </div>
+    </section>
+    <section class="container sponsors text-center">
+      <h2>HackNotts 2015 Sponsors <span class="line"></span></h2>
+      <div class="row">
+          <div class="12u">
+              <div class="row no-collapse">
+                  <div class="push_4u 4u"><a href="mailto:sponsorship@hacknotts.com" class="image fit" target="_blank"><img src="/assets/img/sponsors/new-sponsor.png" alt=""></a></div>
+              </div>
+          </div>
       </div>
 
-      <div class="container sponsors">
-        <h2>HackNotts 2015 Sponsors <span class="line"></span></h2>
-        <div class="row">
-            <div class="12u">
-                <div class="row no-collapse">
-                    <div class="4u"><a href="//SPONSORSHIP-DECK" class="image fit" target="_blank"><img src="/assets/img/sponsors/new-sponsor.png" alt=""></a></div>
-                </div>
-            </div>
-        </div>
-      </div>
-
-
-      <div class="container sponsors">
+      <div class="sponsors">
         <h2>HackNotts 2014 Sponsors <span class="line"></span></h2>
         <div class="row">
             <div class="12u">
                 <div class="row no-collapse">
                     <div class="4u"><a href="//bloomberg.com" class="image fit" target="_blank"><img src="/assets/img/sponsors/bloomburg.png" alt=""></a></div>
-
                     <div class="4u"><a href="//twilio.com" class="image fit" target="_blank"><img src="/assets/img/sponsors/twilio.png" alt=""></a></div>
                     <div class="4u"><a href="//capitalone.co.uk" class="image fit" target="_blank"><img src="/assets/img/sponsors/capitalone.png" alt=""></a></div>
                 </div>
                 <div class="row no-collapse">
                     <div class="4u"><a href="//braintree.com" class="image fit" target="_blank"><img src="/assets/img/sponsors/braintree.png" alt=""></a></div>
-                    <div class="4u"><a href="//uk.mlh.io" class="image fit" target="_blank"><img src="/assets/img/sponsors/mlhio.png" alt=""></a></div>
                     <div class="4u"><a href="//sendgrid.com" class="image fit" target="_blank"><img src="/assets/img/sponsors/sendgrid.png" alt=""></a></div>
-                </div>
-
-                <div class="row no-collapse">
                     <div class="4u"><a href="//www.nottingham.ac.uk/is" class="image fit" target="_blank"><img src="/assets/img/sponsors/IS.png" alt=""></a></div>
                 </div>
             </div>
         </div>
       </div>
-    </section>
-
-  <!-- Prizes Section -->
-  <section id="prizes" class="container content-section text-center">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
-        <h2>Prizes <span class="line"></span></h2>
-
-        <h3 class="prize">Capital One <span class="line"></span> Best use of UX <span class="line"></span> UX Books</h3>
-
-        <h3 class="prize">Capital One <span class="line"></span> Best Nottingham themed Lego build <span class="line"></span> More lego!</h3>
-
-        <h3 class="prize">Bloomberg <span class="line"></span> Best use of Bloomberg API <span class="line"></span> Awesome mini quadcopters</h3>
-
-        <h3 class="prize">Braintree <span class="line"></span> Best use of Braintree <span class="line"></span> Lego! All the lego!</h3>
-
-        <h3 class="prize">Braintree <span class="line"></span> Best ASCII art  <span class="line"></span> Leap Motion</h3>
-
-        <h3 class="prize">Sendgrid <span class="line"></span> Best use of Sendgrid <span class="line"></span> Spheros!!!</h3>
-
-        <h3 class="prize">Information Services <span class="line"></span> Best app to improve student exprience <span class="line"></span> Cool books</h3>
-
-        <h3 class="prize">Yo <span class="line"></span> Just using the Yo API <span class="line"></span> Yo tshirt</h3>
-
-        <h3 class="prize">Twilio <span class="line"></span> Just using Twilio API <span class="line"></span> Small prize (TBC)</h3>
-      </div>
-    </div>
-  </section>
-  <div class="clear"></div>
-
-    <!-- Register Section -->
-    <section id="register" class="container content-section2 text-center">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <h2>Register your ticket <span class="line"></span></h2>
-          <p>Tickets are <strong>now available</strong> and are 100% free, however space is very limited.</p>
-        </div>
-
-        <div class="col-lg-10 col-lg-offset-1">
-          <iframe src="//www.eventbrite.com/tickets-external?eid=4653432542" frameborder="0" height="300" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
-        </div>
-      </div>
+        <div class="sponsors">
+          <h2>HackNotts 2014 Partners <span class="line"></span></h2>
+          <div class="row no-collapse">
+              <div class="push_4u 4u"><a href="//uk.mlh.io" class="image fit" target="_blank"><img src="/assets/img/sponsors/mlhio.png" alt=""></a></div>
+          </div>
+      </div><!-- ./sponsors -->
     </section>
 
   <!-- FAQ Section -->
-  <section id="faq" class="ccontent-section text-center">
+  <section id="faq" class="cta text-center">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h2>Frequently Asked Questions <span class="line"></span></h2>
+          <h2>Frequently Asked Questions</h2>
+          <p>Before you register please read the <a href="//static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">Code Of Conduct</a> and read the FAQ below.</p>
+          <a href="//docs.google.com/document/d/1EQS2i-iNEMWSVOByj4AT69s8ba5mIJ55eKEw0nJq-xE" class="btn btn-success" target="_blank">FAQ</a>
           <br />
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4">
-
-          <h3 class="faq">What is a Hackathon? <span class="line"></span></h3>
-          <p class="faq">A Hackathon is a collaborative programming festival. Hundreds of passionate students come together, form teams, share ideas, and help each other build cool technology. Its a fantastic opportunity to meet new people, learn from mentors, and make cool stuff. <strong>Were very beginner friendly.</strong> Everybody is here to help each other and have fun.</p>
-
-          <h3 class="faq">What is MLH? <span class="line"></span></h3>
-          <p class="faq">Major League Hacking (MLH) is the official student Hackathon league. Each semester, more than 15,000 developers, designers, and makers compete for their school’s glory at the 50+ official MLH Hackathons in the United States, Canada, and United Kingdom.</p>
-
-          <h3 class="faq">Where is HackNotts? <span class="line"></span></h3>
-          <p class="faq">It is being held at <a href="#venue" class="page-scroll">{LOCATION}</a>.</p>
-
-          <h3 class="faq">What time should I arrive? <span class="line"></span></h3>
-          <p class="faq">Please aim to arrive at {LOCATION} on {DATE} at {TIME}.</p>
-
-          <h3 class="faq">Who can attend HackNotts? <span class="line"></span></h3>
-          <p class="faq">Any enrolled undergraduate or postgraduate student, or graduates who are less than a year out of university.</p>
-
-          <h3 class="faq">Can under 18s attend? <span class="line"></span></h3>
-          <p class="faq">Unfortunately due to changes in venue, under 18s cannot attend the event. We are very sorry about this and the late notice.</p>
-        </div>
-
-        <div class="col-lg-4">
-          <h3 class="faq">Can I build my hack before the event? <span class="line"></span></h3>
-          <p class="faq">Not if you want to win any of the prizes. You can think of ideas, just do not start building them. You can of course use libraries, frameworks, and templates. If you are not interested in the prizes, feel free to work on anything you like.</p>
-
-          <h3 class="faq">I can not write code but still want to attend. Help? <span class="line"></span></h3>
-          <p class="faq">We will have mentors on site to teach you lots of new skills and guide you towards creating your first hack. All the students are very friendly and willing to help each other out. Come along and learn your first lines of code and make something cool.</p>
-
-          <h3 class="faq">Do I need to have a team? <span class="line"></span></h3>
-          <p class="faq">You are welcome to make a team before the event. But loads of people come without a team. At the start of the event, we will help everyone find a team.</p>
-
-          <h3 class="faq">Can my team be made up of people from different universities/schools? <span class="line"></span></h3>
-          <p class="faq">Yes! One of the best things about Hackathons is meeting hackers from all over the country.</p>
-
-          <h3 class="faq">For how long can I hack? <span class="line"></span></h3>
-          <p class="faq">You will have a straight 24 hours to hack. {TIME}. You can of course sleep (though many try to stay up as long as possible), and we will have some fun activities for everybody so you can catch a break.</p>
-
-          <h3 class="faq">Can I sleep at the venue? <span class="line"></span></h3>
-          <p class="faq">Yes! We will put spaces aside for people to sleep if they want to. You are welcome to leave overnight to sleep in a real bed, but many hackers sleep over at the venue!</p>
-        </div>
-
-        <div class="col-lg-4">
-          <h3 class="faq">How large can teams be? <span class="line"></span></h3>
-          <p class="faq">To be eligible for prizes, teams need to be 1 to 4 people. If you are okay not being eligible for prizes, you can totally have as many people on your team as you want.</p>
-
-          <h3 class="faq">Do you provide food and drinks over the weekend? <span class="line"></span></h3>
-          <p class="faq">Yes! There will be a healthy lunch and dinner and plenty of snacks/drinks too! All free <a class="page-scroll" href="#sponsors">thanks to our amazing sponsors!</a></p>
-
-          <h3 class="faq">Is there a code of conduct <span class="line"></span></h3>
-          <p class="faq">MLH is dedicated to providing a fun, harassment-free experience for everyone. We expect all of our attendees, sponsors, volunteers, and staff to be respectful and considerate of others. They are all required to agree with <a href="//hackcodeofconduct.org/" target="_blank">this code of conduct</a>. You should read this code. Organisers will enforce it throughout the event.</p>
-
-          <h3 class="faq">Can I volunteer instead? <span class="line"></span></h3>
-          <p class="faq">Yes! If you would like to volunteer at HackNotts, please email tim@mlh.io.</p>
-
-          <h3 class="faq">Are there other hackathons? <span class="line"></span></h3>
-          <p class="faq">Yes, plenty! <a href="//mlh.io/seasons/2015-eu/events" target="_blank">See the EU 2015 list</a>.</p>
-
-          <h3 class="faq">Can I contact you? <span class="line"></span></h3>
-          <p class="faq">Yes, please do. We are improving our FAQ all the time and would love to hear from you! You can reach {LEADCONTACT}.</p>
         </div>
       </div>
     </div>
   </section>
+
+    <!-- Register Section -->
+    <section id="register" class="container text-center">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h2>Register your ticket <span class="line"></span></h2>
+          <p>Tickets are not yet available, check back later.</p>
+          <p>Sign up to be notified</p>
+          <a href="//harrymt.typeform.com/to/QooRki" class="btn btn-success typeform-share link" data-mode="2" target="_blank">Get notified</a>
+        </div>
+      </div>
+    </section>
 
   <!-- Footer -->
   <footer class="text-center">
 
     <div class="container">
-      <script>
-        // Print a random quote
-        var quotes = ["<h3>&ldquo;Don't tell me the sky is the limit when there are footprints on the moon!&rdquo;</h3><p>&mdash; Paul Brandt</p>",
-         "<h3>&ldquo;Keep your eyes on the stars, and your feet on the ground.&rdquo;</h3><p>&mdash; Theodore Roosevelt</p>",
-         "<h3>&ldquo;Act as if what you do makes a difference. It does.&rdquo;</h3><p>&mdash; William James</p>"];
-        var item = quotes[Math.floor(Math.random()*quotes.length)];
-        document.write(item);
-      </script>
+      <div class="quotes">
+        <script>
+          // Print a random quote
+          var quotes = ["<h3>&ldquo;Don't tell me the sky is the limit when there are footprints on the moon!&rdquo;</h3><p>&mdash; Paul Brandt</p>", "<h3>&ldquo;Keep your eyes on the stars, and your feet on the ground.&rdquo;</h3><p>&mdash; Theodore Roosevelt</p>", "<h3>&ldquo;Act as if what you do makes a difference. It does.&rdquo;</h3><p>&mdash; William James</p>"];
+          var item = quotes[Math.floor(Math.random()*quotes.length)];
+          document.write(item);
+        </script>
+      </div>
 
-      <p class="copy">Built at the <a target="_blank" href="//www.nottingham.ac.uk">University of Nottingham</a> by these members of <a href="http://www.hacksocnotts.co.uk" target="_blank">HackSoc</a><br>
+	  <p class="copy">Built at the <a target="_blank" href="//www.nottingham.ac.uk">University of Nottingham</a> by<br />
 
-      <a href="//www.harrymt.com/" target="_blank">harrymt</a> &amp; <a href="//jamietanna.co.uk/" target="_blank">jamietanna</a>
+	  <a href="//www.harrymt.com/" target="_blank">harrymt</a> of <a href="//www.hacksocnotts.co.uk" target="_blank">HackSoc</a>.
       </p>
       <ul class="social">
         <li>
@@ -314,12 +232,21 @@
 
 
     <!-- Google Maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBmbxXmi_WiX322tfOyGRaa3hw4vGDS7A"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDBmbxXmi_WiX322tfOyGRaa3hw4vGDS7A"></script>
 
-     <!-- // TODO add Google Analytics -->
+    <!-- Jquery from CDN to improve load times -->
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 
     <!-- All other JavaScript -->
     <script src="/assets/main.min.js"></script>
 
   </body>
 </html>
+
+<!-- Font awesome -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- Custom Fonts Google fonts -->
+<link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+

@@ -1,5 +1,4 @@
 
-
 // --------
 // COVER
 // --------
@@ -11,7 +10,6 @@
     color: #fff;
     display: table;
     height: 100%;
-    padding: 100px 0;
     position: relative;
     text-align: center;
     width: 100%;
@@ -19,6 +17,10 @@
     .intro-body {
         display: table-cell;
         vertical-align: middle;
+
+        img {
+            width: 60%;
+        }
 
         .brand-heading {
             font-size: 40px;
@@ -37,6 +39,28 @@
                 text-decoration: none;
             }
         }
+
+        .intro-venue {
+            background-color: rgba(255, 255, 255, .82);
+            border-radius: 2px;
+            color: #4e4e4e;
+            display: block;
+            font-size: 15px;
+            line-height: 1.2em;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            text-decoration: none;
+            width: 30%;
+        }
+
+        .intro-buttons {
+            padding-top: 15px;
+
+            a {
+                margin: 10px;
+            }
+        }
     }
 }
 
@@ -51,9 +75,29 @@
             }
 
             .intro-text {
-                font-size: 28px;
+                font-size: 21px;
+                padding: 0 150px;
             }
         }
     }
+}
+
+@media(max-width: 767px) {
+    .intro .intro-body {
+
+        img {
+            padding-top: 50px;
+            width: 100%;
+        }
+
+        .intro-buttons {
+            padding-top: 0;
+        }
+
+        .intro-venue {
+            width: 55%;
+        }
+    }
+
 }
 
