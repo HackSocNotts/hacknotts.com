@@ -28,3 +28,7 @@ before_install:
   - gem install sass
   - npm install
   - grunt
+
+# http://stackoverflow.com/a/33856850
+before_deploy:
+  - rvm 1.9.3 do gem install mime-types -v 2.6.2
