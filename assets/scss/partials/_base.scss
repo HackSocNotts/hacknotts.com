@@ -71,11 +71,10 @@ table {
 
     tr {
         th {
-            background: #59bb1a;
-            color: #000;
+            background: #ddd;
+            color: #555;
             font-size: 20px;
             padding: 10px;
-            text-align: center;
             width: 50%;
         }
 
@@ -94,7 +93,7 @@ table {
 
     tr:nth-child(odd) td:first-child,
     tr:nth-child(odd) td:last-child {
-        background: #333;
+        background: #efefef;
     }
 }
 
