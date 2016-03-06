@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, 'hacknotts'
-set :repo_url, 'git@github.com:jamietanna/hacknotts.com'
+set :repo_url, 'git@github.com:HackSocNotts/hacknotts.com.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
