@@ -33,14 +33,20 @@ h6 {
 p {
     font-size: 18px;
     line-height: 1.5;
-    margin: 0 0 25px;
+    margin: 0 0 20px;
 }
 
 @media(min-width: 767px) {
     p {
         font-size: 20px;
         line-height: 1.6;
-        margin: 0 0 35px;
+        margin: 0 0 30px;
+    }
+}
+
+@media(max-width: 767px) {
+    h2 {
+        font-size: 25px;
     }
 }
 
@@ -65,11 +71,10 @@ table {
 
     tr {
         th {
-            background: #59bb1a;
-            color: #000;
+            background: #ddd;
+            color: #555;
             font-size: 20px;
             padding: 10px;
-            text-align: center;
             width: 50%;
         }
 
@@ -88,7 +93,7 @@ table {
 
     tr:nth-child(odd) td:first-child,
     tr:nth-child(odd) td:last-child {
-        background: #333;
+        background: #efefef;
     }
 }
 
@@ -112,22 +117,47 @@ table {
     text-transform: uppercase;
 }
 
-.btn-success {
-    background-color: #66cc36;
-    border-color: #5ace5a;
+.btn-alt {
+    background-color: #454646;
+    border-color: #3e3e3e;
+    color: #fff;
+}
+
+.btn-alt:hover,
+.btn-alt:focus {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-success,
+.btn-success:focus {
+    background-color: #5db932;
+    border-color: #388238;
 }
 
 .cta {
     background-color: #fff;
     color: #222;
-    margin-bottom: 100px;
-    padding: 75px;
+    padding: 75px 15%;
+}
+
+.photoset-grid-custom {
+    margin-bottom: 50px;
+}
+
+span.line:after {
+    background: #59bb1a;
+    color: transparent;
+    content: ' |';
+    display: inline-block;
+    height: 100%;
+    width: 10px;
 }
 
 @media(min-width: 960px) {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 960px !important;
-  }
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 960px !important;
+    }
 }

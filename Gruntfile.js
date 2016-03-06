@@ -33,9 +33,10 @@ module.exports = function (grunt) {
         separator: ';'
       },
       dist: {
-        src: ['assets/js/jquery.min.js',
+        src: [
         'assets/js/jquery.easing.min.js',
         'assets/js/bootstrap.min.js',
+        'assets/js/photoset-grid.min.js',
         'assets/js/main.js'], // In order of concat
         dest: 'assets/main.min.js'
       }
@@ -53,11 +54,10 @@ module.exports = function (grunt) {
         'assets/html-parts/venue.html',
         'assets/html-parts/schedule.html',
         'assets/html-parts/sponsors.html',
-        'assets/html-parts/prizes.html',
-        'assets/html-parts/register.html',
         'assets/html-parts/faq.html',
+        'assets/html-parts/register.html',
         'assets/html-parts/footer.html',
-        'assets/html-parts/html-foot.html'], // In order of concat
+        'assets/html-parts/html-foot.html'], // In order of concat. 'assets/html-parts/prizes.html',
         dest: 'assets/development.html'
       }
     },

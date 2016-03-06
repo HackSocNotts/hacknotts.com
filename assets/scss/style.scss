@@ -1,14 +1,46 @@
 
-// 3rd party styles
-@import 'vendor/bootstrap';
-@import 'vendor/animate';
-
 @import 'partials/base'; // Base Styles, e.g. body
 @import 'partials/navbar'; // Navigation bar at top of site
 @import 'partials/cover'; // Above the fold content
-@import 'partials/footer'; // footer
-@import 'partials/sponsors'; // Sponsors
+@import 'partials/footer';
+@import 'partials/sponsors';
+@import 'partials/faq';
+@import 'partials/venue';
 
+// Unsorted...probably should be removed / moved
 
-// TODO remove
-@import 'theme-grayscale';
+.schedule {
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+}
+
+.content-section,
+.content-section2 {
+    padding-top: 100px;
+}
+
+::selection,
+::-moz-selection {
+    background: rgba(255, 255, 255, .2);
+    text-shadow: none;
+}
+
+img::selection,
+img::-moz-selection {
+    background: 0 0;
+}
+
+@media(min-width: 767px) {
+    .content-section {
+        padding-top: 250px;
+    }
+
+    .content-section2 {
+        padding-top: 150px;
+    }
+
+    .download-section {
+        padding: 100px 0;
+    }
+}

@@ -1,4 +1,8 @@
 
+// --------
+// SPONSOR
+// --------
+
 a.image:hover {
     opacity: .8;
 }
@@ -15,29 +19,70 @@ a.image:hover {
     width: 100%;
 }
 
-// So important - This is the Grid system, move this over to Bootstrap
 .\34 u,
 .\34 u\24 {
     clear: none;
     margin-left: 0;
+    padding: 25px 0 0 25px;
+    position: relative; // required so that we can have the push_ class
     width: 33.3333333333%;
 }
 
+.push_\34u {
+    left: 33.3333333333%;
+}
+
 .sponsors {
-    padding: 3.5em 20px;
+    padding: 3.5em 0;
 
     // Align Sponsors
     .row {
         border-bottom: solid 1px transparent;
-        margin: -25px 0 -1px -25px;
+        margin-left: -12px;
 
         > * {
             float: left;
-            padding: 25px 0 0 25px;
         }
     }
 
     h2 {
-        padding-bottom: 50px;
+        padding: 20px;
     }
+}
+
+h3.prize {
+    font-size: 17px;
+    line-height: 28px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.sponsor,
+.mlh {
+    display: inline-block;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.sponsor {
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+    img {
+        height: 100px;
+        width: auto;
+    }
+}
+
+.mlh img {
+    height: 100px;
+    width: 375px;
+}
+
+.mlh:hover,
+.sponsor:hover {
+    opacity: .75;
 }
