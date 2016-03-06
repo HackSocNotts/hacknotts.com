@@ -4,8 +4,8 @@ The website for Hacksoc's official hackathon in November 2015.
 
 ## Website URLs
 
-- [Staging](http://hacknotts-staging.herokuapp.com)
-- [Production](http://hacknotts-prod.herokuapp.com)
+- [Staging](http://staging.hacknotts.com)
+- [Production](http://hacknotts.com)
 
 
 ## Travis CI Status
