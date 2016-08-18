@@ -21,6 +21,18 @@ The website for Hacksoc's official hackathon in November 2015.
 - Run 'grunt watch' to watch folders so that SCSS compiles to CSS & others
 - Run (in a new terminal window) 'grunt serve' to test locally at http://localhost:9000/index.html
 
+## Deploying changes
+
+Changes are done via [Capistrano](http://capistranorb.com), which provides the ability to deploy really easily to our server.
+
+In order to set up the dependencies, you will need to run `bundle install`. This requires `ruby` and `ruby-bundler`.
+
+Changes *must* be sent to staging first, to be checked before being put live. This can be done by running `bundle exec cap staging deploy`, and can be found at [`staging.hacknotts.com`](staging.hacknotts.com).
+
+Once confirmed that the changes are good, they can be sent live via `bundle exec cap production deploy`, and can be found at [`hacknotts.com`](hacknotts.com).
+
+*NOTE*: In order to push to the server, you will need to be given SSH access via @jamietanna.
+
 
 ## Inspiration
 
