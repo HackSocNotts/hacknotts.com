@@ -91,9 +91,14 @@ module.exports = function (grunt) {
         files: ['assets/js/*.js'],
         tasks: ['concat', 'uglify']
       }
+    },
+
+    serve: {
+      options: {
+        port: process.env.SERVER_PORT || 9000
+      }
     }
   });
-
 
   // Concatenate JS/HTML
   // Hack: https://github.com/gruntjs/grunt-contrib-concat/issues/113
