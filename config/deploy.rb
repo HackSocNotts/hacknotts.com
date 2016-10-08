@@ -34,15 +34,4 @@ set :repo_url, 'git@github.com:HackSocNotts/hacknotts.com.git'
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
-namespace :deploy do
-
-  after :restart, :clear_cache do
-    on roles(:web), in: :groups, limit: 3, wait: 10 do
-      # Here we can do anything such as:
-      within release_path do
-        execute :grunt
-      end
-    end
-  end
-
-end
+before 'deploy:updated', 'grunt'
