@@ -16,11 +16,12 @@ The website for Hacksoc's official hackathon in November 2015.
 
 ## How to Build
 
-- Uses Grunt
-- Run 'sudo npm install' in main directory
-- Run 'grunt watch' to watch folders so that SCSS compiles to CSS & others
-- Run (in a new terminal window) 'grunt serve' to test locally at http://localhost:9000/index.html
-  - Alternatively, you can specify the port to i.e. 3000 by running `env SERVER_PORT=3000 grunt serve`
+- Run `sudo npm -g install grunt-cli`
+- Run `npm install` in main directory
+- In separate terminal windows:
+  - Run `grunt watch` to watch folders so that SCSS compiles to CSS & others
+  - Run `grunt serve` to test locally at http://localhost:9000/index.html
+    - Alternatively, you can specify the port to i.e. 3000 by running `env SERVER_PORT=3000 grunt serve`
 
 ## Deploying changes
 
