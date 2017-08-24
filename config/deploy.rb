@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock '3.4.0'
+lock '3.9.0'
 
 set :application, 'hacknotts'
 set :repo_url, 'git@github.com:HackSocNotts/hacknotts.com.git'
