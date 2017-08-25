@@ -4,3 +4,5 @@ node_modules
 assets/style.css*
 assets/main.min.js
 assets/development.html
+
+log/
