@@ -5,12 +5,12 @@
 
 #venue {
 
-    p {
-        opacity: .5;
+    a > p {
+        color: #ffffff
     }
 
     a {
-        color: #fff;
+        color: #ffffff;
         text-decoration: none;
     }
 }
