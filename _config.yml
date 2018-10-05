@@ -1,0 +1,12 @@
+baseurl: ""
+url: "https://hacknotts.com"
+
+exclude:
+    - ".gitignore"
+    - "CNAME"
+    - "LICENSE.md"
+    - "README.md"
+
+sass:
+    sass_dir: "assets/scss"
+    style: "compressed"
