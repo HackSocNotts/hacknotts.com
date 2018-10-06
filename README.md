@@ -48,4 +48,4 @@ Once confirmed that the changes are good, they can be sent live via `bundle exec
 
 ## Licensing
 
-HackNotts is released under the [GNU General Public License V3](LICENSE.md).
+HackNotts is released under the [GNU Affero General Public License V3](LICENSE).
