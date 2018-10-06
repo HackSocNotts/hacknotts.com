@@ -4,12 +4,36 @@
             <div class="row">
                 <div class="12u">
                     <div class="row no-collapse">
-                        <!-- <div class="4u"><a href="http://www.capitalonecareers.co.uk/earlycareers" class="image fit"
-                                target="_blank"><img src="/assets/img/sponsors/capitalone.png" alt=""></a></div> -->
-                        <div class="push_4u 4u"><a href="https://jobs.github.com/companies/GitHub" class="image fit" target="_blank"><img
-                                    src="/assets/img/sponsors/github.png" alt="GitHub Logo"></a></div>
-                        <!-- <div class="4u"><a href="https://www.nexmo.com/careers" class="image fit" target="_blank"><img
-                            src="/assets/img/sponsors/nexmo.png" alt=""></a></div> -->
+                    {%- assign i = 0 -%}
+                    {%- assign l = site.data.sponsors.size -%}
+                    {%- assign overhang = l | modulo: 3 -%}
+                    {%- assign lastrowstart = l | minus: overhang -%}
+                    {%- comment -%}If the overhang is 0 (the number of sponsors is a multiple of 3), then the lastrowstart variable will
+                    equal the number of sponsors. As a result, it won't try to do any specific formatting for having an overhang{%- endcomment -%}
+                    {%- for sponsor in site.data.sponsors -%}
+                        {%- if i >= lastrowstart -%}
+                            {%- if overhang == 1 %}
+                        <div class="push_4u 4u">
+                            <a href="{{ sponsor.url }}" class="image fit" target="_blank">
+                                <img src="{{ sponsor.image }}" alt="{{ sponsor.alttext }}">
+                            </a>
+                        </div>
+                            {%- elsif overhang == 2 -%}
+                        <div class="pushlow_4u 4u">
+                            <a href="{{ sponsor.url }}" class="image fit" target="_blank">
+                                <img src="{{ sponsor.image }}" alt="{{ sponsor.alttext }}">
+                            </a>
+                        </div>
+                            {% endif %}
+                        {%- else %}
+                        <div class="4u">
+                            <a href="{{ sponsor.url }}" class="image fit" target="_blank">
+                                <img src="{{ sponsor.image }}" alt="{{ sponsor.alttext }}">
+                            </a>
+                        </div>
+                        {%- endif -%}
+                        {%- assign i = i | plus: 1 -%}
+                    {%- endfor %}
                     </div>
                 </div>
             </div>
