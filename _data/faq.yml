@@ -13,4 +13,6 @@
 - question: "Do you provide food and drinks over the weekend?"
   answer: "Yes! There will be a healthy lunch and dinner and plenty of snacks/drinks too! All free thanks to our lovely sponsors!"
 - question: "How do I contact you?"
-  answer: "Email us: team@hacknotts.com"
+  answer: "Email us: <a href='mailto:team@hacknotts.com'>team@hacknotts.com</a>"
+- question: "I have a ticket, now what?"
+  answer: "Confirm you ticket by verifying your details at <a href='https://my.hacknotts.com'>https://my.hacknotts.com</a>"
