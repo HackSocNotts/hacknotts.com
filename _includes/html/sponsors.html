@@ -18,13 +18,13 @@
                                 <img src="{{ sponsor.image }}" alt="{{ sponsor.alttext }}">
                             </a>
                         </div>
-                            {%- elsif overhang == 2 -%}
+                            {%- elsif overhang == 2 %}
                         <div class="pushlow_4u 4u">
                             <a href="{{ sponsor.url }}" class="image fit" target="_blank">
                                 <img src="{{ sponsor.image }}" alt="{{ sponsor.alttext }}">
                             </a>
                         </div>
-                            {% endif %}
+                            {%- endif %}
                         {%- else %}
                         <div class="4u">
                             <a href="{{ sponsor.url }}" class="image fit" target="_blank">
@@ -41,5 +41,5 @@
         <div class="sponsors">
             <h4>If you are interested in sponsoring HackNotts 2018, get in touch with us at <a href="mailto:sponsorship@hacknotts.com">sponsorship@hacknotts.com</a></h4>
         </div>
-        {% include html/partners.html %}
+{% include html/partners.html %}
     </section>
