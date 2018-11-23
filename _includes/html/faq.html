@@ -2,14 +2,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                        <h2>Frequently Asked Questions <span class="line"></span></h2>
+                    <h2>Frequently Asked Questions <span class="line"></span></h2>
                     <div class="row">
-                        {%- for faq in site.data.faq -%}
+                        {%- for faq in site.data.faq %}
                         <div class="col-lg-6">
                             <dt>{{faq.question}}</dt>
                             <dd>{{faq.answer}}</dd>
                         </div>
-                        {%- endfor -%}
+                        {%- endfor %}
                     </div>
                 </div>
             </div>
