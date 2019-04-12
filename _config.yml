@@ -4,8 +4,14 @@ url: "https://hacknotts.com"
 exclude:
     - ".gitignore"
     - "CNAME"
-    - "LICENSE.md"
+    - "LICENSE"
     - "README.md"
+    - "Gemfile"
+    - "Gemfile.lock"
+    - "Procfile"
+    - "Rakefile"
+    - "static.json"
+    - "app.json"
 
 sass:
     sass_dir: "assets/scss"
