@@ -6,4 +6,3 @@ log/
 \.DS_Store
 
 _site/
-Gemfile.lock
