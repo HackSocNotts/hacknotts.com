@@ -12,6 +12,7 @@ exclude:
     - "Rakefile"
     - "static.json"
     - "app.json"
+    - [vendor]
 
 sass:
     sass_dir: "assets/scss"
