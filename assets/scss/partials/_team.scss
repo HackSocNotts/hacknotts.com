@@ -1,0 +1,96 @@
+
+// --------
+// Team
+// --------
+
+// Team Member
+.image img.teamMember {
+  border-radius: 0.5em;
+  display: block;
+  width: 100%;
+}
+
+.image.fit {
+  display: block;
+  width: 100%;
+}
+
+.\33 u,
+.\33 u\24 {
+  clear: none;
+  margin-left: 0;
+  padding: 25px 0 0 25px;
+  position: relative; // required so that we can have the push_ class
+  width: 25%;
+}
+
+.pushhigh_\33u {
+  left: 37.5%;
+}
+
+.push_\33u {
+  left: 25%;
+}
+
+.pushlow_\33u {
+  left: 12.5%;
+}
+
+
+.team {
+  padding: 3.5em 0;
+
+  // Align Sponsors
+  .row {
+      border-bottom: solid 1px transparent;
+      margin-left: -12px;
+
+      > * {
+          float: left;
+      }
+  }
+
+  h2 {
+      padding: 20px;
+  }
+}
+
+.teamMember {
+  display: inline-block;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.teamMember {
+  margin-bottom: 20px;
+  margin-right: 20px;
+
+  img {
+      height: 100px;
+      width: auto;
+  }
+}
+
+.teamMember:hover {
+  opacity: .75;
+}
+
+.teamMemberDetails h3 {
+  margin-bottom: 1vh;
+}
+
+.teamMemberDetails a {
+  text-decoration: none;
+  float: left;
+}
+
+.teamMemberDetails a.twitter i {
+  color: #1DA1F2;
+}
+
+.teamMemberDetails a.linkedin i {
+  color: #0077B5;
+}
