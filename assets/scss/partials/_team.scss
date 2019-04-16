@@ -3,40 +3,6 @@
 // Team
 // --------
 
-// Team Member
-.image img.teamMember {
-  border-radius: 0.5em;
-  display: block;
-  width: 100%;
-}
-
-.image.fit {
-  display: block;
-  width: 100%;
-}
-
-.\33 u,
-.\33 u\24 {
-  clear: none;
-  margin-left: 0;
-  padding: 25px 0 0 25px;
-  position: relative; // required so that we can have the push_ class
-  width: 25%;
-}
-
-.pushhigh_\33u {
-  left: 37.5%;
-}
-
-.push_\33u {
-  left: 25%;
-}
-
-.pushlow_\33u {
-  left: 12.5%;
-}
-
-
 .team {
   padding: 3.5em 0;
 
@@ -55,22 +21,27 @@
   }
 }
 
-.teamMember {
-  display: inline-block;
-  -moz-transition: all 200ms ease;
-  -ms-transition: all 200ms ease;
-  -o-transition: all 200ms ease;
-  -webkit-transition: all 200ms ease;
-  transition: all 200ms ease;
+// Team Member
+.teamMember img {
+  border-radius: 0.5em;
+}
+
+.teamMembers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .teamMember {
-  margin-bottom: 20px;
-  margin-right: 20px;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  margin-left: 1em;
+  flex-basis: 25%;
 
   img {
-      height: 100px;
-      width: auto;
+      height: auto;
+      width: 17.5em;
   }
 }
 

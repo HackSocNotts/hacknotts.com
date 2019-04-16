@@ -1,142 +1,37 @@
 <section id="team" class="container team text-center">
-  <div class="team">
-    <h2>HackNotts Team <span class="line"></span></h2>
-    <div class="row">
-      <div class="12u">
-        <div class="row no-collapse">
-        {%- assign i = 0 -%}
-        {%- assign l = site.data.team.size -%}
-        {%- assign overhang = l | modulo: 4 -%}
-        {%- assign lastrowstart = l | minus: overhang -%}
-        {%- comment -%}If the overhang is 0 (the number of sponsors is a multiple of 3), then the lastrowstart variable will
-        equal the number of sponsors. As a result, it won't try to do any specific formatting for having an overhang{%- endcomment -%}
-        {%- for member in site.data.team -%}
-          {%- if i >= lastrowstart -%}
-            {%- if overhang == 1 %}
-          <div class="pushhigh_3u 3u">
-            <span class="image fit">
-              <img src="{{ member.image }}" alt="{{ member.name }}" class="teamMember">
-            </span>
-            <div class="teamMemberDetails">
-              <h3>{{member.name}}</h3>
-              <p>{{member.title}}</p>
-              {%- if member.email -%}
-              <a href="mailto:{{ member.email }}" target="_blank">
-                <i class="fas fa-envelope"></i>&nbsp;{{member.email}}
-              </a>
-              <br />
-              {%- endif -%}
+  <h2>HackNotts Team <span class="line"></span></h2>
+  <div class="row">
+    <div class="12u">
+      <div class="teamMembers">
+      {%- for member in site.data.team -%}
+        <div class="teamMember">
+          <img src="{{ member.image }}" alt="{{ member.name }}" class="teamMember">
+          <div class="teamMemberDetails">
+            <h3>{{member.name}}</h3>
+            <p>{{member.title}}</p>
+            {%- if member.email -%}
+            <a href="mailto:{{ member.email }}" target="_blank">
+              <i class="fas fa-envelope"></i>&nbsp;{{member.email}}
+            </a>
+            <br />
+            {%- endif -%}
 
-              {%- if member.linkedin -%}
-              <a href="https://linkedin.com/in/{{ member.linkedin }}" class="linkedin" target="_blank">
-                <i class="fab fa-linkedin"></i>&nbsp;/in/{{member.linkedin}}
-              </a>
-              <br />
-              {%- endif -%}
+            {%- if member.linkedin -%}
+            <a href="https://linkedin.com/in/{{ member.linkedin }}" class="linkedin" target="_blank">
+              <i class="fab fa-linkedin"></i>&nbsp;/in/{{member.linkedin}}
+            </a>
+            <br />
+            {%- endif -%}
 
-              {%- if member.twitter -%}
-              <a href="https://twitter.com/{{ member.twitter }}" class="twitter" target="_blank">
-                <i class="fab fa-twitter"></i>&nbsp;@{{member.twitter}}
-              </a>
-              <br />
-              {%- endif -%}
-            </div>
+            {%- if member.twitter -%}
+            <a href="https://twitter.com/{{ member.twitter }}" class="twitter" target="_blank">
+              <i class="fab fa-twitter"></i>&nbsp;@{{member.twitter}}
+            </a>
+            <br />
+            {%- endif -%}
           </div>
-            {%- elsif overhang == 2 %}
-          <div class="push_3u 3u">
-            <span class="image fit">
-              <img src="{{ member.image }}" alt="{{ member.name }}" class="teamMember">
-            </span>
-            <div class="teamMemberDetails">
-              <h3>{{member.name}}</h3>
-              <p>{{member.title}}</p>
-              {%- if member.email -%}
-              <a href="mailto:{{ member.email }}" target="_blank">
-                <i class="fas fa-envelope"></i>&nbsp;{{member.email}}
-              </a>
-              <br />
-              {%- endif -%}
-
-              {%- if member.linkedin -%}
-              <a href="https://linkedin.com/in/{{ member.linkedin }}" class="linkedin" target="_blank">
-                <i class="fab fa-linkedin"></i>&nbsp;/in/{{member.linkedin}}
-              </a>
-              <br />
-              {%- endif -%}
-
-              {%- if member.twitter -%}
-              <a href="https://twitter.com/{{ member.twitter }}" class="twitter" target="_blank">
-                <i class="fab fa-twitter"></i>&nbsp;@{{member.twitter}}
-              </a>
-              <br />
-              {%- endif -%}
-            </div>
-          </div>
-            {%- elsif overhang == 3 %}
-          <div class="pushlow_3u 3u">
-            <span class="image fit">
-              <img src="{{ member.image }}" alt="{{ member.name }}" class="teamMember">
-            </span>
-            <div class="teamMemberDetails">
-              <h3>{{member.name}}</h3>
-              <p>{{member.title}}</p>
-              {%- if member.email -%}
-              <a href="mailto:{{ member.email }}" target="_blank">
-                <i class="fas fa-envelope"></i>&nbsp;{{member.email}}
-              </a>
-              <br />
-              {%- endif -%}
-
-              {%- if member.linkedin -%}
-              <a href="https://linkedin.com/in/{{ member.linkedin }}" class="linkedin" target="_blank">
-                <i class="fab fa-linkedin"></i>&nbsp;/in/{{member.linkedin}}
-              </a>
-              <br />
-              {%- endif -%}
-
-              {%- if member.twitter -%}
-              <a href="https://twitter.com/{{ member.twitter }}" class="twitter" target="_blank">
-                <i class="fab fa-twitter"></i>&nbsp;@{{member.twitter}}
-              </a>
-              <br />
-              {%- endif -%}
-            </div>
-          </div>
-            {%- endif %}
-          {%- else %}
-          <div class="3u">
-            <span class="image fit">
-              <img src="{{ member.image }}" alt="{{ member.name }}" class="teamMember">
-            </span>
-            <div class="teamMemberDetails">
-              <h3>{{member.name}}</h3>
-              <p>{{member.title}}</p>
-              {%- if member.email -%}
-              <a href="mailto:{{ member.email }}" target="_blank">
-                <i class="fas fa-envelope"></i>&nbsp;{{member.email}}
-              </a>
-              <br />
-              {%- endif -%}
-
-              {%- if member.linkedin -%}
-              <a href="https://linkedin.com/in/{{ member.linkedin }}" class="linkedin" target="_blank">
-                <i class="fab fa-linkedin"></i>&nbsp;/in/{{member.linkedin}}
-              </a>
-              <br />
-              {%- endif -%}
-
-              {%- if member.twitter -%}
-              <a href="https://twitter.com/{{ member.twitter }}" class="twitter" target="_blank">
-                <i class="fab fa-twitter"></i>&nbsp;@{{member.twitter}}
-              </a>
-              <br />
-              {%- endif -%}
-            </div>
-          </div>
-          {%- endif -%}
-          {%- assign i = i | plus: 1 -%}
-        {%- endfor %}
         </div>
+      {%- endfor %}
       </div>
     </div>
   </div>
