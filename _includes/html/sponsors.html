@@ -3,7 +3,6 @@
             <h2>Sponsors <span class="line"></span></h2>
             <div class="row">
                 <div class="12u">
-                    <div class="row no-collapse">
                     {%- assign i = 0 -%}
                     {%- assign l = site.data.sponsors.size -%}
                     {%- assign overhang = l | modulo: 3 -%}
@@ -11,6 +10,11 @@
                     {%- comment -%}If the overhang is 0 (the number of sponsors is a multiple of 3), then the lastrowstart variable will
                     equal the number of sponsors. As a result, it won't try to do any specific formatting for having an overhang{%- endcomment -%}
                     {%- for sponsor in site.data.sponsors -%}
+                        {%- assign lineItem = i | modulo: 3 -%}
+                        {%- if lineItem == 0 -%}
+                        <div class="row no-collapse">
+                        {%- endif %}
+
                         {%- if i >= lastrowstart -%}
                             {%- if overhang == 1 %}
                         <div class="push_4u 4u">
@@ -33,8 +37,11 @@
                         </div>
                         {%- endif -%}
                         {%- assign i = i | plus: 1 -%}
+
+                        {%- if lineItem == 2 or i == j -%}
+                        </div>
+                        {%- endif %}
                     {%- endfor %}
-                    </div>
                 </div>
             </div>
         </div>
