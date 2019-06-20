@@ -7,6 +7,10 @@
     display: block !important;
 }
 
+.top-nav-collapse.navbar-custom a {
+    color: #fff;
+}
+
 .navbar-custom {
     border-bottom: 1px solid rgba(255, 255, 255, .3);
     font-family: Cabin,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -37,7 +41,7 @@
     }
 
     a {
-        color: #fff;
+        color: #000;
         text-decoration: none;
     }
 
@@ -81,10 +85,6 @@
         -moz-transition: background .3s ease-in-out,padding .1s ease-in-out;
         -webkit-transition: background .3s ease-in-out,padding .1s ease-in-out;
         transition: background .3s ease-in-out,padding .1s ease-in-out;
-    }
-
-    .top-nav-collapse {
-        padding: 0;
     }
 
     .navbar-custom.top-nav-collapse {
