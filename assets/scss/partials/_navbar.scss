@@ -102,6 +102,10 @@
     .navbar-custom {
         background-color: #000;
 
+        a {
+            color: #fff !important;
+        }
+
         .navbar-brand img {
             display: block !important;
             margin-top: -16px;
