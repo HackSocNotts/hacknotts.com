@@ -6,10 +6,9 @@
             <div class="collapse navbar-collapse navbar-left navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <li class="hidden"><a href="#page-top"></a></li>
-                    <li><a class="page-scroll" href="#venue">Venue</a></li>
-                    <li><a class="page-scroll" href="#schedule">Schedule</a></li>
-                    <li><a class="page-scroll" href="#faq">FAQ</a></li>
-                    <li><a class="page-scroll" href="#register">Register</a></li>
+                    {%- for navitem in site.data.navbar -%}
+                    <li><a class="page-scroll" href="{{navitem.link}}">{{navitem.text}}</a></li>
+                    {%- endfor %}
                 </ul>
             </div>
         </div>
