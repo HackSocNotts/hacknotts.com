@@ -1,1 +1,12 @@
-
+- image:   "/assets/img/sponsors/starlingbank.png"
+  alttext: "Starling Bank"
+  url:     "https://www.starlingbank.com/"
+- image:   "/assets/img/sponsors/capitalone.png"
+  alttext: "Capital One"
+  url:     "https://jobs.capitalone.co.uk/"
+- image:   "/assets/img/sponsors/netcraft.png"
+  alttext: "Netcraft"
+  url:     "https://www.netcraft.com/about-netcraft/jobs/"
+- image:   "/assets/img/sponsors/github.png"
+  alttext: "GitHub"
+  url:     "https://education.github.com"
