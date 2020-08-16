@@ -1,15 +1,17 @@
 ---
 ---
 {% include html/html-head.html %}
-{% include html/navbar.html %}
+{%- comment -%} {% include html/navbar.html %} {%- endcomment -%}
 {% include html/cover.html %}
+{%- comment -%}
 {% include html/description.html %}
 {% include html/team.html %}
 {% include html/venue.html %}
-{%- comment -%} {% include html/schedule.html %}
+{% include html/schedule.html %}
 {% include html/sponsors.html %}
-{% include html/register.html %} {%- endcomment -%}
+{% include html/register.html %}
 {% include html/past-sponsors.html %}
 {% include html/faq.html %}
 {% include html/footer.html %}
+ {%- endcomment -%}
 {% include html/html-foot.html %}

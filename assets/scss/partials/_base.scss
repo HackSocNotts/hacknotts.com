@@ -1,20 +1,19 @@
-
 // --------
 // BASE
 // --------
 
 body {
-    background-color: #000;
-    color: #fff;
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    height: 100%;
-    letter-spacing: .5px;
-    width: 100%;
+  background-color: #000;
+  color: #fff;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100%;
+  letter-spacing: 0.5px;
+  width: 100%;
 }
 
 html {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 h1,
@@ -23,141 +22,141 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Cabin,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin: 0 0 35px;
-    text-transform: uppercase;
+  font-family: Cabin, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 35px;
+  text-transform: uppercase;
 }
 
 p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin: 0 0 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 20px;
 }
 
-@media(min-width: 767px) {
-    p {
-        font-size: 20px;
-        line-height: 1.6;
-        margin: 0 0 30px;
-    }
+@media (min-width: 767px) {
+  p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0 0 30px;
+  }
 }
 
-@media(max-width: 767px) {
-    h2 {
-        font-size: 25px;
-    }
+@media (max-width: 767px) {
+  h2 {
+    font-size: 25px;
+  }
 }
 
 a {
-    color: #56b447;
-    text-decoration: underline;
+  color: $hn-yellow;
+  text-decoration: underline;
 }
 
 a:hover {
-    color: #295010;
+  color: darken($color: $hn-yellow, $amount: 30%);
 }
 
 section {
-    padding-bottom: 70px;
-    padding-top: 70px;
-    width: 100%;
+  padding-bottom: 70px;
+  padding-top: 70px;
+  width: 100%;
 }
 
 table {
-    margin: 0 auto;
-    width: 90%;
+  margin: 0 auto;
+  width: 90%;
 
-    tr {
-        th {
-            background: #ddd;
-            color: #555;
-            font-size: 20px;
-            padding: 10px;
-            width: 50%;
-        }
-
-        td {
-            font-size: 20px;
-            padding: 15px 10px;
-            text-align: left;
-
-            span {
-                display: inline-block;
-                min-width: 80px;
-                text-align: left;
-            }
-        }
+  tr {
+    th {
+      background: #ddd;
+      color: #555;
+      font-size: 20px;
+      padding: 10px;
+      width: 50%;
     }
 
-    tr:nth-child(odd) td:first-child,
-    tr:nth-child(odd) td:last-child {
-        background: #efefef;
+    td {
+      font-size: 20px;
+      padding: 15px 10px;
+      text-align: left;
+
+      span {
+        display: inline-block;
+        min-width: 80px;
+        text-align: left;
+      }
     }
+  }
+
+  tr:nth-child(odd) td:first-child,
+  tr:nth-child(odd) td:last-child {
+    background: #efefef;
+  }
 }
 
 .clear {
-    clear: both;
+  clear: both;
 }
 
 .row {
-    margin: 0;
+  margin: 0;
 }
 
 .light {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .btn {
-    font-family: Cabin,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
-    padding: 8px 25px;
-    text-decoration: none;
-    text-transform: uppercase;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  padding: 8px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .btn-alt {
-    background-color: #454646;
-    border-color: #3e3e3e;
-    color: #fff;
+  background-color: #454646;
+  border-color: #3e3e3e;
+  color: #fff;
 }
 
 .btn-alt:hover,
 .btn-alt:focus {
-    background-color: #333;
-    color: #fff;
+  background-color: #333;
+  color: #fff;
 }
 
 .btn-success,
 .btn-success:focus {
-    background-color: #56b447;
-    border-color: #388238;
+  background-color: #56b447;
+  border-color: #388238;
 }
 
 .cta {
-    background-color: #fff;
-    color: #222;
-    padding: 75px 15%;
+  background-color: #fff;
+  color: #222;
+  padding: 75px 15%;
 }
 
 .photoset-grid-custom {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 span.line:after {
-    background: #56b447;
-    color: transparent;
-    content: ' |';
-    display: inline-block;
-    height: 100%;
-    width: 10px;
+  background: #56b447;
+  color: transparent;
+  content: " |";
+  display: inline-block;
+  height: 100%;
+  width: 10px;
 }
 
-@media(min-width: 960px) {
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-        width: 960px !important;
-    }
+@media (min-width: 960px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px !important;
+  }
 }
