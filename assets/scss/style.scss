@@ -4,7 +4,7 @@ permalink: "/assets/style.css"
 
 @import "partials/variables";
 @import "partials/base"; // Base Styles, e.g. body
-// @import "partials/cover"; // Above the fold content
+@import "partials/cover"; // Above the fold content
 // @import "partials/navbar"; // Navigation bar at top of site
 // @import "partials/footer";
 // @import "partials/sponsors";
