@@ -4,15 +4,13 @@ permalink: "/assets/style.css"
 
 @import "partials/variables";
 @import "partials/base"; // Base Styles, e.g. body
-@import "partials/cover"; // Above the fold content
-{%- comment -%}
-@import "partials/navbar"; // Navigation bar at top of site
-@import "partials/footer";
-@import "partials/sponsors";
-@import "partials/team";
-@import "partials/faq";
-@import "partials/venue";
-{%- endcomment -%}
+// @import "partials/cover"; // Above the fold content
+// @import "partials/navbar"; // Navigation bar at top of site
+// @import "partials/footer";
+// @import "partials/sponsors";
+// @import "partials/team";
+// @import "partials/faq";
+// @import "partials/venue";
 
 // Unsorted...probably should be removed / moved
 
