@@ -259,8 +259,8 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  github-pages
+  github-pages (>= 198)
   rake
 
 BUNDLED WITH
-   1.16.6
+   1.17.3
