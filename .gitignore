@@ -7,3 +7,5 @@ log/
 .jekyll-cache/
 
 _site/
+
+*.log

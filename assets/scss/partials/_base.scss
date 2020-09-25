@@ -114,6 +114,7 @@ table {
   padding: 8px 25px;
   text-decoration: none;
   text-transform: uppercase;
+  border-style: none;
 }
 
 .btn-alt {
@@ -132,6 +133,7 @@ table {
 .btn-success:focus {
   background-color: #56b447;
   border-color: #388238;
+  border-style: none;
 }
 
 .cta {
