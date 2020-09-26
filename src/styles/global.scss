@@ -1,0 +1,70 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+$hn-blue: #71c9e7;
+$hn-red: #e94d4d;
+$hn-yellow: #f1e74b;
+$hn-grey: #2d2a26;
+
+:export { 
+  hnBlue: $hn-blue;
+  hnRed: $hn-red; 
+  hnYellow: $hn-yellow; 
+  hnGrey: $hn-grey; 
+}
+
+a {
+  text-decoration: underline;
+}
+
+$enable-grid-classes: true;
+html {
+  background-color: $hn-grey;
+}
+
+body {
+  background-color: $hn-grey;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.intro-text {
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+
+.intro-date {
+  font-size: 95%;
+  color: $hn-blue;
+}
+
+.tito-tickets-button {
+  -webkit-appearance: none;
+  border: none;
+  background: inherit;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  color: #fff;
+  font-weight: 700;
+  padding: 8px 30px 10px;
+
+  &:hover { 
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+  }
+}
+
+@media (min-width: 767px) {
+  .intro-text {
+    font-size: 21px;
+    padding: 0 150px;
+  }
+}
+@media (min-width: 960px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px !important;
+  }
+}
