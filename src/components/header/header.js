@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 import global from '../../../src/styles/global.scss';
 
 export default function Header(props) {
-  return <header style={{textAlign: "center", width: '100vw', height: '100vh', background: `url(${Background})`, backgroundSize: 'cover'}}>
+  return <header className='intro' style={{textAlign: "center", width: '100vw', height: '100vh'}}>
     <div style={{display: 'table-cell', verticalAlign: 'middle', width: 'inherit', height: 'inherit'}}>
       <div className='container'>
         <Logo image={props.colours[0].logo}/>
