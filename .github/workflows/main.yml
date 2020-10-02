@@ -27,14 +27,10 @@ jobs:
       - name: Compile Production Build
         run: npm run build
 
-      - name: Install SSH Client 🔑
-        uses: webfactory/ssh-agent@v0.2.0
-        with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
-
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           SSH: true
           BRANCH: gh-pages
           FOLDER: public
+          access-token: ${{ secrets.ACCESS_TOKEN }}
