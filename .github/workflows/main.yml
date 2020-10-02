@@ -1,15 +1,40 @@
-name: Gatsby Publish
+name: Publish Site
 
 on:
   push:
     branches:
       - master
+      - fix-cd
 
 jobs:
-  build:
+  build-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v1
-      - uses: enriikke/gatsby-gh-pages-action@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Compile Production Build
+        run: npm run build
+
+      - name: Install SSH Client 🔑
+        uses: webfactory/ssh-agent@v0.2.0
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          SSH: true
+          BRANCH: gh-pages
+          FOLDER: public
