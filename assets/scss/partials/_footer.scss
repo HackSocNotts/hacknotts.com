@@ -1,0 +1,73 @@
+
+// --------
+// FOOTER
+// --------
+
+footer {
+    background: url('/assets//img//hacknotts_2016_0_blurry.jpg');
+    background-position: center;
+
+    a {
+        color: #fff;
+    }
+
+    p {
+        margin-top: 10px;
+    }
+
+    h3 {
+        line-height: 120%;
+        margin: 0 auto;
+        text-shadow: 0 4px 0 rgba(0, 0, 0, .1);
+        text-transform: uppercase;
+        width: 50%;
+    }
+
+    .container {
+        padding: 100px 0 0;
+    }
+
+    .copy {
+        font-size: 80%;
+        margin-top: 50px;
+    }
+
+    a:hover {
+        color: #555;
+    }
+
+    .social {
+        font-size: 40px;
+        margin-bottom: 50px;
+        padding-left: 0;
+
+        li {
+            display: inline-block;
+            padding: 15px;
+        }
+    }
+}
+
+
+@media(max-width: 767px) {
+    footer {
+        .social {
+            font-size: 80px;
+        }
+
+        .container {
+            padding: 0;
+        }
+
+        .copy {
+            font-size: 13px;
+            line-height: 1.8;
+            padding: 0 50px;
+        }
+
+        // Hide quotes on mobile
+        .quotes {
+            display: none;
+        }
+    }
+}
