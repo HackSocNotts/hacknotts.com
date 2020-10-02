@@ -1,0 +1,73 @@
+
+// --------
+// Team
+// --------
+
+.team {
+  padding: 3.5em 0;
+
+  // Align Sponsors
+  .row {
+      border-bottom: solid 1px transparent;
+      margin-left: -12px;
+
+      > * {
+          float: left;
+      }
+  }
+
+  h2 {
+      padding: 20px;
+  }
+}
+
+// Team Member
+.teamMember img {
+  border-radius: 0.5em;
+}
+
+.teamMembers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.teamMember {
+  margin-bottom: 1em;
+  margin-right: 1em;
+  margin-left: 1em;
+  flex-basis: 25%;
+
+  img {
+      height: auto;
+      width: 17.5em;
+  }
+}
+
+.teamMember:hover {
+  opacity: .75;
+}
+
+.teamMemberDetails h3 {
+  margin-bottom: 1vh;
+}
+
+.teamMemberDetails a {
+  text-decoration: none;
+  float: left;
+  text-align: left;
+}
+
+.teamMemberDetails p {
+  font-size: 1.2em;
+  margin-bottom: 1vh;
+}
+
+.teamMemberDetails a.twitter i {
+  color: #1DA1F2;
+}
+
+.teamMemberDetails a.linkedin i {
+  color: #0077B5;
+}
