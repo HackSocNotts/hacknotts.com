@@ -1,27 +1,29 @@
 import React from 'react';
 import Logo from './logo';
-import Background from '../../../static/background/background.png';
 import Helmet from 'react-helmet';
-import global from '../../../src/styles/global.scss';
+import Loadable from 'react-loadable';
 
 export default function Header(props) {
+  const colours = props.colours.random;
+  const variables = props.colours.named;
+
   return <header className='intro' style={{textAlign: "center", width: '100vw', height: '100vh'}}>
     <div style={{display: 'table-cell', verticalAlign: 'middle', width: 'inherit', height: 'inherit'}}>
       <div className='container'>
-        <Logo image={props.colours[0].logo}/>
+        <Logo image={colours[0].logo}/>
         <div className="intro-text">
-          A 24 hour <a style={{color: props.colours[1].colour}} href="https://en.wikipedia.org/wiki/Hackathon" rel="noopener noreferrer">Hackathon</a> from the University of Nottingham, brought to you by <a style={{color: props.colours[1].colour}} href="http://www.hacksocnotts.co.uk" rel="noopener noreferrer">HackSoc</a>.
+          A 24 hour <a style={{color: colours[1].colour}} href="https://en.wikipedia.org/wiki/Hackathon" rel="noopener noreferrer">Hackathon</a> from the University of Nottingham, brought to you by <a style={{color: colours[1].colour}} href="http://www.hacksocnotts.co.uk" rel="noopener noreferrer">HackSoc</a>.
         </div>
-        <div className="intro-text intro-date" style={{color: props.colours[2].colour}}>
+        <div className="intro-text intro-date" style={{color: colours[2].colour}}>
           November 28<sup>th</sup> and 29<sup>th</sup> 2020
         </div>
         <div style={{fontSize: "20px", paddingTop: "15px"}}>
-        <tito-button style={{background: global.hnRed}}event="hacknotts/2020">Register</tito-button>
+        <tito-button style={{background: variables.hnRed}}event="hacknotts/2020">Register</tito-button>
         </div>
       </div>
     </div>
     <Helmet>
-      <script src="https://js.tito.io/v1" async=""></script>
+      <script src="https://js.tito.io/v1"></script>
     </Helmet>
   </header>;
 }
