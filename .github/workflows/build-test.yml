@@ -45,38 +45,38 @@ jobs:
       - name: Compile Production Build
         run: npm run build
 
-  lint:
-    needs: install
-    runs-on: ubuntu-latest
+  # lint:
+  #   needs: install
+  #   runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v2
 
-      - name: Load node_modules
-        uses: actions/cache@v1
-        with:
-          path: node_modules
-          key: node_modules-${{ hashFiles('package-lock.json') }}
-          # no restore-keys here, so we only accept this exact version
+  #     - name: Load node_modules
+  #       uses: actions/cache@v1
+  #       with:
+  #         path: node_modules
+  #         key: node_modules-${{ hashFiles('package-lock.json') }}
+  #         # no restore-keys here, so we only accept this exact version
 
-      - name: Run eslint
-        run: npm run lint
+  #     - name: Run eslint
+  #       run: npm run lint
 
-  test:
-    needs: install
-    runs-on: ubuntu-latest
+  # test:
+  #   needs: install
+  #   runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v2
 
-      - name: Load node_modules
-        uses: actions/cache@v1
-        with:
-          path: node_modules
-          key: node_modules-${{ hashFiles('package-lock.json') }}
-          # no restore-keys here, so we only accept this exact version
+  #     - name: Load node_modules
+  #       uses: actions/cache@v1
+  #       with:
+  #         path: node_modules
+  #         key: node_modules-${{ hashFiles('package-lock.json') }}
+  #         # no restore-keys here, so we only accept this exact version
 
-      - name: Run Jest
-        run: npm run test
+  #     - name: Run Jest
+  #       run: npm run test
