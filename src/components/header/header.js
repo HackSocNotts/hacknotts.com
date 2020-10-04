@@ -1,7 +1,6 @@
 import React from 'react';
 import Logo from './logo';
 import Helmet from 'react-helmet';
-import Loadable from 'react-loadable';
 
 export default function Header(props) {
   const colours = props.colours.random;
