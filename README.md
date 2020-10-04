@@ -1,6 +1,6 @@
 # HackNotts.com [![CircleCI](https://img.shields.io/circleci/project/github/HackSocNotts/hacknotts.com/master.svg?style=flat-square)](hackscocnotts.co.uk) ![Requires.io](https://img.shields.io/requires/github/HackSocNotts/hacknotts.com.svg?style=flat-square)  ![GitHub issues](https://img.shields.io/github/issues/hacksocnotts/hacknotts.com.svg?style=flat-square) ![GitHub pull requests](https://img.shields.io/github/issues-pr/hacksocnotts/hacknotts.com.svg?style=flat-square) ![GitHub](https://img.shields.io/github/license/hacksocnotts/hacknotts.com.svg?style=flat-square)
 
-The website for Hacksoc's official hackathon in November 2015.
+The website for Hacksoc's official hackathon in November 2020.
 
 ## Website URLs
 
