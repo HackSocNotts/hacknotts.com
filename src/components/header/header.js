@@ -23,6 +23,7 @@ export default function Header(props) {
     </div>
     <Helmet>
       <script src="https://js.tito.io/v1"></script>
+      <title>HackNotts</title>
     </Helmet>
   </header>;
 }
