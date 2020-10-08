@@ -1,0 +1,16 @@
+{
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-static.git"
+        }
+    ],
+    "env": {},
+    "formation": {},
+    "name": "hacknotts.com",
+    "scripts": {},
+    "stack": "heroku-18"
+}
