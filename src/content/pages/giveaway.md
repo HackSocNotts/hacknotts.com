@@ -43,7 +43,7 @@ In order to be able to receive the prize from the giveaway you must:
 1. The organizer will announce the winner on Twitter.com no later than 48-hours after they draw the winner, and after they have contacted the winner on Twitter.com
 
 ## 5. The Prizes
-1. The prizes shall be decided by the organizer and may not be announced publicly, and may change at any time.
+The prizes shall be decided by the organizer and may not be announced publicly, and may change at any time.
 
 ## 6. Disqualification
 The organizer may at any time and fully at their discretion disqualify any individual or entry without warning, reason, or notification.
