@@ -1,8 +1,16 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./variables.moudle.scss";
 
-a.intro-link {
-  text-decoration: underline;
+a {
+  color: $hn-blue;
+
+  &:hover {
+    color: darken($color: $hn-blue, $amount: 30);
+  }
+
+  &.intro-link {
+    text-decoration: underline;
+  }
 }
 
 $enable-grid-classes: true;
@@ -14,7 +22,6 @@ body {
   background-color: $hn-grey;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
-  overflow: hidden;
 }
 
 .intro {
