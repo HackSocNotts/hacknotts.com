@@ -2,7 +2,15 @@
 @import "./variables.moudle.scss";
 
 a {
-  text-decoration: underline;
+  color: $hn-blue;
+
+  &:hover {
+    color: darken($color: $hn-blue, $amount: 30);
+  }
+
+  &.intro-link {
+    text-decoration: underline;
+  }
 }
 
 $enable-grid-classes: true;
@@ -13,6 +21,7 @@ html {
 body {
   background-color: $hn-grey;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
 }
 
 .intro {
