@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import logoRed from "../../static/logo/logoRed.png"
 import { Nav, Navbar } from "react-bootstrap"
 
-const NavBar = () => {
+const NavBar = (props) => {
   const [current, setCurrent] = useState("")
 
   const getCurrent = href => ({ isCurrent }) => {
@@ -13,7 +13,7 @@ const NavBar = () => {
   }
 
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar bg="dark" variant="dark" fixed={props.fixed ?? ""} >
       <Navbar.Brand as={Link} to="/" getProps={getCurrent("/")}>
         <img
           src={logoRed}
