@@ -1,4 +1,4 @@
-import React,  { useEffect, useState } from 'react';
+import React,  { useLayoutEffect, useState } from 'react';
 import Header from '../components/header/header';
 
 import logoRed from '../../static/logo/logoRed.png';
@@ -27,16 +27,23 @@ export default function Home() {
     return newColours;
   }
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setColours([...randomColour(colours)]);
     console.log(colours);
-  }, [])
-
+  }, []);
   return <div style={{overflowX: "hidden"}}>
     <link href="https://fonts.googleapis.com/css?family=Montseratt:400,700|Lato:400,700" rel="stylesheet"/>
     <NavBar fixed="top"/>
     <Header colours={{random: colours, named: variables}}/>
+        {/*
     <SectionTitle text="Build Incredible Projects in 24 Hours"/>
     <Intro/>
+
+    <SectionTitle text="Schedule"/>
+    <Schedule/>
+    <SectionTitle text="Sponsors"/>
+    <SectionTitle text="Partners"/>
+    <SectionTitle text="Meet the Team"/>
+        */}
   </div>
 }
