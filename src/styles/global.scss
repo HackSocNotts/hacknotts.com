@@ -61,7 +61,6 @@ body {
   font-size: 30px;
   font-weight: bold;
   border-radius: 25px;
-  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -102,10 +101,22 @@ body {
     padding: 0 150px;
   }
 }
+@media (max-width: 767px) {
+  .hideimage-1 {
+    display: none;
+  }
+}
+
+
 @media (min-width: 960px) {
   .container {
     margin-left: auto;
     margin-right: auto;
     width: 960px !important;
+  }
+}
+@media (max-width: 960px) {
+  .hideimage-2 {
+    display: none;
   }
 }

@@ -7,6 +7,8 @@ import logoBlue from '../../static/logo/logoBlue.png';
 import Intro from '../components/intro';
 import SectionTitle from '../components/sectiontitle';
 import NavBar from '../components/navbar';
+import Schedule from '../components/schedule';
+import Team from '../components/team';
 
 const variables =  { 
   hnBlue: "#71c9e7",
@@ -35,7 +37,6 @@ export default function Home() {
     <link href="https://fonts.googleapis.com/css?family=Montseratt:400,700|Lato:400,700" rel="stylesheet"/>
     <NavBar fixed="top"/>
     <Header colours={{random: colours, named: variables}}/>
-        {/*
     <SectionTitle text="Build Incredible Projects in 24 Hours"/>
     <Intro/>
 
@@ -44,6 +45,6 @@ export default function Home() {
     <SectionTitle text="Sponsors"/>
     <SectionTitle text="Partners"/>
     <SectionTitle text="Meet the Team"/>
-        */}
+    <Team/>
   </div>
 }
