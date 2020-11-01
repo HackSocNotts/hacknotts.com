@@ -3,6 +3,7 @@ import { Container, Table } from 'react-bootstrap';
 
 export default function Schedule(props) {
   return <Container style={{paddingTop: "10px", display:"flex", justifyContent: "center", alignItems: "center"}}>
+    {/*
     <Table striped bordered variant="dark" size="sm" style={{width: "70%"}}>
       <thead>
         <tr class="intro-text">
@@ -22,7 +23,9 @@ export default function Schedule(props) {
         <ScheduleRow time="23:00" activity="Werewolf"/>
         <ScheduleRow time="09:00" activity="Midnight Pizza"/>
       </tbody>
-    </Table>
+    </Table>    
+    */}
+    <div className="intro-text">Announced Soon</div>
   </Container>;
 }
 

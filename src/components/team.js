@@ -20,7 +20,7 @@ export default function Team() {
       <TeamMember name="Reece Harvey" photo={reece} role="Head of Logistics" email="reece.harvey@hacksocnotts.co.uk"/>
       <TeamMember name="Ryan Hardwick" photo={ryan} role="Head of Finance" email="reece.hardwick@hacksocnotts.co.uk" />
       <TeamMember name="Abinaya Maruthalingam" photo={abinaya} role="Head of Human Resources" email="abinaya.maruthalingam@hacksocnotts.co.uk"/>
-      <TeamMember name="Gabe Leach" photo={alexi} role="Head of Experience" email="gabriel.leach@hacksocnotts.co.uk"/>
+      <TeamMember name="Gabe Leach" photo={gabe} role="Head of Experience" email="gabriel.leach@hacksocnotts.co.uk"/>
       <TeamMember name="Alisha Dadar" photo={alisha} role="Sponsor Liaison" email="alisha.dadar@hacksocnotts.co.uk"/>
       <TeamMember name="Alexi Dewfall" photo={alexi} role="HackNotts Coordinator" email="alexander@hacksocnotts.co.uk" twitter="https://twitter.com/AksanDotDev" linkedin="https://linkedin.com/in/aksandotdev"/>
       <TeamMember name="Aaron Osher" photo={aaron} role="HackSoc President" email="aaron@hacksocnotts.co.uk" twitter="https://twitter.com/aaronosher" linkedin="https://linkedin.com/in/aaronosher"/>

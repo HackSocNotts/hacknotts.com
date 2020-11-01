@@ -20,7 +20,7 @@ html {
 
 body {
   background-color: $hn-grey;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Encode Sans Expanded', sans-serif;
   color: white;
 }
 
@@ -40,10 +40,9 @@ body {
 .main-text {
   color: white;
   font-size: 16px;
-  font-weight: bold;
   border-radius: 25px;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: justify;
 }
 
 .intro-text {
@@ -67,7 +66,6 @@ body {
 .large-text {
   color: white;
   font-size:40px;
-  font-weight: bold;
   border-radius: 25px;
   margin-bottom: 30px;
   text-align: center;
@@ -108,15 +106,20 @@ body {
 }
 
 
-@media (min-width: 960px) {
+@media (min-width: 1020px) {
   .container {
     margin-left: auto;
     margin-right: auto;
-    width: 960px !important;
+    width: 1020px !important;
   }
 }
 @media (max-width: 960px) {
   .hideimage-2 {
     display: none;
   }
+}
+
+.bear {
+  height: 8em;
+  margin: 12px 0px;
 }

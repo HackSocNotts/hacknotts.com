@@ -8,6 +8,8 @@ import Intro from '../components/intro';
 import SectionTitle from '../components/sectiontitle';
 import NavBar from '../components/navbar';
 import Schedule from '../components/schedule';
+import Sponsors from '../components/sponsors';
+import Partners from '../components/partners';
 import Team from '../components/team';
 
 const variables =  { 
@@ -34,7 +36,7 @@ export default function Home() {
     console.log(colours);
   }, []);
   return <div style={{overflowX: "hidden"}}>
-    <link href="https://fonts.googleapis.com/css?family=Montseratt:400,700|Lato:400,700" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap" rel="stylesheet"/>
     <NavBar fixed="top"/>
     <Header colours={{random: colours, named: variables}}/>
     <SectionTitle text="Build Incredible Projects in 24 Hours"/>
@@ -43,7 +45,9 @@ export default function Home() {
     <SectionTitle text="Schedule"/>
     <Schedule/>
     <SectionTitle text="Sponsors"/>
+    <Sponsors/>
     <SectionTitle text="Partners"/>
+    <Partners/>
     <SectionTitle text="Meet the Team"/>
     <Team/>
   </div>
