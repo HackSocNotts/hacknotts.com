@@ -1,10 +1,13 @@
 import { Link } from "gatsby"
 import React, { useState } from "react"
 import logoRed from "../../static/logo/logoRed.png"
+import bruceFaceWink from "../../static/bruce/bruce_facewink.png";
+import bruceFaceNeutral from "../../static/bruce/bruce_faceneutral.png";
 import { Nav, Navbar } from "react-bootstrap"
 
 const NavBar = (props) => {
   const [current, setCurrent] = useState("")
+  const [bruceFace, setBruceFace] = useState(bruceFaceNeutral)
 
   const getCurrent = href => ({ isCurrent }) => {
     if (isCurrent && current !== href) {
@@ -36,6 +39,16 @@ const NavBar = (props) => {
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
+        <img
+          src={bruceFace}
+          alt="Bruce"
+          height="40"
+          className="d-inline-black align-top"
+          loading="lazy"
+          onMouseEnter = {e => setBruceFace(bruceFaceWink)}
+          onMouseLeave = {e => setBruceFace(bruceFaceNeutral)}
+        />
+
     </Navbar>
   )
 }
