@@ -105,21 +105,18 @@ body {
   }
 }
 
-
-@media (min-width: 1020px) {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1020px !important;
-  }
-}
 @media (max-width: 960px) {
   .hideimage-2 {
     display: none;
   }
 }
 
+.bear-wrapper {
+  display: flex;
+  justify-content:space-between;
+}
+
 .bear {
-  height: 8em;
-  margin: 12px 0px;
+  height: 10em;
+  margin: 4px auto;
 }
