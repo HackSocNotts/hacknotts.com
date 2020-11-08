@@ -39,7 +39,7 @@ const NavBar = (props) => {
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
-        <img
+        <a href="https://twitter.com/BruceBernardII"><img
           src={bruceFace}
           alt="Bruce"
           height="40"
@@ -47,7 +47,7 @@ const NavBar = (props) => {
           loading="lazy"
           onMouseEnter = {e => setBruceFace(bruceFaceWink)}
           onMouseLeave = {e => setBruceFace(bruceFaceNeutral)}
-        />
+        /></a>
 
     </Navbar>
   )
