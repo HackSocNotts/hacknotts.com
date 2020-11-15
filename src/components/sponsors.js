@@ -9,7 +9,7 @@ import Twilio from '../../static/external/twilio.svg';
 
 export default function Sponsors() {
   return <Container>
-    <Row style={{marginTop: "32px", marginBottom: "32px", justifyContent: "center"}}>
+    <Row style={{marginTop: "16px", marginBottom: "32px", justifyContent: "center"}}>
       <PartnerSponsor photo={CapitalOne} link="https://www.capitalone.co.uk/"/>
       <PartnerSponsor photo={GitHub} link="https://github.com/"/>
       <PartnerSponsor photo={Twilio} link="https://www.twilio.com/"/>
