@@ -1,4 +1,4 @@
-import React,  { useEffect, useState } from 'react';
+import React  from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import blue1 from '../../static/hexagons/blue1.png';
 import blue2 from '../../static/hexagons/blue2.png';

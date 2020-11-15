@@ -33,8 +33,7 @@ export default function Home() {
 
   useLayoutEffect(() => {
     setColours([...randomColour(colours)]);
-    console.log(colours);
-  }, []);
+  }, [colours]);
   return <div style={{overflowX: "hidden"}}>
 <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap" rel="stylesheet"/>
     <NavBar fixed="top"/>

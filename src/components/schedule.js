@@ -1,4 +1,4 @@
-import React,  { useEffect, useState } from 'react';
+import React from 'react';
 import { Container, Table } from 'react-bootstrap';
 
 export default function Schedule(props) {
