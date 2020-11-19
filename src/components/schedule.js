@@ -10,7 +10,7 @@ export default function Schedule(props) {
           <th>Activity</th>
         </tr>
       </thead>
-      <tbody class="main-text">
+      <tbody class="main-text" style={textAlign: "center"}>
         <tr class="intro-text">
           <th colSpan="2">Saturday</th>
         </tr>
