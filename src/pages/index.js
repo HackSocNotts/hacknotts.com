@@ -38,16 +38,16 @@ export default function Home() {
 <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap" rel="stylesheet"/>
     <NavBar fixed="top"/>
     <Header colours={{random: colours, named: variables}}/>
-    <SectionTitle text="Build Incredible Projects in 24 Hours"/>
+    <SectionTitle text="Build Incredible Projects in 24 Hours" id="about"/>
     <Intro/>
 
-    <SectionTitle text="Schedule"/>
+    <SectionTitle text="Schedule" id="schedule"/>
     <Schedule/>
-    <SectionTitle text="Sponsors"/>
+    <SectionTitle text="Sponsors" id="sponsors"/>
     <Sponsors/>
-    <SectionTitle text="Partners"/>
+    <SectionTitle text="Partners" id="partners"/>
     <Partners/>
-    <SectionTitle text="Meet the Team"/>
+    <SectionTitle text="Meet the Team" id="team" />
     <Team/>
   </div>
 }

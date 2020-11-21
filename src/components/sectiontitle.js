@@ -32,18 +32,37 @@ export default function SectionTitle(props) {
     colours.push(c);
   }
 
-  return <Container>
-    <Row style={{alignItems: "center", textAlign: "center"}}>
-      <Col className="hideimage-1"><Hexagon src={colours[0]}/></Col>
-      <Col className="hideimage-2"><Hexagon src={colours[1]}/></Col>
-      <Col ><Hexagon src={colours[2]}/></Col>
-      <Col xs={4}><h1 className="title-text" style={{display: "flex", justifyContent: "center"}}>
-        {props.text}
-      </h1></Col>
-    <Col><Hexagon src={colours[2]}/></Col>
-    <Col className="hideimage-2"><Hexagon src={colours[1]}/></Col>
-    <Col className="hideimage-1"><Hexagon src={colours[0]}/></Col>
-    </Row>
-  </Container>;
+  return (
+    <Container id={props.id}>
+      <Row style={{ alignItems: "center", textAlign: "center" }}>
+        <Col className="hideimage-1">
+          <Hexagon src={colours[0]} />
+        </Col>
+        <Col className="hideimage-2">
+          <Hexagon src={colours[1]} />
+        </Col>
+        <Col>
+          <Hexagon src={colours[2]} />
+        </Col>
+        <Col xs={4}>
+          <h1
+            className="title-text"
+            style={{ display: "flex", justifyContent: "center" }}
+          >
+            {props.text}
+          </h1>
+        </Col>
+        <Col>
+          <Hexagon src={colours[2]} />
+        </Col>
+        <Col className="hideimage-2">
+          <Hexagon src={colours[1]} />
+        </Col>
+        <Col className="hideimage-1">
+          <Hexagon src={colours[0]} />
+        </Col>
+      </Row>
+    </Container>
+  )
  }
  
