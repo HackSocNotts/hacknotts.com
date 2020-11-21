@@ -41,7 +41,7 @@ function TeamMember(props) {
         <b>{props.name}</b>
       </div>
       <div>{props.role}</div>
-      <a href={`mailto:${props.email}`}>
+      <a href={`mailto:${props.email}`} target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon
           icon={faEnvelope}
           style={{ marginRight: "5px" }}
@@ -49,7 +49,7 @@ function TeamMember(props) {
         />
       </a>
       {props.twitter ? (
-        <a href={props.twitter}>
+        <a href={props.twitter} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon
             icon={faTwitter}
             style={{ marginRight: "5px" }}
@@ -60,7 +60,7 @@ function TeamMember(props) {
         ""
       )}
       {props.linkedin ? (
-        <a href={props.linkedin}>
+        <a href={props.linkedin} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedin} color="#0077B5" />
         </a>
       ) : (
