@@ -19,21 +19,27 @@ const variables =  {
   hnGrey: "#2d2a26"
 }
 
-export default function Home() {
-  const [colours, setColours] = useState([{logo: logoRed, colour: variables.hnRed}, {logo: logoYellow, colour: variables.hnYellow}, {logo: logoBlue, colour: variables.hnBlue}]);
+const defaultColours = [
+  { logo: logoRed, colour: variables.hnRed },
+  { logo: logoYellow, colour: variables.hnYellow },
+  { logo: logoBlue, colour: variables.hnBlue },
+]
 
-  const randomColour = (newColours) => {
-    const colourPicker = Math.floor(Math.random() * 3);
-    for (var i = colourPicker; i < 3; ++i) {
-      var c = newColours.shift();
-      newColours.push(c);
-    }
-    return newColours;
+const randomColour = (newColours = defaultColours) => {
+  const colourPicker = Math.floor(Math.random() * 3)
+  for (var i = colourPicker; i < 3; ++i) {
+    var c = newColours.shift()
+    newColours.push(c)
   }
+  return newColours
+}
 
-  useLayoutEffect(() => {
-    setColours([...randomColour(colours)]);
-  }, []);
+export default function Home() {
+  const [colours, setColours] = useState(defaultColours)
+
+  useLayoutEffect(() => {    
+    setColours([...randomColour()])
+  }, [])
   return <div style={{overflowX: "hidden"}}>
 <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap" rel="stylesheet"/>
     <NavBar fixed="top"/>
