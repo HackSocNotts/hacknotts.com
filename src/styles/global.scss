@@ -20,20 +20,29 @@ html {
 
 body {
   background-color: $hn-grey;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Encode Sans Expanded', sans-serif;
   color: white;
 }
 
 .intro {
   @media (max-width: 1280px), (max-aspect-ratio: 12/9) {
-    background: url("../../static/background/background-mobile.png"), $hn-grey;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 80%,$hn-grey 100%), url("../../static/background/background-mobile.png"), $hn-grey;
     background-size: cover;
+
   }
 
   @media (min-width: 1280px) and (min-aspect-ratio: 12/9) {
-    background: url("../../static/background/background.png"), $hn-grey;
+    background:linear-gradient(to bottom, rgba(255,255,255,0) 80%, $hn-grey 100%),  url("../../static/background/background.png"), $hn-grey;
     background-size: cover;
   }
+}
+
+.main-text {
+  color: white;
+  font-size: 16px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  text-align: justify;
 }
 
 .intro-text {
@@ -42,7 +51,26 @@ body {
   font-weight: bold;
   border-radius: 25px;
   margin-bottom: 30px;
+  text-align: center;
 }
+
+.title-text {
+  padding: .75em 0;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.large-text {
+  color: white;
+  font-size:40px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
 
 .intro-date {
   font-size: 95%;
@@ -66,15 +94,33 @@ body {
 }
 
 @media (min-width: 767px) {
-  .intro-text {
+  .header-text {
     font-size: 21px;
     padding: 0 150px;
   }
 }
-@media (min-width: 960px) {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 960px !important;
+@media (max-width: 767px) {
+  .hideimage-1 {
+    display: none;
   }
+}
+
+@media (max-width: 960px) {
+  .hideimage-2 {
+    display: none;
+  }
+}
+
+.bear-wrapper {
+  display: flex;
+  justify-content:space-between;
+}
+
+.bear {
+  height: 10em;
+  margin: 4px auto;
+}
+
+.sectionTitle {
+  padding: 3em 0 2em 0;
 }
