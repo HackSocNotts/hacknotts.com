@@ -92,7 +92,13 @@ const NavBar = (props) => {
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
-      <a href="https://twitter.com/BruceBernardII">
+      <a
+     
+          href="https://twitter.com/BruceBernardII"
+  
+             aria-label="Link to Bruce Bernard the second's Twitter Page"
+      
+      >
         <img
           src={bruceFace}
           alt="Bruce"
@@ -101,6 +107,7 @@ const NavBar = (props) => {
           loading="lazy"
           onMouseEnter={e => setBruceFace(bruceFaceWink)}
           onMouseLeave={e => setBruceFace(bruceFaceNeutral)}
+          role="presentation"
         />
       </a>
     </Navbar>

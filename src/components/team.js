@@ -30,12 +30,42 @@ export default function Team() {
 }
 
 function TeamMember(props) {
-  return <Col style={{paddingTop: "12px", margin: "4px", textAlign: "center"}}>
-    <img style={{height: "12em", maxHeight: "40vh", borderRadius: "5px"}} src={props.photo}/>
-    <div style={{textAlign: "center"}}><b>{props.name}</b></div>
-    <div>{props.role}</div>
-    <a href={`mailto:${props.email}`}><FontAwesomeIcon icon={faEnvelope} style={{marginRight: "5px"}} color="#00953b"/></a>
-    {props.twitter ? <a href={props.twitter}><FontAwesomeIcon icon={faTwitter} style={{marginRight: "5px"}} color="#1DA1F2"/></a> : ""}
-    {props.linkedin ? <a href={props.linkedin}><FontAwesomeIcon icon={faLinkedin} color="#0077B5"/></a> : ""}
-  </Col>;
+  return (
+    <Col style={{ paddingTop: "12px", margin: "4px", textAlign: "center" }}>
+      <img
+        style={{ height: "12em", maxHeight: "40vh", borderRadius: "5px" }}
+        src={props.photo}
+        alt={props.name || "Team Member"}
+      />
+      <div style={{ textAlign: "center" }}>
+        <b>{props.name}</b>
+      </div>
+      <div>{props.role}</div>
+      <a href={`mailto:${props.email}`}>
+        <FontAwesomeIcon
+          icon={faEnvelope}
+          style={{ marginRight: "5px" }}
+          color="#00953b"
+        />
+      </a>
+      {props.twitter ? (
+        <a href={props.twitter}>
+          <FontAwesomeIcon
+            icon={faTwitter}
+            style={{ marginRight: "5px" }}
+            color="#1DA1F2"
+          />
+        </a>
+      ) : (
+        ""
+      )}
+      {props.linkedin ? (
+        <a href={props.linkedin}>
+          <FontAwesomeIcon icon={faLinkedin} color="#0077B5" />
+        </a>
+      ) : (
+        ""
+      )}
+    </Col>
+  )
 }

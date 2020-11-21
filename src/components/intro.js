@@ -18,9 +18,21 @@ export default function Intro(props) {
        Leaving our usual venue of the Ada Lovelace Computing Lab at UoN
        HackNotts 2020 is coming to internet connected host near you!
        <div className="bear-wrapper">
-         <img src={bruceHug} className="bear hideimage-2" />
-         <img src={bruceNeutral} className="bear" />
-         <img src={bruceWave} className="bear hideimage-1" />
+         <img
+           src={bruceHug}
+           className="bear hideimage-2"
+           alt="Bruce the bear with his hands up"
+         />
+         <img
+           src={bruceNeutral}
+           className="bear"
+           alt="Bruce the bear with his hand at his side"
+         />
+         <img
+           src={bruceWave}
+           className="bear hideimage-1"
+           alt="Bruce the bear waving"
+         />
        </div>
        Join us online this year for everything HackNotts is known for sans the
        food: great people, fascinating workshop content, unique swag, games
