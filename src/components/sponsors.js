@@ -3,7 +3,7 @@ import { Container, Row, } from 'react-bootstrap';
 
 import PartnerSponsor from '../components/partnersponsor';
 
-import CapitalOne from '../../static/external/capitalone.svg';
+import CapitalOne from "../../static/external/capitalone.png"
 import GitHub from '../../static/external/github.png';
 import Twilio from '../../static/external/twilio.svg';
 
