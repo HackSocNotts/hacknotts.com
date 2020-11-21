@@ -33,7 +33,7 @@ export default function SectionTitle(props) {
   }
 
   return (
-    <Container id={props.id}>
+    <Container className="sectionTitle" id={props.id}>
       <Row style={{ alignItems: "center", textAlign: "center" }}>
         <Col className="hideimage-1">
           <Hexagon src={colours[0]} />
