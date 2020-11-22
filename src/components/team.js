@@ -24,7 +24,7 @@ export default function Team() {
       <TeamMember name="Alisha Dadar" photo={alisha} role="Sponsor Liaison" email="alisha.dadar@hacksocnotts.co.uk"/>
       <TeamMember name="Alexi Dewfall" photo={alexi} role="HackNotts Coordinator" email="alexander@hacksocnotts.co.uk" twitter="https://twitter.com/AksanDotDev" linkedin="https://linkedin.com/in/aksandotdev"/>
       <TeamMember name="Aaron Osher" photo={aaron} role="HackSoc President" email="aaron@hacksocnotts.co.uk" twitter="https://twitter.com/aaronosher" linkedin="https://linkedin.com/in/aaronosher"/>
-      <TeamMember name="Daniel Cordell" photo={daniel} role="Friend" email="daniel@hacksocnotts.co.uk" twitter="https://twitter.com/CrdlPls" linkedin="https://www.linkedin.com/in/daniel-cordell/"/>
+      <TeamMember name="Daniel Cordell" photo={daniel} role="Chief Friend Officer" email="daniel@hacksocnotts.co.uk" twitter="https://twitter.com/CrdlPls" linkedin="https://www.linkedin.com/in/daniel-cordell/"/>
     </Row>
   </Container>;
 }

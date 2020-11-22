@@ -29,7 +29,7 @@ const NavBar = (props) => {
   }
 
   return (
-    <Navbar bg="dark" variant="dark" fixed={props.fixed ?? ""}>
+    <Navbar bg="dark" variant="dark" expand="md" fixed={props.fixed ?? ""}>
       <Navbar.Brand as={Link} to="/" getProps={getCurrent("/")}>
         <img
           src={logoRed}
@@ -39,10 +39,11 @@ const NavBar = (props) => {
           loading="lazy"
         />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle data-toggle="collapse" data-target="#basic-navbar-nav" aria-controls="basic-navbar-nav" label="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link
+            eventKey="1"
             as={Link}
             to="/#about"
             getProps={getCurrent("/#about")}
@@ -51,6 +52,7 @@ const NavBar = (props) => {
             About
           </Nav.Link>
           <Nav.Link
+            eventKey="2"
             as={Link}
             to="/#schedule"
             getProps={getCurrent("/#schedule")}
@@ -59,6 +61,7 @@ const NavBar = (props) => {
             Schedule
           </Nav.Link>
           <Nav.Link
+            eventKey="3"
             as={Link}
             to="/#sponsors"
             getProps={getCurrent("/#sponsors")}
@@ -67,6 +70,7 @@ const NavBar = (props) => {
             Sponsors
           </Nav.Link>
           <Nav.Link
+            eventKey="4"
             as={Link}
             to="/#partners"
             getProps={getCurrent("/#partners")}
@@ -75,6 +79,7 @@ const NavBar = (props) => {
             Partners
           </Nav.Link>
           <Nav.Link
+            eventKey="5"
             as={Link}
             to="/#team"
             getProps={getCurrent("/#team")}
@@ -83,6 +88,7 @@ const NavBar = (props) => {
             Team
           </Nav.Link>
           <Nav.Link
+            eventKey="6"
             as={Link}
             to="/giveaway"
             getProps={getCurrent("/giveaway")}
@@ -93,11 +99,9 @@ const NavBar = (props) => {
         </Nav>
       </Navbar.Collapse>
       <a
-     
-          href="https://twitter.com/BruceBernardII"
-  
-             aria-label="Link to Bruce Bernard the second's Twitter Page"
-      
+        href="https://twitter.com/BruceBernardII"
+        class="hideimage-1"
+        aria-label="Link to Bruce Bernard the second's Twitter Page"
       >
         <img
           src={bruceFace}
