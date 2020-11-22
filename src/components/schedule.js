@@ -20,7 +20,7 @@ export default function Schedule(props) {
         </thead>
         <tbody class="main-text" style={{ textAlign: "center" }}>
           <tr class="intro-text">
-            <th></th>
+            <th aria-label="No value"></th>
             <th style={{padding: "1em"}}><i>Sunday</i></th>
           </tr>
           <ScheduleRow
@@ -42,7 +42,7 @@ export default function Schedule(props) {
             activity="Game Night on Discord & Stream"
           />
           <tr class="intro-text">
-            <th></th>
+            <th aria-label="No value"></th>
             <th style={{padding: "1em"}}><i>Sunday</i></th>
           </tr>
           <ScheduleRow time="00:00" activity="Live RPG on Stream" />
