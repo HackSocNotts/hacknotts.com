@@ -11,7 +11,8 @@ import yellow2 from '../../static/hexagons/yellow2.png';
 import styled from 'styled-components';
 
 const Hexagon = styled.img `
-height: 5em;
+width: inherit;
+padding: 5px;
 `
 
 const blues = [blue1, blue2, blue3];
