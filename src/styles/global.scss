@@ -20,19 +20,28 @@ html {
 
 body {
   background-color: $hn-grey;
-  font-family: 'Encode Sans Expanded', sans-serif;
+  font-family: "Encode Sans Expanded", sans-serif;
   color: white;
 }
 
 .intro {
   @media (max-width: 1280px), (max-aspect-ratio: 12/9) {
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 80%,$hn-grey 100%), url("../../static/background/background-mobile.png"), $hn-grey;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 80%,
+        $hn-grey 100%
+      ),
+      url("../../static/background/background-mobile.png"), $hn-grey;
     background-size: cover;
-
   }
 
   @media (min-width: 1280px) and (min-aspect-ratio: 12/9) {
-    background:linear-gradient(to bottom, rgba(255,255,255,0) 80%, $hn-grey 100%),  url("../../static/background/background.png"), $hn-grey;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 80%,
+        $hn-grey 100%
+      ),
+      url("../../static/background/background.png"), $hn-grey;
     background-size: cover;
   }
 }
@@ -55,7 +64,7 @@ body {
 }
 
 .title-text {
-  padding: .75em 0;
+  padding: 0.75em 0;
   color: white;
   font-size: 30px;
   font-weight: bold;
@@ -65,12 +74,11 @@ body {
 
 .large-text {
   color: white;
-  font-size:40px;
+  font-size: 40px;
   border-radius: 25px;
   margin-bottom: 30px;
   text-align: center;
 }
-
 
 .intro-date {
   font-size: 95%;
@@ -82,14 +90,14 @@ body {
   border: none;
   background: inherit;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: #fff;
   font-weight: 700;
   padding: 8px 30px 10px;
 
-  &:hover { 
+  &:hover {
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -113,7 +121,7 @@ body {
 
 .bear-wrapper {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .bear {
@@ -123,4 +131,12 @@ body {
 
 .sectionTitle {
   padding: 3em 0 2em 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffffbf;
+
+  &:hover {
+    color: #ffffffdf;
+  }
 }
