@@ -90,11 +90,11 @@ const NavBar = (props) => {
           <Nav.Link
             eventKey="6"
             as={Link}
-            to="/giveaway"
-            getProps={getCurrent("/giveaway")}
-            active={current === "/giveaway"}
+            to="/ssbu-tournament-rules"
+            getProps={getCurrent("/ssbu-tournament-rules")}
+            active={current === "/ssbu-tournament-rules"}
           >
-            Giveaway T&Cs
+            Super Smash Bros. Tournament Rules
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
