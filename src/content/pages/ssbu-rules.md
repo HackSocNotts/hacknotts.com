@@ -6,8 +6,8 @@
 - Check-in is on Discord at **7:30pm**
 - Once everyone is checked in, the bracket will be reshuffled 
 - If you can't make the tournament, no worries, just let us know beforehand and we can remove you from the tournament 
-- The tournament is a **1v1** double elimination bracket - if you lose 2 sets you are eliminated
-- All sets are best of 3 games, apart from semi-finals, grand finals, and losers finals which will be best of 5 
+- The tournament is a **1v1 [double elimination](https://en.wikipedia.org/wiki/Double-elimination_tournament) bracket** - if you lose 2 sets, you are eliminated
+- All sets are best of 3 games, apart from semi-finals, grand finals, and losers finals which will be best of 5
 
 ## Game Rules
 - Stock and time are set to 3 stock and 7 minutes
