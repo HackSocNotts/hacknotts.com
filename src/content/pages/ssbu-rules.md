@@ -1,3 +1,9 @@
+---
+template: article
+slug: /ssbu-tournament-rules
+title: Super Smash Bros. Tournament Rules
+---
+
 # SSBU Player Rules
 
 ## Tournament Details
