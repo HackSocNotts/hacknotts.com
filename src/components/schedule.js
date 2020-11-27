@@ -21,7 +21,7 @@ export default function Schedule(props) {
         <tbody class="main-text" style={{ textAlign: "center" }}>
           <tr class="intro-text">
             <th aria-label="No value"></th>
-            <th style={{padding: "1em"}}><i>Sunday</i></th>
+            <th style={{padding: "1em"}}><i>Saturday</i></th>
           </tr>
           <ScheduleRow
             time="10:00"
