@@ -8,8 +8,8 @@ title: Super Smash Bros. Tournament Rules
 
 ## Tournament Details
 
-- The tournament will start at **8pm** 
-- Check-in is on Discord at **7:30pm**
+- The tournament will start at **7pm** 
+- Check-in is on Discord at **6pm**
 - Once everyone is checked in, the bracket will be reshuffled 
 - If you can't make the tournament, no worries, just let us know beforehand and we can remove you from the tournament 
 - The tournament is a **1v1 [double elimination](https://en.wikipedia.org/wiki/Double-elimination_tournament) bracket** - if you lose 2 sets, you are eliminated

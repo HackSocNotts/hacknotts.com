@@ -1,7 +1,7 @@
 import React from "react"
 import Logo from "./logo"
 import Helmet from "react-helmet"
-import { Container } from "react-bootstrap"
+import { Container, Button } from "react-bootstrap"
 
 export default function Header(props) {
   const colours = props.colours.random
@@ -56,6 +56,11 @@ export default function Header(props) {
             >
               Register
             </tito-button>
+          </div>
+          <div style={{ fontSize: "20px", paddingTop: "15px" }}>
+            <Button className="tito-tickets-button" href="https://www.twitch.tv/hackathonsuk" target="_blank" style={{ background: variables.hnRed }}>
+                Watch Live!
+            </Button>
           </div>
         </Container>
       </div>
