@@ -4,6 +4,7 @@ import logoRed from "../../static/logo/logoRed.png"
 import bruceFaceWink from "../../static/bruce/bruce_facewink.png";
 import bruceFaceNeutral from "../../static/bruce/bruce_faceneutral.png";
 import { Nav, Navbar } from "react-bootstrap"
+import { Helmet } from "react-helmet";
 
 const scrollTo = id => () => {
   const el = document.querySelector(id)
@@ -114,6 +115,9 @@ const NavBar = (props) => {
           role="presentation"
         />
       </a>
+      <Helmet>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap" rel="stylesheet"/>
+      </Helmet>
     </Navbar>
   )
 }

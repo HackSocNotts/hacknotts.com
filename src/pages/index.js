@@ -41,12 +41,10 @@ export default function Home() {
     setColours([...randomColour()])
   }, [])
   return <div style={{overflowX: "hidden"}}>
-<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap" rel="stylesheet"/>
     <NavBar fixed="top"/>
     <Header colours={{random: colours, named: variables}}/>
     <SectionTitle text="Build Incredible Projects in 24 Hours" id="about"/>
     <Intro/>
-
     <SectionTitle text="Schedule" id="schedule"/>
     <Schedule/>
     <SectionTitle text="Sponsors" id="sponsors"/>
