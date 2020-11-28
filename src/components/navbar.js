@@ -91,6 +91,15 @@ const NavBar = (props) => {
           <Nav.Link
             eventKey="6"
             as={Link}
+            to="/faq"
+            getProps={getCurrent("/faq")}
+            active={current === "/faq"}
+          >
+            FAQ
+          </Nav.Link>
+          <Nav.Link
+            eventKey="7"
+            as={Link}
             to="/ssbu-tournament-rules"
             getProps={getCurrent("/ssbu-tournament-rules")}
             active={current === "/ssbu-tournament-rules"}
