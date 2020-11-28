@@ -4,7 +4,6 @@ slug: /faq
 title: FAQ
 ---
 
-
 ### What is HackNotts? 
 
 - HackNotts is a 24 hour Hackathon, a coding challenge for teams of up to 4 to create a proof or concept or tech prototype.  
