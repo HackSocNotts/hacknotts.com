@@ -34,7 +34,7 @@ export default function Schedule(props) {
           <ScheduleRow time="12:45" activity="Discord API Workshop" />
           <ScheduleRow time="14:00" activity="Capital One Workshop" />
           <ScheduleRow time="15:15" activity="GitHub Workshop" />
-          <ScheduleRow time="16:30" activity="Parsec Talk" />
+          <ScheduleRow time="16:30" activity="Pictionary with Hackathons UK" />
           <ScheduleRow time="17:30" activity="Clash of Code Mini Event" />
           <ScheduleRow time="18:30" activity="Pub Quiz Mini Event" />
           <ScheduleRow
