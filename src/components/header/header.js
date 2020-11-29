@@ -47,19 +47,23 @@ export default function Header(props) {
             className="intro-text intro-date"
             style={{ color: colours[2].colour }}
           >
-            November 28<sup>th</sup> and 29<sup>th</sup> 2020
+            HackNotts 2020 is over. We'll see you next year <span role="img" aria-label="waving hand">👋</span>
           </div>
-          <div style={{ fontSize: "20px", paddingTop: "15px" }}>
+          {/* <div style={{ fontSize: "20px", paddingTop: "15px" }}>
             <tito-button
               style={{ background: variables.hnRed }}
               event="hacknotts/2020"
             >
               Register
             </tito-button>
-          </div>
+          </div> */}
           <div style={{ fontSize: "20px", paddingTop: "15px" }}>
-            <Button className="tito-tickets-button" href="https://www.twitch.tv/hackathonsuk" target="_blank" style={{ background: variables.hnRed }}>
-                Watch Live!
+            <Button className="tito-tickets-button" href="https://hacknotts2020.devpost.com/project-gallery" target="_blank" style={{ background: variables.hnRed }}>
+              Winners
+            </Button>
+          &nbsp;
+            <Button className="tito-tickets-button" href="https://www.twitch.tv/videos/818420205" target="_blank" style={{ background: variables.hnRed }}>
+                Re-Watch
             </Button>
           </div>
         </Container>
