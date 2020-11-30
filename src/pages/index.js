@@ -51,8 +51,6 @@ export default function Home() {
     <Sponsors/>
     <SectionTitle text="Partners" id="partners"/>
     <Partners/>
-    <SectionTitle text="FAQ" id="faq"/>
-    <Partners/>
     <SectionTitle text="Meet the Team" id="team" />
     <Team/>
   </div>
