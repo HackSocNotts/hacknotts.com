@@ -156,41 +156,22 @@ img.right-img {
     transform: translateY(-40px);
 }
 
-div.register-interest {
+div.tickets {
     text-align: center;
     margin-top: 80px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-div.register-interest input {
-    width: 300px;
-    padding: 10px;
-    color: #202D52;
-    background-color: #A0AEDA;
-    font-size: 13pt;
-    font-family: 'Roboto Mono', monospace;
-}
-
-div.register-interest input::placeholder {
-    color: #4d5e99;
-    opacity: 1;
-}
-
-div.register-interest button {
-    padding: 10px;
+button.tito-widget-button {
+    padding: 15px;
     background: none;
-    border: none;
+    border: 3px solid #A0AEDA;
     color: #A0AEDA;
-    font-size: 12pt;
+    font-size: 14pt;
     font-weight: bold;
     font-family: 'Roboto Mono', monospace;
     cursor: pointer;
-}
-
-p#register-error {
-    color: rgb(224, 102, 102);
-    font-weight: bold;
 }
 
 article {

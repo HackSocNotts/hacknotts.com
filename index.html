@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="/styles/desktop.css">
     <link rel="stylesheet" href="/styles/mobile.css">
 
-    <script src="/scripts/main.js"></script>
+    <script src='https://js.tito.io/v2' async></script>
 </head>
 <body>
     <div class="wrapper">
@@ -42,12 +42,12 @@
         </header>
 
         <p class="large">A 24-hour Hackathon from the University of Nottingham.</p>
-        <p class="large">Brought to you by <a href="https://hacksocnotts.co.uk">HackSoc</a>.</p>
+        <p class="large">Brought to you by <a href="https://hacksocnotts.co.uk">HackSoc</a>. Get your <a href="https://ti.to/hacksoc/hacknotts-21">ticket!</a></p>
 
         <div class="date-container">
             <div class="date">
                 <div class="content">
-                    Feb x<sup>th</sup> - y<sup>th</sup>, 2022
+                    Feb 12<sup>th</sup> - 13<sup>th</sup>, 2022
                 </div>
             </div>
         </div>
@@ -55,8 +55,9 @@
         <img class="left-img" src="/img/teapot.svg" alt="">
 
         <div class="paragraph-right">
-            <h2>Build incredible projects in 24 hours!</h2>
-            <p>Each year, HackNotts gathers hundreds of hackers to engage with new technologies, the tech industry, and each other.</p>
+            <h2>Build incredible things in 24 hours!</h2>
+            <p>Each year, HackNotts gathers students from all over the country to engage with new technologies, the tech industry, and each other.</p>
+            <p>HackNotts is an open-ended coding challenge for students of all skill levels and all Universities.</p>
             <p>Learn new skills, meet new people, and enjoy workshops and prizes from some great tech companies.</p>
         </div>
 
@@ -66,19 +67,18 @@
             <h2>Win prizes!</h2>
             <p>There are some amazing prizes up for grabs! Enter into any of our prize categories, including:</p>
             <ul>
-                <li>Best Overall Hack</li>
+                <li>Overall 1<sup>st</sup>, 2<sup>nd</sup>, and 3<sup>rd</sup> places</li>
+                <li>First-time Hacker Prize</li>
                 <li>Hackiest Hack</li>
                 <li>Haskell Prize (TBD)</li>
-                <li>And many more!</li>
+                <li>And many more! Check back here later</li>
             </ul>
-            <p>Register your interest below! Tickets will be available soon.</p>
+            <p>Get your tickets below!</p>
         </div>
 
-        <div class="register-interest" id="register-interest">
-            <input type="email" name="email" id="email" placeholder="Email address">
-            <button id="register-submit" onclick="register()">Register Interest</button>
-            <p id="register-error"></p>
-            <p>If you're interested in attending, please send us your email address and we'll let you know when registration opens up. No spam, we promise!</p>
+        <div class="tickets">
+            <tito-button event="hacksoc/hacknotts-21" releases="pYYoaijsYShzDDk9YPP9I7g">Get a Ticket</tito-button>
+            <p>If you're interested in coming to HackNotts 21, get yourself your free ticket here!</p>
         </div>
 
         <footer>
