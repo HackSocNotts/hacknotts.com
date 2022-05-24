@@ -4,4 +4,19 @@ body {
 
 h1 {
     color: #1BBB4F;
+    font-weight: bold;
+}
+
+h2 {
+    color: #1BBB4F;
+    font-weight: bold;
+}
+
+h3 {
+    color: #1BBB4F;
+    font-weight: bold;
+}
+
+p {
+    color: #A0A0A0;
 }
