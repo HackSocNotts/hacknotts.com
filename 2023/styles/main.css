@@ -30,12 +30,43 @@ p {
     font-family: 'Source Code Pro', monospace;
     font-weight: 400;
     font-size: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
 }
 
 p::before {
     content: "guest@HackNotts:~$ ";
     position: inherit;
     color: #1BBB4F;
+}
+
+ul#nav {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+ul#nav a {
+    color: #2825e7;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    padding-right: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+ul#nav a.active {
+    text-decoration: underline;
+}
+
+header {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 @media screen and (max-width: 3840px) {
