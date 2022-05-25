@@ -1,22 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+
 body {
     background-color: #1A1A1A;
 }
 
 h1 {
     color: #1BBB4F;
-    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    font-size: 60px;
 }
 
 h2 {
     color: #1BBB4F;
-    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    font-size: 48px;
 }
 
 h3 {
     color: #1BBB4F;
-    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    font-size: 32px;
 }
 
 p {
     color: #A0A0A0;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+p::before {
+    content: "guest@HackNotts:~$ ";
+    position: inherit;
+    color: #1BBB4F;
+}
+
+@media screen and (max-width: 3840px) {
+    div.wrapper {
+        width: 2000px;
+        max-width: 2000px;
+        overflow: hidden;
+        margin: auto;
+        text-overflow: clip;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 2560px) {
+    div.wrapper {
+        width: 1500px;
+        max-width: 1500px;
+        overflow: hidden;
+        margin: auto;
+        text-overflow: clip;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    div.wrapper {
+        width: 1000px;
+        max-width: 1000px;
+        overflow: hidden;
+        margin: auto;
+        text-overflow: clip;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    div.wrapper {
+        width: 600px;
+        max-width: 600px;
+        overflow: hidden;
+        margin: auto;
+        text-overflow: clip;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    div.wrapper {
+        width: 200px;
+        max-width: 200px;
+        overflow: hidden;
+        margin: auto;
+        text-overflow: clip;
+        left: 0;
+        right: 0;
+    }
 }
