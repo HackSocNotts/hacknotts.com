@@ -64,6 +64,11 @@ ul#nav a.active {
     text-decoration: underline;
 }
 
+
+h1#nav {
+    margin: 0;
+}
+
 header {
     padding-top: 0;
     padding-bottom: 0;
