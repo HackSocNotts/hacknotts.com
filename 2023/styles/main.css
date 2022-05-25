@@ -35,7 +35,7 @@ p {
     margin: 0;
 }
 
-p::before {
+p#term::before {
     content: "guest@HackNotts:~$ ";
     position: inherit;
     color: #1BBB4F;
@@ -71,6 +71,11 @@ h1#nav {
 header {
     padding-top: 0;
     padding-bottom: 0;
+}
+
+
+footer {
+    padding-top: 20px;
 }
 
 @media screen and (max-width: 3840px) {
