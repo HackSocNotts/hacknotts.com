@@ -8,35 +8,45 @@ h1 {
     color: #1BBB4F;
     font-family: 'Source Code Pro', monospace;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 48px;
 }
 
 h2 {
     color: #1BBB4F;
     font-family: 'Source Code Pro', monospace;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 30px;
+    padding-top: 12px;
+    padding-bottom: 0;
 }
 
 h3 {
     color: #1BBB4F;
     font-family: 'Source Code Pro', monospace;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 25px;
 }
 
-p {
+p, ul {
     color: #A0A0A0;
     font-family: 'Source Code Pro', monospace;
     font-weight: 400;
     font-size: 20px;
     padding-top: 0;
     padding-bottom: 0;
+    margin: 10;
+}
+
+p#large {
+    font-size: 25px;
+}
+
+p#term {
     margin: 0;
 }
 
 p#term::before {
-    content: "guest@HackNotts:~$ ";
+    content: "guest@HackNotts:~/2023$ ";
     position: inherit;
     color: #1BBB4F;
 }
@@ -78,6 +88,17 @@ footer {
     padding-top: 20px;
 }
 
+b {
+    color: #1BBB4F;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #2825e7;
+    font-weight: 700;
+}
+
 @media screen and (max-width: 3840px) {
     div.wrapper {
         width: 2000px;
@@ -87,6 +108,9 @@ footer {
         text-overflow: clip;
         left: 0;
         right: 0;
+    }
+    img#main {
+        height: 390px;
     }
 }
 
@@ -100,6 +124,9 @@ footer {
         left: 0;
         right: 0;
     }
+    img#main {
+        height: 390px;
+    }
 }
 
 @media screen and (max-width: 1920px) {
@@ -112,28 +139,37 @@ footer {
         left: 0;
         right: 0;
     }
+    img#main {
+        height: 390px;
+    }
 }
 
 @media screen and (max-width: 1080px) {
     div.wrapper {
         width: 900px;
-        max-width: 900px;
+        max-width: 800px;
         overflow: hidden;
         margin: auto;
         text-overflow: clip;
         left: 0;
         right: 0;
     }
+    img#main {
+        height: 390px;
+    }
 }
 
 @media screen and (max-width: 500px) {
     div.wrapper {
         width: 500px;
-        max-width: 500px;
+        max-width: 400px;
         overflow: hidden;
         margin: auto;
         text-overflow: clip;
         left: 0;
         right: 0;
+    }
+    img#main {
+        height: 250px;
     }
 }
