@@ -91,6 +91,12 @@ a {
     font-weight: bold;
 }
 
+li#directory {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 div.date-container {
     display: flex;
     justify-content: center;
