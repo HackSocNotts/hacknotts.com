@@ -27,7 +27,7 @@ h3 {
     font-size: 25px;
 }
 
-p, ul {
+p, ul, figcaption {
     color: #A0A0A0;
     font-family: 'Source Code Pro', monospace;
     font-weight: 400;
@@ -35,6 +35,10 @@ p, ul {
     padding-top: 0;
     padding-bottom: 0;
     margin: 10;
+}
+
+figcaption {
+    text-align: center;
 }
 
 p#large {
@@ -53,10 +57,12 @@ p#term::before {
 
 ul#nav {
     padding: 0;
-    list-style: none;
-    display: flex;
     padding: 0;
     margin: 0;
+}
+
+ul#nav li {
+    display: inline;
 }
 
 ul#nav a {
@@ -82,7 +88,6 @@ header {
     padding-top: 0;
     padding-bottom: 0;
 }
-
 
 footer {
     padding-top: 20px;
