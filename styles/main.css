@@ -1,19 +1,27 @@
+html {
+    font-size: 13pt;
+}
+
 body {
-    background-color: #131313;
+    background-color: #1a1a1a;
+}
+
+h1, h2, h3 {
+    margin-bottom: 0;
 }
 
 h1 {
     color: #1BBB4F;
     font-family: 'Source Code Pro', monospace;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 2em;
 }
 
 h2 {
     color: #1BBB4F;
     font-family: 'Source Code Pro', monospace;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.5em;
     padding-top: 12px;
     padding-bottom: 0;
 }
@@ -29,7 +37,6 @@ p, pre, ul, figcaption {
     color: #A0A0A0;
     font-family: 'Source Code Pro', serif;
     font-weight: 400;
-    font-size: 20px;
     padding-top: 0;
     padding-bottom: 0;
     margin: 10;
@@ -42,10 +49,6 @@ pre {
 
 figcaption {
     text-align: center;
-}
-
-p#large {
-    font-size: 25px;
 }
 
 p#term {
@@ -71,9 +74,6 @@ ul#nav li {
 
 ul#nav a {
     font-family: 'Source Code Pro', monospace;
-    font-weight: normal;
-    font-size: 20px;
-    text-decoration: underline;
     padding-right: 20px;
     padding-top: 0;
     padding-bottom: 0;
@@ -103,6 +103,12 @@ b {
 
 a {
     color: #1BBB9F;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 img#footer, img#about, img#sponsor {
@@ -191,76 +197,22 @@ div#neofetch {
     display: inline-flex;
 }
 
-@media screen and (max-width: 3840px) {
-    div.wrapper {
-        width: 2000px;
-        max-width: 2000px;
-        overflow: hidden;
-        margin: auto;
-        text-overflow: clip;
-        left: 0;
-        right: 0;
-    }
-    img#main {
-        height: 390px;
-    }
-    div#castle {
-        display: inline-flex;
-    }
+div.wrapper {
+    width: 900px;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    text-overflow: clip;
+    left: 0;
+    right: 0;
 }
 
-@media screen and (max-width: 2560px) {
-    div.wrapper {
-        width: 1500px;
-        max-width: 1500px;
-        overflow: hidden;
-        margin: auto;
-        text-overflow: clip;
-        left: 0;
-        right: 0;
-    }
-    img#main {
-        height: 390px;
-    }
-    div#castle {
-        display: inline-flex;
-    }
+img#main {
+    height: 390px;
 }
 
-@media screen and (max-width: 1920px) {
-    div.wrapper {
-        width: 1100px;
-        max-width: 1100px;
-        overflow: hidden;
-        margin: auto;
-        text-overflow: clip;
-        left: 0;
-        right: 0;
-    }
-    img#main {
-        height: 390px;
-    }
-    div#castle {
-        display: inline-flex;
-    }
-}
-
-@media screen and (max-width: 1080px) {
-    div.wrapper {
-        width: 900px;
-        max-width: 800px;
-        overflow: hidden;
-        margin: auto;
-        text-overflow: clip;
-        left: 0;
-        right: 0;
-    }
-    img#main {
-        height: 390px;
-    }
-    div#castle {
-        display: inline-flex;
-    }
+div#castle {
+    display: inline-flex;
 }
 
 @media screen and (max-width: 500px) {
