@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
-
 body {
-    background-color: #1A1A1A;
+    background-color: #131313;
 }
 
 h1 {
@@ -29,7 +27,7 @@ h3 {
 
 p, pre, ul, figcaption {
     color: #A0A0A0;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Source Code Pro', serif;
     font-weight: 400;
     font-size: 20px;
     padding-top: 0;
@@ -51,13 +49,14 @@ p#large {
 }
 
 p#term {
+    color: #727272;
     margin: 0;
 }
 
 p#term::before {
     content: "guest@HackNotts:~/2023$ ";
     position: inherit;
-    color: #1BBB4F;
+    color: #117031;
 }
 
 ul#nav {
@@ -71,11 +70,10 @@ ul#nav li {
 }
 
 ul#nav a {
-    color: #4542eb;
     font-family: 'Source Code Pro', monospace;
-    font-weight: 700;
+    font-weight: normal;
     font-size: 20px;
-    text-decoration: none;
+    text-decoration: underline;
     padding-right: 20px;
     padding-top: 0;
     padding-bottom: 0;
@@ -90,7 +88,7 @@ h1#nav {
 }
 
 header {
-    padding-top: 0;
+    padding-top: 50px;
     padding-bottom: 0;
 }
 
@@ -104,9 +102,7 @@ b {
 }
 
 a {
-    text-decoration: none;
-    color: #4542eb;
-    font-weight: 700;
+    color: #1BBB9F;
 }
 
 img#footer, img#about, img#sponsor {
@@ -125,6 +121,10 @@ img#about {
 
 img#sponsor {
     width: 60%;
+}
+
+span.big-title {
+    font-size: 2em;
 }
 
 span.green {
@@ -186,6 +186,8 @@ span.blue {
 }
 
 div#neofetch {
+    margin-top: 25px;
+    margin-bottom: 25px;
     display: inline-flex;
 }
 
