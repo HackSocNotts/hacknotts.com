@@ -33,13 +33,19 @@ h3 {
     font-size: 25px;
 }
 
-p, pre, ul, figcaption {
+p, pre, ul {
     color: #A0A0A0;
-    font-family: 'Source Code Pro', serif;
+    font-family: 'Source Code Pro', monospace;
     font-weight: 400;
     padding-top: 0;
     padding-bottom: 0;
     margin: 10;
+}
+
+figcaption {
+    color: #727272;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.8rem;
 }
 
 pre {
@@ -111,7 +117,7 @@ a:hover {
     text-decoration: underline;
 }
 
-img#footer, img#about, img#sponsor {
+img#footer, img#sponsor, img.img-about {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -121,8 +127,8 @@ img#footer, img#about, img#sponsor {
     margin-bottom: 0;
 }
 
-img#about {
-    width: 55%;
+img.img-about {
+    width: 65%;
 }
 
 img#sponsor {
@@ -213,6 +219,28 @@ img#main {
 
 div#castle {
     display: inline-flex;
+}
+
+div#gallery {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    width: 100%;
+}
+
+div#gallery img {
+    width: 300px;
+}
+
+div.side-by-side {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+div.side-by-side img {
+    width: 100%;
 }
 
 @media screen and (max-width: 500px) {
