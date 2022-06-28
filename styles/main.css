@@ -27,7 +27,7 @@ h3 {
     font-size: 25px;
 }
 
-p, ul, figcaption {
+p, pre, ul, figcaption {
     color: #A0A0A0;
     font-family: 'Source Code Pro', monospace;
     font-weight: 400;
@@ -35,6 +35,11 @@ p, ul, figcaption {
     padding-top: 0;
     padding-bottom: 0;
     margin: 10;
+}
+
+pre {
+    color: #1BBB4F;
+    font-weight: 900;
 }
 
 figcaption {
@@ -120,6 +125,64 @@ img#about {
 
 img#sponsor {
     width: 60%;
+}
+
+span.green {
+    color: #1BBB4F;
+}
+
+span.grey {
+    color: #A0A0A0;
+    font-weight: 400;
+}
+
+span.red {
+    color: #BB1B37;
+}
+
+span.pink {
+    color: #BB1B87;
+    font-weight: 400;
+}
+
+span.blue {
+    color: #1BBB9F;
+    font-weight: 400;
+}
+
+.redrec {
+    height: 30px;
+    width: 45px;
+    background-color: #BB1B37;
+    display: inline-block;
+}
+
+.pinkrec {
+    height: 30px;
+    width: 45px;
+    background-color: #BB1B87;
+    display: inline-block;
+}
+
+.bluerec {
+    height: 30px;
+    width: 45px;
+    background-color: #1BBB9F;
+    display: inline-block;
+}
+
+.greenrec {
+    height: 30px;
+    width: 45px;
+    background-color: #1BBB4F;
+    display: inline-block;
+}
+
+.greyrec {
+    height: 30px;
+    width: 45px;
+    background-color: #A0A0A0;
+    display: inline-block;
 }
 
 @media screen and (max-width: 3840px) {
