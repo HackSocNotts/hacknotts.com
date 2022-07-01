@@ -1,5 +1,8 @@
 p#term::before {
     content: "guest@HackNotts:~/2023/Sponsors$ ";
     position: inherit;
-    color: #1BBB4F;
+}
+
+article {
+    margin: 50px;
 }

@@ -1,5 +1,4 @@
 p#term::before {
     content: "guest@HackNotts:~/2023/About$ ";
     position: inherit;
-    color: #1BBB4F;
 }

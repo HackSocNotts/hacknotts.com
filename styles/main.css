@@ -243,10 +243,19 @@ div.side-by-side img {
     width: 100%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
     div.wrapper {
-        width: 500px;
-        max-width: 400px;
+        width: calc(100% - 20px);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    div.wrapper {
+        width: calc(100% - 10px);
+        margin-left: 5px;
+        margin-right: 5px;
         overflow: hidden;
         margin: auto;
         text-overflow: clip;
@@ -259,7 +268,10 @@ div.side-by-side img {
     img#footer {
         width: 75%;
     }
-    img#about {
+    figure {
+        margin: 0;
+    }
+    img.img-about {
         width: 100%;
     }
     img#sponsor {
