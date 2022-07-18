@@ -1,3 +1,4 @@
-article h2 {
-    margin-bottom: -15px;
+p#term::before {
+    content: "guest@HackNotts:~/2023/FAQs$ ";
+    position: inherit;
 }

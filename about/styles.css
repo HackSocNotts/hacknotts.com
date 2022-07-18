@@ -1,8 +1,4 @@
-img.fullwidth {
-    width: 100%;
-    border: 5px solid #0b101f;
-}
-
-h2 {
-    margin-bottom: -10px;
+p#term::before {
+    content: "guest@HackNotts:~/2023/About$ ";
+    position: inherit;
 }
