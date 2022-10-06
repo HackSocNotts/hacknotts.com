@@ -2,7 +2,3 @@ p#term::before {
     content: "guest@HackNotts:~/2023/Sponsors$ ";
     position: inherit;
 }
-
-article {
-    margin: 50px;
-}
