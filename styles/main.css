@@ -314,6 +314,15 @@ div.side-by-side img {
     border: #1BBB4F !important;
     color: #1a1a1a !important;
     font-family: 'Source Code Pro', monospace !important;
-    font-weight: 400 !important;
+    font-weight: 600 !important;
+    font-size: 13pt !important
+}
+
+.tito-widget-button {
+    background: #1a1a1a !important;
+    border: #1a1a1a !important;
+    color: #A0A0A0 !important;
+    font-family: 'Source Code Pro', monospace !important;
+    font-weight: 700 !important;
     font-size: 13pt !important
 }
