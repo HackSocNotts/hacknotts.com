@@ -328,13 +328,15 @@ div.side-by-side img {
 
 .tito-registration-header {
     background: #727272 !important;
-}
-
-.tito-registration-header h1{
+    border-bottom: #727272 !important;
     font-weight: 700 !important;
 }
 
-.tito-registration-progress {
+.tito-registration-progress .tito-registration-summary-lines {
     color: #A0A0A0;
     background: #1a1a1a;
+}
+
+.tito-progress-bar {
+    background-color: #1a1a1a;
 }
