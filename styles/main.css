@@ -321,8 +321,16 @@ div.side-by-side img {
 .tito-widget-button {
     background: #1a1a1a !important;
     border: #1a1a1a !important;
-    color: #A0A0A0 !important;
+    color: #1BBB9F !important;
     font-family: 'Source Code Pro', monospace !important;
     font-weight: 700 !important;
     font-size: 13pt !important
+}
+
+.tito-progress-bar .tito-registration-header {
+    background-color: #1a1a1a !important;
+}
+
+.tito-registration-header {
+    border-bottom: #1a1a1a !important;
 }
