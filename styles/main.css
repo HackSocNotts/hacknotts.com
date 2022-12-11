@@ -326,17 +326,62 @@ div.side-by-side img {
     font-size: 13pt !important
 }
 
+.tito-registration-form {
+    background-color: #1a1a1a !important;
+}
+
 .tito-registration-header {
     background: #727272 !important;
     border-bottom: #727272 !important;
+}
+
+.tito-registration-section-header {
+    background: #727272 !important;
+}
+
+.tito-registration-summary--details-button {
+    background: #727272 !important;
+    border: none !important;
+}
+
+.tito-registration-section-header a{
+    color: #1BBB9F !important;
+    font-weight: 600 !important;
+    font-size: 11pt !important;
+}
+
+.tito-registration-header h1 {
     font-weight: 700 !important;
 }
 
-.tito-registration-progress .tito-registration-summary-lines {
-    color: #A0A0A0;
-    background: #1a1a1a;
+.tito-registration-progress {
+    color: #A0A0A0 !important;
+    background: #1a1a1a !important;
 }
 
 .tito-progress-bar {
-    background-color: #1a1a1a;
+    background-color: #1a1a1a !important;
+}
+
+.tito-registration-summary-lines {
+    background: #1a1a1a !important;
+    color: #1BBB4F !important;
+    font-size: 11pt !important;
+    font-weight: 400 !important;
+    padding-bottom: 0 !important;
+}
+
+.tito-registration-form-button-overlay {
+    background: #1a1a1a !important;
+}
+
+.tito-registration-summary-lines--divider {
+    background: #1a1a1a !important;
+}
+
+.tito-continue-button {
+    color: #1a1a1a !important;
+    font-family: 'Source Code Pro', monospace !important;
+    font-weight: 600 !important;
+    font-size: 13pt !important
 }
