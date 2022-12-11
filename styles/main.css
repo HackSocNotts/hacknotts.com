@@ -310,7 +310,7 @@ div.side-by-side img {
 }
 
 .tito-submit {
-    background-color: #1BBB4F !important;
+    background: #1BBB4F !important;
     border: #1BBB4F !important;
     color: #1a1a1a !important;
     font-family: 'Source Code Pro', monospace !important;
