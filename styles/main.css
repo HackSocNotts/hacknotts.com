@@ -282,3 +282,25 @@ div.side-by-side img {
         display: none;
     }
 }
+
+.tito-release--title {
+    color: #A0A0A0 !important;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    font-size: 13pt;
+}
+.tito-release-description--description {
+    color: #A0A0A0 !important;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    font-size: 13pt;
+}
+.tito-price {
+    color: #A0A0A0 !important;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    font-size: 13pt;
+}
+.tito-widget .tito-widget-form {
+    background-color: #1a1a1a !important;
+}
