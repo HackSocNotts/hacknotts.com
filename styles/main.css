@@ -304,3 +304,16 @@ div.side-by-side img {
 .tito-widget .tito-widget-form {
     background-color: #1a1a1a !important;
 }
+
+.tito-registration-form {
+    background-color: #1a1a1a !important;
+}
+
+.tito-submit {
+    background-color: #1BBB4F !important;
+    border: #1BBB4F !important;
+    color: #1a1a1a;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    font-size: 13pt;
+}
