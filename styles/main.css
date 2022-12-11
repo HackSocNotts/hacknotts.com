@@ -289,7 +289,7 @@ div.side-by-side img {
     font-weight: 700 !important;
     font-size: 13pt !important;
 }
-.tito-release-description--description {
+.tito-release-description--description p{
     color: #A0A0A0 !important;
     font-family: 'Source Code Pro', monospace !important;
     font-weight: 400 !important;
