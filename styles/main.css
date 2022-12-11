@@ -281,3 +281,38 @@ div.side-by-side img {
         display: none;
     }
 }
+
+.tito-release--title {
+    color: #A0A0A0 !important;
+    font-family: 'Source Code Pro', monospace !important;
+    font-weight: 700 !important;
+    font-size: 13pt !important;
+}
+.tito-release-description--description {
+    color: #A0A0A0 !important;
+    font-family: 'Source Code Pro', monospace !important;
+    font-weight: 400 !important;
+    font-size: 13pt !important;
+}
+.tito-price {
+    color: #A0A0A0 !important;
+    font-family: 'Source Code Pro', monospace !important;
+    font-weight: 400 !important;
+    font-size: 13pt !important;
+}
+.tito-widget .tito-widget-form {
+    background-color: #1a1a1a !important;
+}
+
+.tito-registration-form {
+    background-color: #1a1a1a !important;
+}
+
+.tito-submit {
+    background-color: #1BBB4F !important;
+    border: #1BBB4F !important;
+    color: #1a1a1a !important;
+    font-family: 'Source Code Pro', monospace !important;
+    font-weight: 400 !important;
+    font-size: 13pt !important;
+}
