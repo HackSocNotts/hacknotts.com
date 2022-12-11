@@ -289,23 +289,22 @@ div.side-by-side img {
     font-weight: 700 !important;
     font-size: 13pt !important;
 }
+
 .tito-release-description--description p{
     color: #A0A0A0 !important;
     font-family: 'Source Code Pro', monospace !important;
     font-weight: 400 !important;
     font-size: 13pt !important;
 }
+
 .tito-price {
     color: #A0A0A0 !important;
     font-family: 'Source Code Pro', monospace !important;
     font-weight: 400 !important;
     font-size: 13pt !important;
 }
-.tito-widget .tito-widget-form {
-    background-color: #1a1a1a !important;
-}
 
-.tito-registration-form {
+.tito-widget .tito-widget-form .tito-registration-form{
     background-color: #1a1a1a !important;
 }
 
@@ -327,10 +326,21 @@ div.side-by-side img {
     font-size: 13pt !important
 }
 
-.tito-progress-bar .tito-registration-header {
+.tito-registration-header .tito-registration-section-header{
+    background: #1a1a1a !important;
+}
+
+.tito-progress-bar {
     background-color: #1a1a1a !important;
 }
 
 .tito-registration-header {
     border-bottom: #1a1a1a !important;
+}
+
+.tito-registration-summary-lines td {
+    color: #A0A0A0 !important;
+    font-family: 'Source Code Pro', monospace !important;
+    font-weight: 400 !important;
+    font-size: 13pt !important;
 }
