@@ -40,6 +40,7 @@ p, pre, ul {
     padding-top: 0;
     padding-bottom: 0;
     margin: 10;
+    text-align: justify;
 }
 
 figcaption {
@@ -280,4 +281,47 @@ div.side-by-side img {
     div#castle {
         display: none;
     }
+}
+
+.tito-release--title {
+    color: #A0A0A0 !important;
+    font-family: 'Source Code Pro', monospace !important;
+    font-weight: 700 !important;
+    font-size: 13pt !important;
+}
+
+.tito-release-description--description p{
+    color: #A0A0A0 !important;
+    font-family: 'Source Code Pro', monospace !important;
+    font-weight: 400 !important;
+    font-size: 13pt !important;
+}
+
+.tito-price {
+    color: #A0A0A0 !important;
+    font-family: 'Source Code Pro', monospace !important;
+    font-weight: 400 !important;
+    font-size: 13pt !important;
+}
+
+.tito-widget .tito-widget-form {
+    background-color: #1a1a1a !important;
+}
+
+.tito-submit {
+    background: #1BBB4F !important;
+    border: #1BBB4F !important;
+    color: #1a1a1a !important;
+    font-family: 'Source Code Pro', monospace !important;
+    font-weight: 600 !important;
+    font-size: 13pt !important
+}
+
+.tito-widget-button {
+    background: #1a1a1a !important;
+    border: #1a1a1a !important;
+    color: #1BBB9F !important;
+    font-family: 'Source Code Pro', monospace !important;
+    font-weight: 700 !important;
+    font-size: 13pt !important
 }
