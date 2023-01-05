@@ -2,3 +2,9 @@ p#term::before {
     content: "guest@HackNotts:~/2023/About$ ";
     position: inherit;
 }
+
+div.gmaps {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
