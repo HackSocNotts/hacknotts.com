@@ -237,7 +237,6 @@ div#gallery img {
 div.side-by-side {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 10px;
 }
 
 div.side-by-side img {
