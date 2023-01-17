@@ -33,6 +33,14 @@ h3 {
     font-size: 25px;
 }
 
+h4 {
+    color: #1BBB4F;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+}
+
 p, pre, ul {
     color: #A0A0A0;
     font-family: 'Source Code Pro', monospace;
@@ -133,7 +141,7 @@ img.img-about {
 }
 
 img#sponsor {
-    width: 50%;
+    width: 70%;
 }
 
 span.big-title {
@@ -237,7 +245,6 @@ div#gallery img {
 div.side-by-side {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 10px;
 }
 
 div.side-by-side img {
