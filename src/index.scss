@@ -1,0 +1,15 @@
+$primary:       red;
+$secondary:     yellow;
+$tertiary:      green;
+$quaternary:    cyan;
+
+@import "bootstrap_custom";
+
+@font-face {
+    font-family: "IBM Plex Serif";
+    src: url(public/IBMPlexSerif-Regular.ttf) format('truetype');
+}
+
+* {
+    font-family: "IBM Plex Serif", serif;
+}
