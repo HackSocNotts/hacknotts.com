@@ -1,6 +1,6 @@
 import {createContext, useContext, useEffect, useState} from "react";
 
-type ColorMode = "micro" | "spectrum"
+type ColorMode = "light" | "dark"
 
 const ColorModeContext = createContext<ColorMode>("micro")
 const ColorModeDispatchContext = createContext<(colorMode: ColorMode) => void>(null)

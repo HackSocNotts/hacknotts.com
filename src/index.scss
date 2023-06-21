@@ -1,15 +1,51 @@
-$primary:       red;
+//$enable-gradients: true;
+$primary:       #f13f23;
 $secondary:     yellow;
-$tertiary:      green;
-$quaternary:    cyan;
+$gradient: linear-gradient(135deg, rgba(255,255,255,.40) 40%, rgba(255,255,255,0) 100%);
 
-@import "bootstrap_custom";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@include color-mode(light) {
+    --bs-body-color: #edd6b2;
+    --bs-body-color-rgb: #edd6b2;
+    --bs-body-bg: #edd6b2;
+    --bs-body-bg-rgb: #edd6b2;
+    --bs-tertiary-bg: #edd6b2;
+    --bs-light-rgb: #edd6b2;
+}
 
 @font-face {
     font-family: "IBM Plex Serif";
-    src: url(public/IBMPlexSerif-Regular.ttf) format('truetype');
+    src: url(assets/IBMPlexSerif-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "SourceCodePro ExtraBold";
+    src: url(assets/SourceCodePro-ExtraBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Comic Neue";
+    src: url(assets/ComicNeue-Regular.ttf) format('truetype');
 }
 
 * {
-    font-family: "IBM Plex Serif", serif;
+    font-family: "Source Code Pro ExtraBold", monospace;
+}
+
+.logo tspan {
+    font-family: "Source Code Pro ExtraBold", monospace !important;
+}
+
+.right-chevron {
+    mask: url(assets/hacknotts_right_chevron.svg) no-repeat 50% 50%;
+    mask-size: 100% 100%;
+}
+
+.comic {
+    font-family: "Comic Neue", sans-serif;
+}
+
+div#root {
+    width: 100vw;
 }
