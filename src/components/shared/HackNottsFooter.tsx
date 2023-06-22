@@ -5,65 +5,19 @@ interface HackNottsFooterProps {
 
 function HackNottsFooter(props: HackNottsFooterProps) : JSX.Element {
     return <footer className="bg-primary w-100">
-        <Container className="pt-5 pb-5">
+        <Container className="pt-3 pb-3 d-flex flex-column" style={{minHeight: 180}}>
             <Stack className="align-items-stretch">
-                {/*<Nav fill>*/}
-                {/*    <Nav.Item>*/}
-                {/*        <Nav.Link href="/safeguarding" className="link-light">*/}
-                {/*            Safeguarding*/}
-                {/*        </Nav.Link>*/}
-                {/*    </Nav.Item>*/}
-                {/*    <Nav.Item>*/}
-                {/*        <Nav.Link href="/training-policy.pdf" className="link-light">*/}
-                {/*            Training Policy*/}
-                {/*        </Nav.Link>*/}
-                {/*    </Nav.Item>*/}
-                {/*    <Nav.Item>*/}
-                {/*        <Nav.Link href="/contact-us" className="link-light">*/}
-                {/*            Contact Us*/}
-                {/*        </Nav.Link>*/}
-                {/*    </Nav.Item>*/}
-                {/*</Nav>*/}
-                {/*<div className="d-flex flex-column align-items-center">*/}
-                {/*    <Nav>*/}
-                {/*        <Nav.Item>*/}
-                {/*            <Nav.Link href="https://twitter.com/kaizen_anil_mbb" target="_blank" className="link-light">*/}
-                {/*                <FontAwesomeIcon icon={faTwitter}/>*/}
-                {/*            </Nav.Link>*/}
-                {/*        </Nav.Item>*/}
-                {/*        <Nav.Item className="link-light">*/}
-                {/*            <Nav.Link href="https://www.linkedin.com/company/lean-enabled-group/" target="_blank"*/}
-                {/*                className="link-light">*/}
-                {/*                <FontAwesomeIcon icon={faLinkedin}/>*/}
-                {/*            </Nav.Link>*/}
-                {/*        </Nav.Item>*/}
-                {/*        <Nav.Item>*/}
-                {/*            <Nav.Link href="https://www.youtube.com/@leanenabled3924" target="_blank"*/}
-                {/*                className="link-light">*/}
-                {/*                <FontAwesomeIcon icon={faYoutube}/>*/}
-                {/*            </Nav.Link>*/}
-                {/*        </Nav.Item>*/}
-                {/*    </Nav>*/}
-                {/*</div>*/}
-                {/*<div className="d-flex flex-column align-items-center">*/}
-                {/*    <Nav>*/}
-                {/*        <Nav.Item>*/}
-                {/*            <Nav.Link className="link-light">*/}
-                {/*                <FontAwesomeIcon icon={faBuilding} href="https://goo.gl/maps/rAMjHszfKLkRfpbT8"/> Lean*/}
-                {/*                Enabled Group, 124 City Road, London, EC1V 2NX.*/}
-                {/*            </Nav.Link>*/}
-                {/*        </Nav.Item>*/}
-                {/*        <Nav.Item>*/}
-                {/*            <Nav.Link href="tel:02039077717" className="link-light">*/}
-                {/*                <FontAwesomeIcon icon={faPhone}/> (0203) 907 7717*/}
-                {/*            </Nav.Link>*/}
-                {/*        </Nav.Item>*/}
-                {/*    </Nav>*/}
-                {/*</div>*/}
-                <div className="text-center text-light">
-                    Footer placeholder text
-                </div>
+                <h4 className="text-center text-light">
+                    HackNotts 2024
+                </h4>
+                <h6 className="text-center text-muted">
+                    November 4<small>th</small> & 5<small>th</small>
+                </h6>
             </Stack>
+            <div>
+                <h6 className="text-muted">&copy; <a className="text-secondary text-decoration-none" href="https://hacksoc.net/">HackSoc Nottingham</a></h6>
+                <h6><a className="text-secondary text-decoration-none" href="https://github.com/HackSocNotts/hacknotts.com">This site's source code</a> (MIT licensed)</h6>
+            </div>
         </Container>
     </footer>
 }

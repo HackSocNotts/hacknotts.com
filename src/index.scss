@@ -1,18 +1,11 @@
 //$enable-gradients: true;
-$primary:       #f13f23;
-$secondary:     yellow;
+$primary:       #e0332c;
+$secondary:     #fdbe01;
+$light:         #edd6b2;
+
 $gradient: linear-gradient(135deg, rgba(255,255,255,.40) 40%, rgba(255,255,255,0) 100%);
 
 @import "node_modules/bootstrap/scss/bootstrap";
-
-@include color-mode(light) {
-    --bs-body-color: #edd6b2;
-    --bs-body-color-rgb: #edd6b2;
-    --bs-body-bg: #edd6b2;
-    --bs-body-bg-rgb: #edd6b2;
-    --bs-tertiary-bg: #edd6b2;
-    --bs-light-rgb: #edd6b2;
-}
 
 @font-face {
     font-family: "IBM Plex Serif";
@@ -48,4 +41,5 @@ $gradient: linear-gradient(135deg, rgba(255,255,255,.40) 40%, rgba(255,255,255,0
 
 div#root {
     width: 100vw;
+    background-color: $light;
 }

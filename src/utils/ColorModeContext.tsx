@@ -2,10 +2,10 @@ import {createContext, useContext, useEffect, useState} from "react";
 
 type ColorMode = "light" | "dark"
 
-const ColorModeContext = createContext<ColorMode>("micro")
-const ColorModeDispatchContext = createContext<(colorMode: ColorMode) => void>(null)
+const ColorModeContext = createContext<ColorMode>("micro" as ColorMode)
+const ColorModeDispatchContext = createContext<(colorMode: ColorMode) => void>(() => {})
 
-function useColorMode() {
+function useColorMode(): [ColorMode, (colorMode: ColorMode) => void] {
     return [useContext(ColorModeContext), useContext(ColorModeDispatchContext)]
 }
 
@@ -28,3 +28,4 @@ function ColorModeProvider(props: ColorModeProviderProps) : JSX.Element {
 }
 
 export {ColorModeProvider, useColorMode}
+export type {ColorMode}
