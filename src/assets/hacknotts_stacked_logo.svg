@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="110.99271mm"
+   height="42.039719mm"
+   viewBox="0 0 110.99271 42.039719"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="HackNotts Working.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.58628491"
+     inkscape:cx="256.70113"
+     inkscape:cy="720.63939"
+     inkscape:window-width="1280"
+     inkscape:window-height="800"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient4605"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4603" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(4.0526101e-7,-181.73034)">
+    <g
+       id="g349"
+       transform="translate(-5.388901,42.748082)"
+       inkscape:export-filename="../Code/hacknotts.com/src/assets/hacknotts_stacked_logo.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:currentColor;stroke:none;stroke-width:0.205304;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2900"
+         width="19.035482"
+         height="19.706982"
+         x="47.043251"
+         y="143.88503"
+         rx="3.0456772"
+         transform="matrix(1,0,-0.25881905,0.96592583,0,0)"
+         inkscape:export-filename="HackNotts.svg"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <rect
+         style="fill:currentColor;stroke:none;stroke-width:0.205304;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2900-3"
+         width="19.035482"
+         height="19.706982"
+         x="69.100624"
+         y="143.88503"
+         rx="3.0456772"
+         transform="matrix(1,0,-0.25881905,0.96592583,0,0)" />
+      <rect
+         style="fill:currentColor;stroke:none;stroke-width:0.205304;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2900-2"
+         width="19.035482"
+         height="19.706982"
+         x="91.15799"
+         y="143.88503"
+         rx="3.0456772"
+         transform="matrix(1,0,-0.25881905,0.96592583,0,0)" />
+      <rect
+         style="fill:currentColor;stroke:none;stroke-width:0.205304;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2900-3-9"
+         width="19.035482"
+         height="19.706982"
+         x="113.21535"
+         y="143.88503"
+         rx="3.0456772"
+         transform="matrix(1,0,-0.25881905,0.96592583,0,0)" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:19.3401px;font-family:'SauceCodePro Nerd Font';-inkscape-font-specification:'SauceCodePro Nerd Font Ultra-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.201776;stroke-dasharray:none;stroke-opacity:1"
+         x="56.560997"
+         y="154.7952"
+         id="text3015"
+         transform="skewX(-15)"><tspan
+           sodipodi:role="line"
+           id="tspan3013"
+           style="font-size:19.3401px;fill:#ffffff;stroke-width:0.201776"
+           x="56.560997"
+           y="154.7952">H</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:19.3401px;font-family:'SauceCodePro Nerd Font';-inkscape-font-specification:'SauceCodePro Nerd Font Ultra-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.201776;stroke-dasharray:none;stroke-opacity:1"
+         x="78.61837"
+         y="154.7952"
+         id="text3121"
+         transform="skewX(-15)"><tspan
+           sodipodi:role="line"
+           id="tspan3119"
+           style="font-size:19.3401px;fill:#ffffff;stroke-width:0.201776"
+           x="78.61837"
+           y="154.7952">A</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:19.3401px;font-family:'SauceCodePro Nerd Font';-inkscape-font-specification:'SauceCodePro Nerd Font Ultra-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.201776;stroke-dasharray:none;stroke-opacity:1"
+         x="100.43398"
+         y="154.7952"
+         id="text3125"
+         transform="skewX(-15)"><tspan
+           sodipodi:role="line"
+           id="tspan3123"
+           style="font-size:19.3401px;fill:#ffffff;stroke-width:0.201776"
+           x="100.43398"
+           y="154.7952">C</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:19.3401px;font-family:'SauceCodePro Nerd Font';-inkscape-font-specification:'SauceCodePro Nerd Font Ultra-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.201776;stroke-dasharray:none;stroke-opacity:1"
+         x="122.16257"
+         y="154.7952"
+         id="text3129"
+         transform="skewX(-15)"><tspan
+           sodipodi:role="line"
+           id="tspan3127"
+           style="font-size:19.3401px;fill:#ffffff;stroke-width:0.201776"
+           x="122.16257"
+           y="154.7952">K</tspan></text>
+    </g>
+    <g
+       id="g335"
+       transform="translate(-93.618386,65.752314)">
+      <rect
+         style="fill:currentColor;stroke:none;stroke-width:0.205304;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2900-6"
+         width="19.035482"
+         height="19.706982"
+         x="135.27274"
+         y="143.88503"
+         rx="3.0456772"
+         transform="matrix(1,0,-0.25881905,0.96592583,0,0)" />
+      <rect
+         style="fill:currentColor;stroke:none;stroke-width:0.205304;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2900-3-1"
+         width="19.035482"
+         height="19.706982"
+         x="157.33008"
+         y="143.88503"
+         rx="3.0456772"
+         transform="matrix(1,0,-0.25881905,0.96592583,0,0)" />
+      <rect
+         style="fill:currentColor;stroke:none;stroke-width:0.205304;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2900-31"
+         width="19.035482"
+         height="19.706982"
+         x="179.38745"
+         y="143.88503"
+         rx="3.0456772"
+         transform="matrix(1,0,-0.25881905,0.96592583,0,0)" />
+      <rect
+         style="fill:currentColor;stroke:none;stroke-width:0.205304;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2900-3-94"
+         width="19.035482"
+         height="19.706982"
+         x="201.44482"
+         y="143.88503"
+         rx="3.0456772"
+         transform="matrix(1,0,-0.25881905,0.96592583,0,0)" />
+      <rect
+         style="fill:currentColor;stroke:none;stroke-width:0.205304;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2900-7"
+         width="19.035482"
+         height="19.706982"
+         x="223.50218"
+         y="143.88503"
+         rx="3.0456772"
+         transform="matrix(1,0,-0.25881905,0.96592583,0,0)" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:19.3401px;font-family:'SauceCodePro Nerd Font';-inkscape-font-specification:'SauceCodePro Nerd Font Ultra-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.201776;stroke-dasharray:none;stroke-opacity:1"
+         x="144.79047"
+         y="154.7952"
+         id="text3133"
+         transform="skewX(-15)"><tspan
+           sodipodi:role="line"
+           id="tspan3131"
+           style="font-size:19.3401px;fill:#ffffff;stroke-width:0.201776"
+           x="144.79047"
+           y="154.7952">N</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:19.3401px;font-family:'SauceCodePro Nerd Font';-inkscape-font-specification:'SauceCodePro Nerd Font Ultra-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.201776;stroke-dasharray:none;stroke-opacity:1"
+         x="166.84781"
+         y="154.7952"
+         id="text3137"
+         transform="skewX(-15)"><tspan
+           sodipodi:role="line"
+           id="tspan3135"
+           style="font-size:19.3401px;fill:#ffffff;stroke-width:0.201776"
+           x="166.84781"
+           y="154.7952">O</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:19.3401px;font-family:'SauceCodePro Nerd Font';-inkscape-font-specification:'SauceCodePro Nerd Font Ultra-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.201776;stroke-dasharray:none;stroke-opacity:1"
+         x="188.9052"
+         y="154.7952"
+         id="text3141"
+         transform="skewX(-15)"><tspan
+           sodipodi:role="line"
+           id="tspan3139"
+           style="font-size:19.3401px;fill:#ffffff;stroke-width:0.201776"
+           x="188.9052"
+           y="154.7952">T</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:19.3401px;font-family:'SauceCodePro Nerd Font';-inkscape-font-specification:'SauceCodePro Nerd Font Ultra-Bold';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.201776;stroke-dasharray:none;stroke-opacity:1"
+         x="210.96257"
+         y="154.7952"
+         id="text3145"
+         transform="skewX(-15)"><tspan
+           sodipodi:role="line"
+           id="tspan3143"
+           style="font-size:19.3401px;fill:#ffffff;stroke-width:0.201776"
+           x="210.96257"
+           y="154.7952">T</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:19.3401px;font-family:'SauceCodePro Nerd Font';-inkscape-font-specification:'SauceCodePro Nerd Font Ultra-Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.201776;stroke-dasharray:none;stroke-opacity:1"
+         x="233.01993"
+         y="154.7952"
+         id="text3149"
+         transform="skewX(-15)"><tspan
+           sodipodi:role="line"
+           id="tspan3147"
+           style="font-size:19.3401px;fill:#ffffff;fill-opacity:1;stroke-width:0.201776"
+           x="233.01993"
+           y="154.7952">S</tspan></text>
+    </g>
+  </g>
+</svg>

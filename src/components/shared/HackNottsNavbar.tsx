@@ -4,6 +4,7 @@ import {ReactComponent as HackNottsLogo} from "@assets/hacknotts_beeb_logo.svg"
 // import {useColorMode, ColorMode} from "@utils/ColorModeContext.tsx";
 
 interface HackNottsBaseProps {
+    hideTitle?: boolean
 }
 
 // const colorModes : ColorMode[] = ["light", "dark"]
@@ -20,11 +21,11 @@ function HackNottsNavbar(props : HackNottsBaseProps): JSX.Element {
     //     setColorMode(colorModes[currentColorModeIndex])
     // }, [currentColorModeIndex])
     
-    return <Navbar expand="lg" bg="light" variant="light" sticky="top" className="w-100">
-        <Container className="w-100">
-            <Navbar.Brand href="/" className="d-flex flex-nowrap align-items-center">
-                <HackNottsLogo style={{maxHeight:"1.6rem", width: "auto"}} className="logo text-primary"/>
-            </Navbar.Brand>
+    return <Navbar expand={props.hideTitle ? "sm": "lg"} bg="light" variant="light" sticky="top" className="w-100">
+        <Container className={`w-100 ${props.hideTitle ? "flex-row-reverse" : "flex-row"}`}>
+            {!props.hideTitle ? <Navbar.Brand href="/" className="d-flex flex-nowrap align-items-center">
+                <HackNottsLogo style={{maxHeight:"1.6rem", width: "auto"}} className="text-primary"/>
+            </Navbar.Brand> : null}
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
@@ -35,7 +36,7 @@ function HackNottsNavbar(props : HackNottsBaseProps): JSX.Element {
                     {/*<Button onClick={handleNextColorMode}>*/}
                     {/*    {{"light": "MICRO", "dark": "SPECTRUM"}[colorModes[currentColorModeIndex]]}*/}
                     {/*</Button>*/}
-                    <Button href="/#tickets" className="m-1 text-light">Get Tickets</Button>
+                    <Button href="/#tickets" className="m-1 text-secondary comic fw-bolder">Get Tickets</Button>
                 </Nav>
             </Navbar.Collapse>
         </Container>

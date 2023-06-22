@@ -7,27 +7,10 @@ $gradient: linear-gradient(135deg, rgba(255,255,255,.40) 40%, rgba(255,255,255,0
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
-@font-face {
-    font-family: "IBM Plex Serif";
-    src: url(assets/IBMPlexSerif-Regular.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: "SourceCodePro ExtraBold";
-    src: url(assets/SourceCodePro-ExtraBold.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: "Comic Neue";
-    src: url(assets/ComicNeue-Regular.ttf) format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=IBM+Plex+Sans&display=swap');
 
 * {
-    font-family: "Source Code Pro ExtraBold", monospace;
-}
-
-.logo tspan {
-    font-family: "Source Code Pro ExtraBold", monospace !important;
+    font-family: "IBM Plex Sans", sans-serif;
 }
 
 .right-chevron {
@@ -41,7 +24,35 @@ $gradient: linear-gradient(135deg, rgba(255,255,255,.40) 40%, rgba(255,255,255,0
 }
 
 .comic {
-    font-family: "Comic Neue", sans-serif;
+    font-family: "Comic Neue", cursive;
+}
+
+.beeb-back {
+    background-image: url(assets/beeb.png);
+    background-position: 50% 55%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+@include media-breakpoint-up(sm) {
+    .beeb-back {
+        background-position: 80% 65%;
+        background-size: 80%;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .beeb-back {
+        background-position: 70% 50%;
+        background-size: 70%;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .beeb-back {
+        background-position: 70% 50%;
+        background-size: contain;
+    }
 }
 
 div#root {

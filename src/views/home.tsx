@@ -2,7 +2,7 @@ import HackNottsDecoratedPage from '@components/shared/HackNottsDecoratedPage.ts
 import {Col, Container, Row, Stack} from "react-bootstrap";
 import { animated, useSpring } from "@react-spring/web";
 import prizeImage from "@assets/rtx-4080-review-07.jpg"
-import beeb from "@assets/beeb.png"
+import {ReactComponent as HackNottsStackedLogo} from "@assets/hacknotts_stacked_logo.svg"
 import {ReactComponent as HackNottsLogo} from "@assets/hacknotts_logo.svg"
 import HackNottsSectionHeader from '@components/shared/HackNottsSectionHeader';
 
@@ -59,12 +59,13 @@ export default function Home() {
         })
     }
 
-    return <HackNottsDecoratedPage>
-        <Container className="mt-3 mb-3" style={{backgroundImage: `url(${beeb})`, backgroundPosition: "50% 40%", backgroundSize: "contain", backgroundRepeat: "no-repeat"}}>
+    return <HackNottsDecoratedPage hideTitle={true}>
+        <Container className="mt-3 mb-3 beeb-back">
             <Col className="text-dark d-flex flex-column align-items-stretch">
                 <Row>
                     <Col>
-                        <h4 className="fw-bolder">Nottingham's Premier Hackathon!</h4>
+                        <HackNottsStackedLogo className="h-auto text-primary mb-3" style={{maxWidth: "60vw"}}/>
+                        <h4 className="fw-bolder">Nottingham's Premier<br/>Hackathon!</h4>
                         <h6>
                             <span className="bg-light">
                                 Volume. 9 No. 2<br/>
@@ -78,9 +79,9 @@ export default function Home() {
                             onMouseEnter={handleMouseEnterPrizes}
                             onMouseLeave={handleMouseLeavePrizes}
                             href="/#prizes"
-                            style={{maxWidth: 200, height: "auto", ...prizeSprings}}>
+                            style={{maxWidth: 200, height: 200, ...prizeSprings}}>
                             <div className="h-50 p-3 m-0 text-light text-center d-flex flex-row align-items-center" style={{backgroundImage: `url(${prizeImage})`, backgroundPosition: "50% 50%",  backgroundSize: "cover"}}>
-                                <h1 style={{fontSize: 80}} className="w-100 m-0 ms-4">?</h1>
+                                <h1 style={{fontSize: 90}} className="w-100 m-0 ms-4">?</h1>
                             </div>
                             <div className="h-50 p-3 m-0 text-center text-light d-flex flex-row align-items-center">
                                 <h5 className="w-100 m-0 ms-4">Win Fabulous Prizes!</h5>
@@ -106,8 +107,8 @@ export default function Home() {
                         className="w-auto text-decoration-none bg-primary right-chevron p-3 m-2 d-flex flex-row border-0 align-items-center"
                         style={ticketSprings}
                         href="/#tickets">
-                        <h2 className="text-secondary text-start text-nowrap comic m-0 me-4">
-                            <span className="fw-bolder fst-italic">Free Tickets!</span><br/>
+                        <h2 className="text-secondary text-start text-nowrap m-0 me-4">
+                            <span className="fw-bolder fst-italic comic">Free Tickets!</span><br/>
                             <span className="h5">Get yours now!</span>
                         </h2>
                     </animated.a>
