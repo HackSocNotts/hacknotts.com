@@ -35,6 +35,11 @@ $gradient: linear-gradient(135deg, rgba(255,255,255,.40) 40%, rgba(255,255,255,0
     mask-size: 100% 100%;
 }
 
+.prize-chevron {
+    mask: url(assets/hacknotts_prize_chevron.svg) no-repeat 50% 50%;
+    mask-size: 100% 100%;
+}
+
 .comic {
     font-family: "Comic Neue", sans-serif;
 }

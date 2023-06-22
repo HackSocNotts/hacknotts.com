@@ -1,7 +1,7 @@
 import HackNottsDecoratedPage from '@components/shared/HackNottsDecoratedPage.tsx'
 import {Col, Container, Row, Stack} from "react-bootstrap";
 import { animated, useSpring } from "@react-spring/web";
-// import prizeImage from "@assets/rtx-4080-review-07.jpg"
+import prizeImage from "@assets/rtx-4080-review-07.jpg"
 import beeb from "@assets/beeb.png"
 import {ReactComponent as HackNottsLogo} from "@assets/hacknotts_logo.svg"
 import HackNottsSectionHeader from '@components/shared/HackNottsSectionHeader';
@@ -61,8 +61,8 @@ export default function Home() {
 
     return <HackNottsDecoratedPage>
         <Container className="mt-3 mb-3" style={{backgroundImage: `url(${beeb})`, backgroundPosition: "50% 40%", backgroundSize: "contain", backgroundRepeat: "no-repeat"}}>
-            <Col className="text-dark d-flex flex-column">
-                <Row className="w-100">
+            <Col className="text-dark d-flex flex-column align-items-stretch">
+                <Row>
                     <Col>
                         <h4 className="fw-bolder">Nottingham's Premier Hackathon!</h4>
                         <h6>
@@ -72,36 +72,25 @@ export default function Home() {
                             </span>
                         </h6>
                     </Col>
-                    <Col className="d-md-flex flex-row-reverse d-none">
+                    <Col className="d-md-flex flex-row-reverse d-none mx-1">
                         <animated.a
-                            className="border-0 p-0 right-chevron text-decoration-none text-dark d-flex flex-column align-items-center justify-content-center"
+                            className="border-0 p-0 bg-dark prize-chevron text-decoration-none d-flex flex-column align-items-stretch"
                             onMouseEnter={handleMouseEnterPrizes}
                             onMouseLeave={handleMouseLeavePrizes}
                             href="/#prizes"
-                            style={{backgroundColor: "white", height: 200, width: 200, ...prizeSprings}}>
-                            <Stack gap={3} className="align-items-center h-100">
-                                <div className="w-100 bg-dark text-light text-center d-flex flex-row align-items-center">
-                                    <div style={{width: "90%"}}>
-                                        <h1 style={{fontSize: 80}} className="m-0 w-100">?</h1>
-                                    </div>
-                                </div>
-                                {/* <div className="bg-primary w-100 h-50" style={{backgroundImage: `url(${prizeImage})`, backgroundPosition: "50% 50%",  backgroundSize: "cover"}}></div> */}
-                                <div className="w-100 text-center d-flex flex-row align-items-center">
-                                    <div style={{width: "90%"}}>
-                                        <h5 className="fw-bolder m-3">Win Fabulous Prizes!</h5>
-                                    </div>
-                                </div>
-                            </Stack>
+                            style={{maxWidth: 200, height: "auto", ...prizeSprings}}>
+                            <div className="h-50 p-3 m-0 text-light text-center d-flex flex-row align-items-center" style={{backgroundImage: `url(${prizeImage})`, backgroundPosition: "50% 50%",  backgroundSize: "cover"}}>
+                                <h1 style={{fontSize: 80}} className="w-100 m-0 ms-4">?</h1>
+                            </div>
+                            <div className="h-50 p-3 m-0 text-center text-light d-flex flex-row align-items-center">
+                                <h5 className="w-100 m-0 ms-4">Win Fabulous Prizes!</h5>
+                            </div>
                         </animated.a>
                     </Col>
                 </Row>
                 <Row className="flex-grow-1" style={{minHeight: "30vh"}}>
                     <Stack gap={1} className="justify-content-end" style={{maxWidth: "20rem"}}>
-                        <h6 className="text-muted fw-bolder"><span className="bg-light">Open to all</span></h6>
-                        <h6 style={{width: "auto"}} className="text-muted fw-bolder">
-                            <span className="bg-light">Build your own<br />Anything!</span>
-                        </h6>
-                        <h5 style={{width: "auto"}} className="fw-bolder">
+                        <h5 className="fw-bolder">
                             <span className="bg-light">
                                 University of Nottingham<br />
                                 Computer Science Department<br/>
@@ -114,11 +103,8 @@ export default function Home() {
                     <animated.a
                         onMouseEnter={handleMouseEnterTickets}
                         onMouseLeave={handleMouseLeaveTickets}
-                        className="text-decoration-none bg-primary right-chevron p-3 m-2 d-flex flex-row border-0 align-items-center"
-                        style={{
-                            width:"auto",
-                            ...ticketSprings
-                        }}
+                        className="w-auto text-decoration-none bg-primary right-chevron p-3 m-2 d-flex flex-row border-0 align-items-center"
+                        style={ticketSprings}
                         href="/#tickets">
                         <h2 className="text-secondary text-start text-nowrap comic m-0 me-4">
                             <span className="fw-bolder fst-italic">Free Tickets!</span><br/>
@@ -137,10 +123,10 @@ export default function Home() {
                         <div style={{borderRadius: 100, border: "4px solid", width: 16}} />
                         <div style={{borderRadius: 100, border: "4px solid", width: 16}} />
                     </Stack>
-                    <div className="flex-grow-1 d-flex flex-row align-items-stretch justify-content-end">
-                        <div className="h-100 d-flex flex-column text-center text-capitalize justify-content-between mx-3">
-                            <p className="m-0" style={{fontSize: "1.1rem"}}>HACKSOC NOTTINGHAM</p>
-                            <p className="m-0" style={{fontSize: "1rem"}}>MICROCOMPUTER SYSTEM</p>
+                    <div className="flex-grow-1 d-flex flex-row align-items-center justify-content-end">
+                        <div className="h-100 d-flex flex-column text-center text-uppercase justify-content-between mx-3">
+                            <p className="m-0" style={{fontSize: "1.1rem"}}>HackSoc Nottingham</p>
+                            <p className="m-0" style={{fontSize: "1rem"}}>Microcomputer System</p>
                         </div>
                         <HackNottsLogo className="text-light m-0" style={{maxHeight: 80, width: "auto"}}/>
                     </div>
