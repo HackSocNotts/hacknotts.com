@@ -24,7 +24,7 @@ function HackNottsNavbar(props : HackNottsBaseProps): JSX.Element {
     return <Navbar expand={props.hideTitle ? "sm": "lg"} bg="light" variant="light" sticky="top" className="w-100">
         <Container className={`w-100 ${props.hideTitle ? "flex-row-reverse" : "flex-row"}`}>
             {!props.hideTitle ? <Navbar.Brand href="/" className="d-flex flex-nowrap align-items-center">
-                <HackNottsLogo style={{maxHeight:"1.6rem", width: "auto"}} className="text-primary"/>
+                <HackNottsLogo style={{maxHeight:"1.6rem"}}/>
             </Navbar.Brand> : null}
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
@@ -36,7 +36,7 @@ function HackNottsNavbar(props : HackNottsBaseProps): JSX.Element {
                     {/*<Button onClick={handleNextColorMode}>*/}
                     {/*    {{"light": "MICRO", "dark": "SPECTRUM"}[colorModes[currentColorModeIndex]]}*/}
                     {/*</Button>*/}
-                    <Button href="/#tickets" className="m-1 text-secondary comic fw-bolder">Get Tickets</Button>
+                    <Button href="/#tickets" className="m-1 bg-gradient text-primary border-0 comic fw-bolder" style={{fontSize: "1.1rem"}}>Get Tickets</Button>
                 </Nav>
             </Navbar.Collapse>
         </Container>

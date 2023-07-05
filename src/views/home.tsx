@@ -104,10 +104,10 @@ export default function Home() {
                     <animated.a
                         onMouseEnter={handleMouseEnterTickets}
                         onMouseLeave={handleMouseLeaveTickets}
-                        className="w-auto text-decoration-none bg-primary right-chevron p-3 m-2 d-flex flex-row border-0 align-items-center"
+                        className="w-auto text-decoration-none bg-primary bg-gradient right-chevron p-3 m-2 d-flex flex-row border-0 align-items-center"
                         style={ticketSprings}
                         href="/#tickets">
-                        <h2 className="text-secondary text-start text-nowrap m-0 me-4">
+                        <h2 className="text-primary text-start text-nowrap m-0 me-4">
                             <span className="fw-bolder fst-italic comic">Free Tickets!</span><br/>
                             <span className="h5">Get yours now!</span>
                         </h2>
@@ -152,7 +152,7 @@ export default function Home() {
                 <div className="text-dark">
                     <p>We have various prizes you'll to want to win in several categories:</p>
                     <ul>
-                        <li><b>First place</b> - TBD</li>
+                        <li><span className='fw-bolder text-primary'>First place</span> - TBD</li>
                     </ul>
                 </div>
             </Container>

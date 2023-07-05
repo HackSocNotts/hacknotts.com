@@ -1,9 +1,11 @@
 //$enable-gradients: true;
-$primary:       #e0332c;
-$secondary:     #fdbe01;
-$light:         #edd6b2;
+$primary:       #3e3632;
+$secondary:     #f5f5dc;
+$light:         #f5f5dc;
+$dark:          #3e3632;
+$gradient: linear-gradient(135deg, rgba(242,0,41,1) 0%, rgba(242,0,41,1) 20%, rgba(253,120,1,1) 20%, rgba(253,120,1,1) 40%, rgba(242,245,64,1) 40%, rgba(242,245,64,1) 60%, rgba(72,204,49,1) 60%, rgba(72,204,49,1) 80%, rgba(20,163,253,1) 80%);
 
-$gradient: linear-gradient(135deg, rgba(255,255,255,.40) 40%, rgba(255,255,255,0) 100%);
+// $gradient: linear-gradient(135deg, rgba(255,255,255,.40) 40%, rgba(255,255,255,0) 100%);
 
 @import "node_modules/bootstrap/scss/bootstrap";
 

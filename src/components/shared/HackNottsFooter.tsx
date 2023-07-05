@@ -10,13 +10,13 @@ function HackNottsFooter(props: HackNottsFooterProps) : JSX.Element {
                 <h4 className="text-center text-light">
                     HackNotts 2024
                 </h4>
-                <h6 className="text-center text-muted">
+                <h6 className="text-center text-light">
                     November 4<small>th</small> & 5<small>th</small>
                 </h6>
             </Stack>
-            <div>
-                <h6 className="text-muted">&copy; <a className="text-secondary text-decoration-none" href="https://hacksoc.net/">HackSoc Nottingham</a></h6>
-                <h6><a className="text-secondary text-decoration-none" href="https://github.com/HackSocNotts/hacknotts.com">This site's source code</a> (MIT licensed)</h6>
+            <div className="text-light">
+                <h6>&copy; <a className="text-secondary text-decoration-none" href="https://hacksoc.net/">HackSoc Nottingham</a></h6>
+                <h6><a className="text-secondary text-decoration-underline" href="https://github.com/HackSocNotts/hacknotts.com">This site's source code</a> (MIT licensed)</h6>
             </div>
         </Container>
     </footer>
