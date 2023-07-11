@@ -16,8 +16,7 @@ function Sponsors() : JSX.Element {
                     we have a range of flexible packages available
                     to cater for any budget or other requirements.
                     Take a look at our <a href="/sponsor-info.pdf">Sponsorship Information Booklet</a> for more details and prices, and then feel free to
-                    get in contact with the <a href="mailto:committee@hacksocnotts.co.uk">committee</a> or our
-                    <a href="mailto:daudi.wampamba@hacksocnotts.co.uk">lead organiser</a> and we can set up a meeting!
+                    get in contact with the <a href="mailto:committee@hacksocnotts.co.uk">committee</a> or our <a href="mailto:daudi.wampamba@hacksocnotts.co.uk">lead organiser</a> and we can set up a meeting!
                 </p>
                 <p>
                     Thank you for considering us — HackNotts is only

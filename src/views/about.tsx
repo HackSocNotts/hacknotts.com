@@ -1,6 +1,7 @@
 import HackNottsDecoratedPage from "@components/shared/HackNottsDecoratedPage";
 import HackNottsSectionHeader from "@components/shared/HackNottsSectionHeader";
-import { Container, Stack } from "react-bootstrap";
+import { Container, Figure, Stack } from "react-bootstrap";
+import volunteeers from "@assets/volunteers.jpg"
 
 function About() : JSX.Element {
     return <HackNottsDecoratedPage>
@@ -38,6 +39,49 @@ function About() : JSX.Element {
                     <div className="d-flex flex-column align-items-center">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1201.8687271487627!2d-1.187196!3d52.953147!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879c209bfffffff%3A0xaf426646771a25ac!2sSchool%20of%20Computer%20Science!5e0!3m2!1sen!2suk!4v1687441425435!5m2!1sen!2suk" width="600" height="450" style={{border:0}} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
+                </div>
+            </Container>
+            <Container>
+                <HackNottsSectionHeader
+                    title="Discord Server"
+                    id="discord"
+                />
+                <div>
+                    <p>
+                        The invite link will be sent out with your ticket comfirmation! You can discuss travel arrangements, any questions you may have and anything else HackNotts related there :).
+                    </p>
+                    <p>
+                        This will also be one of our main methods to communicate, and important announcements will be made there along with directions to campus and much more. So please join to stay up to date.
+                    </p>
+                </div>
+            </Container>
+            <Container>
+                <HackNottsSectionHeader
+                    title="Volunteering"
+                    id="volunteering"
+                />
+                <div>
+                    <p>
+                        Been to a hackathon before? Well of course you are welcome to participate again, but without the volunteers we would not be able to host a hackathon. We generally don't encourage volunteering if you have never been to a hackathon before as it is useful to know how a hackathon works beforehand.
+                    </p>
+                    <h3>What does it involve?</h3>
+                    <p>
+                        Volunteering will involve helping run the hackathon on the day alongside the organisers, chaperoning people around the building(s) and generally lending a hand. You'll still get all the free food and drinks alongside the hackers, but you'll also get a free t-shirt (always a bonus) ;-)
+                    </p>
+                    <p>
+                        Please be aware that as a volunteer you are unable to submit anything for HackNotts '23. You can always work on a project, but it cannot be submitted for judging. If you have any questions about volunteering then please contact us via email or on the Discord server (invitations sent when ordering a ticket). You will still have to get a, but it will be a volunteering ticket. Please double check before ordering what ticket you have.
+                    </p>
+                    <p>
+                        Volunteering is a great opportunity to build on many skills such as leadership, mentoring and communication. These are all great qualities to have for your career and your important CV.
+                    </p>
+                    <h3>Conclusion</h3>
+                    <p>
+                        Each year we receive so much positive feedback from our volunteers, hackers and sponsors. We hope that this year is no different. We look forward to seeing all of you in February 2023! Until then, if you have any questions then you can email us or use the Discord server. Thank you!
+                    </p>
+                    <Figure>
+                        <Figure.Image src={volunteeers}/>
+                        <Figure.Caption className="text-center">The Organisers and Volunteers at the end of HackNotts '23</Figure.Caption>
+                    </Figure>
                 </div>
             </Container>
         </Stack>

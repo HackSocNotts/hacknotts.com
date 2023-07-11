@@ -1,6 +1,6 @@
 //$enable-gradients: true;
 $primary:       #3e3632;
-$secondary:     #f5f5dc;
+$secondary:     #655e56;
 $light:         #f5f5dc;
 $dark:          #3e3632;
 $gradient: linear-gradient(135deg, rgba(242,0,41,1) 0%, rgba(242,0,41,1) 20%, rgba(253,120,1,1) 20%, rgba(253,120,1,1) 40%, rgba(242,245,64,1) 40%, rgba(242,245,64,1) 60%, rgba(72,204,49,1) 60%, rgba(72,204,49,1) 80%, rgba(20,163,253,1) 80%);
@@ -36,6 +36,10 @@ $gradient: linear-gradient(135deg, rgba(242,0,41,1) 0%, rgba(242,0,41,1) 20%, rg
     background-repeat: no-repeat;
 }
 
+.logo {
+    width: 100%;
+}
+
 @include media-breakpoint-up(sm) {
     .beeb-back {
         background-position: 80% 65%;
@@ -47,6 +51,10 @@ $gradient: linear-gradient(135deg, rgba(242,0,41,1) 0%, rgba(242,0,41,1) 20%, rg
     .beeb-back {
         background-position: 70% 50%;
         background-size: 70%;
+    }
+
+    .logo {
+        width: 50vw;
     }
 }
 

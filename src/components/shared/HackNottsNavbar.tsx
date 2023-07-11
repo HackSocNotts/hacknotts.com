@@ -24,7 +24,7 @@ function HackNottsNavbar(props : HackNottsBaseProps): JSX.Element {
     return <Navbar expand={props.hideTitle ? "sm": "lg"} bg="light" variant="light" sticky="top" className="w-100">
         <Container className={`w-100 ${props.hideTitle ? "flex-row-reverse" : "flex-row"}`}>
             {!props.hideTitle ? <Navbar.Brand href="/" className="d-flex flex-nowrap align-items-center">
-                <HackNottsLogo style={{maxHeight:"1.6rem"}}/>
+                <HackNottsLogo aria-label="HackNotts Home" style={{maxHeight:"3rem"}}/>
             </Navbar.Brand> : null}
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
