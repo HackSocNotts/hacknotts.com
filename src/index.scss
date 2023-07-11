@@ -1,0 +1,72 @@
+//$enable-gradients: true;
+$primary:       #3e3632;
+$secondary:     #655e56;
+$light:         #f5f5dc;
+$dark:          #3e3632;
+$gradient: linear-gradient(135deg, rgba(242,0,41,1) 0%, rgba(242,0,41,1) 20%, rgba(253,120,1,1) 20%, rgba(253,120,1,1) 40%, rgba(242,245,64,1) 40%, rgba(242,245,64,1) 60%, rgba(72,204,49,1) 60%, rgba(72,204,49,1) 80%, rgba(20,163,253,1) 80%);
+
+// $gradient: linear-gradient(135deg, rgba(255,255,255,.40) 40%, rgba(255,255,255,0) 100%);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=IBM+Plex+Sans&display=swap');
+
+* {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.right-chevron {
+    mask: url(assets/hacknotts_right_chevron.svg) no-repeat 50% 50%;
+    mask-size: 100% 100%;
+}
+
+.prize-chevron {
+    mask: url(assets/hacknotts_prize_chevron.svg) no-repeat 50% 50%;
+    mask-size: 100% 100%;
+}
+
+.comic {
+    font-family: "Comic Neue", cursive;
+}
+
+.beeb-back {
+    background-image: url(assets/hacknotts_logo_modified.svg);
+    // background-image: url(assets/beeb.png);
+    background-position: 50% 55%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    width: 100%;
+}
+
+@include media-breakpoint-up(sm) {
+    .beeb-back {
+        background-position: 80% 65%;
+        background-size: 80%;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .beeb-back {
+        background-position: 70% 50%;
+        background-size: 70%;
+    }
+
+    .logo {
+        width: 50vw;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .beeb-back {
+        background-position: 70% 50%;
+        background-size: contain;
+    }
+}
+
+div#root {
+    width: 100vw;
+    background-color: $light;
+}
