@@ -3,7 +3,7 @@ import {Container, Stack} from "react-bootstrap";
 interface HackNottsFooterProps {
 }
 
-function HackNottsFooter(props: HackNottsFooterProps) : JSX.Element {
+function HackNottsFooter(_props: HackNottsFooterProps) : JSX.Element {
     return <footer className="bg-primary w-100">
         <Container className="pt-3 pb-3 d-flex flex-column" style={{minHeight: 180}}>
             <Stack className="align-items-stretch">
