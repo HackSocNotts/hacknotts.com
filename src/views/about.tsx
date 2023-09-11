@@ -12,9 +12,9 @@ function About() : JSX.Element {
                     id="what"
                 />
                 <div>
-                    <p>HackNotts is an annual <a href="https://en.wikipedia.org/wiki/Hackathon" target="_blank">hackathon</a> hosted by <a href="https://hacksocnotts.co.uk/" target="_blank">HackSoc</a> at the University of Nottingham. It's a two-day overnight hackathon for all skill levels taking place on February 11<sup>th</sup> and 12<sup>th</sup> 2023.</p>
+                    <p>HackNotts is an annual <a href="https://en.wikipedia.org/wiki/Hackathon" target="_blank">hackathon</a> hosted by <a href="https://hacksocnotts.co.uk/" target="_blank">HackSoc</a> at the University of Nottingham. It's a two-day overnight hackathon for all skill levels taking place on November 4<sup>th</sup> and 5<sup>th</sup> 2023.</p>
                     <p>This is a great opportunity to connect with like-minded people and discuss new ideas and projects. Teams are not mandatory, as said previously. There will be loads of opportunities to find one though, including a team building workshop on the day along with the <b>#find-a-team</b> Discord channel. Aside from the hacking, workshops and food, there will also be games and other events to keep you entertained.</p>
-                    <p>There will be numerous workshops during the event with a variety of topics, from hardware to software and life skills. There will be something for everyone! All meals and drinks will be provided for free including lunch on both days with dinner on the 11<sup>th</sup> and breakfast on the 12<sup>th</sup>. Feel free to bring anything else as well to keep you going, just please be thoughtful of any possible allergic reactions people could have to certain foods (ie nut allergies).</p>
+                    <p>There will be numerous workshops during the event with a variety of topics, from hardware to software and life skills. There will be something for everyone! All meals and drinks will be provided for free including lunch on both days with dinner on the 4<sup>th</sup> and breakfast on the 5<sup>th</sup>. Feel free to bring anything else as well to keep you going, just please be thoughtful of any possible allergic reactions people could have to certain foods (ie nut allergies).</p>
                 </div>
             </Container>
             <Container>
@@ -69,14 +69,14 @@ function About() : JSX.Element {
                         Volunteering will involve helping run the hackathon on the day alongside the organisers, chaperoning people around the building(s) and generally lending a hand. You'll still get all the free food and drinks alongside the hackers, but you'll also get a free t-shirt (always a bonus) ;-)
                     </p>
                     <p>
-                        Please be aware that as a volunteer you are unable to submit anything for HackNotts '23. You can always work on a project, but it cannot be submitted for judging. If you have any questions about volunteering then please contact us via email or on the Discord server (invitations sent when ordering a ticket). You will still have to get a, but it will be a volunteering ticket. Please double check before ordering what ticket you have.
+                        Please be aware that as a volunteer you are unable to submit anything for the hackathon. You can always work on a project, but it cannot be submitted for judging. If you have any questions about volunteering then please contact us via email or on the Discord server (invitations sent when ordering a ticket). You will still have to get a, but it will be a volunteering ticket. Please double check before ordering what ticket you have.
                     </p>
                     <p>
                         Volunteering is a great opportunity to build on many skills such as leadership, mentoring and communication. These are all great qualities to have for your career and your important CV.
                     </p>
                     <h3>Conclusion</h3>
                     <p>
-                        Each year we receive so much positive feedback from our volunteers, hackers and sponsors. We hope that this year is no different. We look forward to seeing all of you in February 2023! Until then, if you have any questions then you can email us or use the Discord server. Thank you!
+                        Each year we receive so much positive feedback from our volunteers, hackers and sponsors. We hope that this year is no different. We look forward to seeing all of you in November 2023! Until then, if you have any questions then you can email us or use the Discord server. Thank you!
                     </p>
                     <Figure>
                         <Figure.Image src={volunteeers}/>
