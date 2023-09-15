@@ -68,10 +68,8 @@ export default function Home() {
                         <HackNottsStackedLogo className="h-auto text-primary d-none d-md-block mb-3 logo" />
                         <h4 className="fw-bolder">Nottingham's Premier<br />Hackathon!</h4>
                         <h6>
-                            <span className="bg-light">
-                                Volume. 9 No. 2<br />
-                                <span className="fw-bold h5">November 4<span className="small">th</span> & 5<span className="small">th</span></span>
-                            </span>
+                            Volume. 9 No. 2<br />
+                            <span className="fw-bold h5">November 4<span className="small">th</span> & 5<span className="small">th</span></span>
                         </h6>
                     </Col>
                     <Col className="d-md-flex flex-row-reverse d-none mx-1">
@@ -98,11 +96,9 @@ export default function Home() {
                 <Row className="flex-grow-1" style={{ minHeight: "30vh" }}>
                     <Stack gap={1} className="justify-content-end" style={{ maxWidth: "20rem" }}>
                         <h5 className="fw-bolder">
-                            <span className="bg-light">
-                                University of Nottingham<br />
-                                Computer Science Department<br />
-                                Room A32
-                            </span>
+                            University of Nottingham<br />
+                            Computer Science Department<br />
+                            Room A32
                         </h5>
                     </Stack>
                 </Row>

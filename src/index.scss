@@ -16,7 +16,9 @@ $gradient: linear-gradient(135deg, rgba(242,0,41,1) 0%, rgba(242,0,41,1) 20%, rg
 }
 
 .right-chevron {
-    mask: url(assets/hacknotts_right_chevron.svg) no-repeat 50% 50%;
+    mask-image: url(assets/hacknotts_right_chevron.svg);
+    mask-repeat: no-repeat;
+    mask-position: 50% 50%;
     mask-size: 100% 100%;
 }
 
