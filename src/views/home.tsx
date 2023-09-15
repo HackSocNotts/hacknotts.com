@@ -65,7 +65,7 @@ export default function Home() {
             <Col className="text-dark d-flex flex-column align-items-stretch">
                 <Row>
                     <Col>
-                        <HackNottsStackedLogo className="h-auto text-primary d-none d-md-block mb-3 logo" />
+                        <HackNottsStackedLogo className="h-auto text-primary d-none d-md-block mb-3 logo" style={{maxWidth: "900px"}}/>
                         <h4 className="fw-bolder">Nottingham's Premier<br />Hackathon!</h4>
                         <h6>
                             Volume. 9 No. 2<br />
