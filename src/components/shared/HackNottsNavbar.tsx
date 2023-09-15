@@ -23,7 +23,7 @@ function HackNottsNavbar(props : HackNottsBaseProps): JSX.Element {
     // }, [currentColorModeIndex])
     
     return <Navbar expand={props.hideTitle ? "sm": "lg"} bg="light" variant="light" sticky="top" className="w-100">
-        <Container className={`w-100 ${props.hideTitle ? "flex-row-reverse" : "flex-row"} flex-nowrap`}>
+        <Container className={`w-100 ${props.hideTitle ? "flex-row-reverse" : "flex-row"}`}>
             {!props.hideTitle ? <Navbar.Brand href="/" className="d-flex flex-nowrap align-items-center">
                 <HackNottsLogo aria-label="HackNotts Home" style={{maxHeight:"3rem"}} className={props.titleBreakpoint ? `d-block d-${props.titleBreakpoint}-none` : undefined}/>
             </Navbar.Brand> : null}
