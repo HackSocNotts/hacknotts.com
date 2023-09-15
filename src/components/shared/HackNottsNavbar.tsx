@@ -4,7 +4,8 @@ import {ReactComponent as HackNottsLogo} from "@assets/hacknotts_beeb_logo.svg"
 // import {useColorMode, ColorMode} from "@utils/ColorModeContext.tsx";
 
 interface HackNottsBaseProps {
-    hideTitle?: boolean
+    hideTitle?: boolean;
+    titleBreakpoint?: "xs" | "md" | "lg";
 }
 
 // const colorModes : ColorMode[] = ["light", "dark"]
@@ -22,9 +23,9 @@ function HackNottsNavbar(props : HackNottsBaseProps): JSX.Element {
     // }, [currentColorModeIndex])
     
     return <Navbar expand={props.hideTitle ? "sm": "lg"} bg="light" variant="light" sticky="top" className="w-100">
-        <Container className={`w-100 ${props.hideTitle ? "flex-row-reverse" : "flex-row"}`}>
+        <Container className={`w-100 ${props.hideTitle ? "flex-row-reverse" : "flex-row"} flex-nowrap`}>
             {!props.hideTitle ? <Navbar.Brand href="/" className="d-flex flex-nowrap align-items-center">
-                <HackNottsLogo aria-label="HackNotts Home" style={{maxHeight:"3rem"}}/>
+                <HackNottsLogo aria-label="HackNotts Home" style={{maxHeight:"3rem"}} className={props.titleBreakpoint ? `d-block d-${props.titleBreakpoint}-none` : undefined}/>
             </Navbar.Brand> : null}
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">

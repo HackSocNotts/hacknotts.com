@@ -60,12 +60,12 @@ export default function Home() {
         })
     }
 
-    return <HackNottsDecoratedPage hideTitle={true}>
+    return <HackNottsDecoratedPage hideTitle={false} titleBreakpoint={"md"}>
         <Container className="mt-3 mb-3 beeb-back">
             <Col className="text-dark d-flex flex-column align-items-stretch">
                 <Row>
                     <Col>
-                        <HackNottsStackedLogo className="h-auto text-primary mb-3 logo" />
+                        <HackNottsStackedLogo className="h-auto text-primary d-none d-md-block mb-3 logo" />
                         <h4 className="fw-bolder">Nottingham's Premier<br />Hackathon!</h4>
                         <h6>
                             <span className="bg-light">
