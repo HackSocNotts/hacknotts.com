@@ -1,6 +1,5 @@
-import { Container } from "react-bootstrap"
 import { useEffect } from 'react';
-
+import TitoWidget from "@components/shared/TitoWidget"
 
 
 interface TicketsProps {
@@ -20,11 +19,11 @@ function Tickets(_props: TicketsProps): JSX.Element {
         }
     }, []);
 
-    return <Container>
-        <tito-widget
+    return <div className="m-0">
+        <TitoWidget
             event="hacksocnottingham/hacknotts84"
-        ></tito-widget>
-    </Container>
+        ></TitoWidget>
+    </div>
 }
 
 export default Tickets;
