@@ -1,10 +1,11 @@
 import HackNottsDecoratedPage from '@components/shared/HackNottsDecoratedPage.tsx'
-import {Col, Container, Row, Stack} from "react-bootstrap";
+import { Col, Container, Row, Stack } from "react-bootstrap";
 import { animated, useSpring } from "@react-spring/web";
 // import prizeImage from "@assets/rtx-4080-review-07.jpg"
-import {ReactComponent as HackNottsStackedLogo} from "@assets/hacknotts_stacked_logo.svg"
-import {ReactComponent as HackNottsLogo} from "@assets/hacknotts_logo.svg"
+import { ReactComponent as HackNottsStackedLogo } from "@assets/hacknotts_stacked_logo.svg"
+import { ReactComponent as HackNottsLogo } from "@assets/hacknotts_logo.svg"
 import HackNottsSectionHeader from '@components/shared/HackNottsSectionHeader';
+import Tickets from '@components/home/tickets';
 
 export default function Home() {
     const [ticketSprings, ticketApi] = useSpring(() => ({
@@ -59,18 +60,16 @@ export default function Home() {
         })
     }
 
-    return <HackNottsDecoratedPage hideTitle={true}>
+    return <HackNottsDecoratedPage hideTitle={false} titleBreakpoint={"md"}>
         <Container className="mt-3 mb-3 beeb-back">
             <Col className="text-dark d-flex flex-column align-items-stretch">
                 <Row>
                     <Col>
-                        <HackNottsStackedLogo className="h-auto text-primary mb-3 logo"/>
-                        <h4 className="fw-bolder">Nottingham's Premier<br/>Hackathon!</h4>
+                        <HackNottsStackedLogo className="h-auto text-primary d-none d-md-block mb-3 logo" />
+                        <h4 className="fw-bolder">Nottingham's Premier<br />Hackathon!</h4>
                         <h6>
-                            <span className="bg-light">
-                                Volume. 9 No. 2<br/>
-                                <span className="fw-bold h5">November 4<span className="small">th</span> & 5<span className="small">th</span></span>
-                            </span>
+                            Volume. 9 No. 2<br />
+                            <span className="fw-bold h5">November 4<span className="small">th</span> & 5<span className="small">th</span></span>
                         </h6>
                     </Col>
                     <Col className="d-md-flex flex-row-reverse d-none mx-1">
@@ -79,14 +78,14 @@ export default function Home() {
                             onMouseEnter={handleMouseEnterPrizes}
                             onMouseLeave={handleMouseLeavePrizes}
                             href="/#prizes"
-                            style={{maxWidth: 200, height: 200, ...prizeSprings}}>
+                            style={{ maxWidth: 200, height: 200, ...prizeSprings }}>
                             <div
                                 className="h-50 p-3 m-0 text-light text-center d-flex flex-row align-items-center bg-secondary"
                                 style={{
                                     // backgroundImage: `url(${prizeImage})`, backgroundPosition: "50% 50%",  backgroundSize: "cover",
                                 }}
                             >
-                                <h1 style={{fontSize: 90}} className="w-100 m-0 ms-4">?</h1>
+                                <h1 style={{ fontSize: 90 }} className="w-100 m-0 ms-4">?</h1>
                             </div>
                             <div className="h-50 p-3 m-0 text-center text-light d-flex flex-row align-items-center">
                                 <h5 className="w-100 m-0 ms-4">Win Fabulous Prizes!</h5>
@@ -94,14 +93,12 @@ export default function Home() {
                         </animated.a>
                     </Col>
                 </Row>
-                <Row className="flex-grow-1" style={{minHeight: "30vh"}}>
-                    <Stack gap={1} className="justify-content-end" style={{maxWidth: "20rem"}}>
+                <Row className="flex-grow-1" style={{ minHeight: "30vh" }}>
+                    <Stack gap={1} className="justify-content-end" style={{ maxWidth: "20rem" }}>
                         <h5 className="fw-bolder">
-                            <span className="bg-light">
-                                University of Nottingham<br />
-                                Computer Science Department<br/>
-                                Room A32
-                            </span>
+                            University of Nottingham<br />
+                            Computer Science Department<br />
+                            Room A32
                         </h5>
                     </Stack>
                 </Row>
@@ -113,7 +110,7 @@ export default function Home() {
                         style={ticketSprings}
                         href="/#tickets">
                         <h2 className="text-primary text-start text-nowrap m-0 me-4">
-                            <span className="fw-bolder fst-italic comic">Free Tickets!</span><br/>
+                            <span className="fw-bolder fst-italic comic">Free Tickets!</span><br />
                             <span className="h5">Get yours now!</span>
                         </h2>
                     </animated.a>
@@ -124,17 +121,17 @@ export default function Home() {
             <Container className="pt-3 pb-3 h-100">
                 <div className="d-flex flex-row h-100 flex-nowrap align-items-stretch">
                     <Stack className="align-items-stretch" direction="horizontal" gap={2}>
-                        <div style={{borderRadius: 100, border: "4px solid", width: 16}} />
-                        <div style={{borderRadius: 100, border: "4px solid", width: 16}} />
-                        <div style={{borderRadius: 100, border: "4px solid", width: 16}} />
-                        <div style={{borderRadius: 100, border: "4px solid", width: 16}} />
+                        <div style={{ borderRadius: 100, border: "4px solid", width: 16 }} />
+                        <div style={{ borderRadius: 100, border: "4px solid", width: 16 }} />
+                        <div style={{ borderRadius: 100, border: "4px solid", width: 16 }} />
+                        <div style={{ borderRadius: 100, border: "4px solid", width: 16 }} />
                     </Stack>
                     <div className="flex-grow-1 d-flex flex-row align-items-center justify-content-end">
                         <div className="h-100 d-flex flex-column text-center text-uppercase justify-content-between mx-3">
-                            <p className="m-0" style={{fontSize: "1.1rem"}}>HackSoc Nottingham</p>
-                            <p className="m-0" style={{fontSize: "1rem"}}>Microcomputer System</p>
+                            <p className="m-0" style={{ fontSize: "1.1rem" }}>HackSoc Nottingham</p>
+                            <p className="m-0" style={{ fontSize: "1rem" }}>Microcomputer System</p>
                         </div>
-                        <HackNottsLogo className="text-light m-0" style={{maxHeight: 80, width: "auto"}}/>
+                        <HackNottsLogo className="text-light m-0" style={{ maxHeight: 80, width: "auto" }} />
                     </div>
                 </div>
             </Container>
@@ -163,7 +160,7 @@ export default function Home() {
             </Container>
             <Container>
                 <HackNottsSectionHeader id="tickets" title="Tickets" />
-                <div>TBD</div>
+                <Tickets />
             </Container>
         </Stack>
     </HackNottsDecoratedPage>
