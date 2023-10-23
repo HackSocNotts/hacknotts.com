@@ -7,6 +7,11 @@ import { ReactComponent as HackNottsLogo } from "@assets/hacknotts_logo.svg"
 import HackNottsSectionHeader from '@components/shared/HackNottsSectionHeader';
 import Tickets from '@components/home/tickets';
 
+import {ReactComponent as CapOneLogo} from "@assets/sponsors/capitalone.svg";
+import FrasersLogo from "@assets/sponsors/frasers.png";
+import {ReactComponent as IntelLogo } from "@assets/sponsors/intel.svg";
+import {ReactComponent as HackUkLogo } from "@assets/sponsors/hackuk.svg";
+
 export default function Home() {
     const [ticketSprings, ticketApi] = useSpring(() => ({
         from: { x: 0 }
@@ -139,7 +144,7 @@ export default function Home() {
         <Container>
             <p className='lead text-muted'><b>HackNotts</b> is a 24 hour hackathon brought to you by <a href="https://hacksocnotts.co.uk/" target="_blank">HackSoc</a>. Our other Sponsors can be found <a href="./sponsors">here</a>. Tickets are free! They can be found at the bottom of this page!</p>
         </Container>
-        <Stack gap={2} className="mb-3">
+        <Stack gap={2}>
             <Container>
                 <HackNottsSectionHeader id="what-is-hacknotts" title="What is HackNotts?" />
                 <div>
@@ -163,5 +168,13 @@ export default function Home() {
                 <Tickets />
             </Container>
         </Stack>
+        <Container className="p-2 mb-5">
+            <Stack gap={5} className="flex-row flex-wrap align-items-center justify-content-around h-100">
+                <img src={FrasersLogo} width="100%" style={{width: "150px"}}/>
+                <CapOneLogo width="100%" style={{width: "150px"}} />
+                <IntelLogo width="100%" style={{width: "150px"}} />
+                <HackUkLogo width="100%" style={{width: "150px"}} />
+            </Stack>
+        </Container>
     </HackNottsDecoratedPage>
 }

@@ -1,7 +1,12 @@
 import HackNottsDecoratedPage from "@components/shared/HackNottsDecoratedPage";
 import HackNottsSectionHeader from "@components/shared/HackNottsSectionHeader";
-import { Container } from "react-bootstrap";
+import { Container, Stack } from "react-bootstrap";
 import sponsorDoc from "@assets/sponsor-info.pdf"
+
+import {ReactComponent as CapOneLogo} from "@assets/sponsors/capitalone.svg";
+import FrasersLogo from "@assets/sponsors/frasers.png";
+import {ReactComponent as IntelLogo } from "@assets/sponsors/intel.svg";
+import {ReactComponent as HackUkLogo } from "@assets/sponsors/hackuk.svg";
 
 function Sponsors(): JSX.Element {
     let sponsorDocUrl = new URL(sponsorDoc, import.meta.url).href;
@@ -9,21 +14,25 @@ function Sponsors(): JSX.Element {
     return <HackNottsDecoratedPage>
         <Container>
             <HackNottsSectionHeader
-                title="Sponsors"
+                title="Our Sponsors"
                 id="sponsors"
             />
+            <Stack gap={5} className="p-3 d-flex flex-row flex-wrap justify-content-around">
+                <div style={{width: "300px"}}>
+                    <img src={FrasersLogo} width="100%"/>
+                </div>
+                <CapOneLogo width="300px" />
+                <IntelLogo width="300px" />
+                <HackUkLogo width="300px" />
+            </Stack>
             <div>
-                <p>
-                    Would you like to sponsor us? That's great!
-                    We really appreciate all of our sponsors, and
-                    we have a range of flexible packages available
-                    to cater for any budget or other requirements.
-                    Take a look at our <a href={sponsorDocUrl}>Sponsorship Information Booklet</a> for more details and prices, and then feel free to
-                    get in contact with the <a href="mailto:committee@hacksocnotts.co.uk">committee</a> or our <a href="mailto:daudi.wampamba@hacksocnotts.co.uk">lead organiser</a> and we can set up a meeting!
+                <p className="italics">
+                    HackNotts is only possible because of our amazing sponsors! It's thanks to their help that we can buy food, drinks,
+                    and prizes, while keeping our event forever free for our attendees. Look forward to seeing them at the event!
                 </p>
-                <p>
-                    Thank you for considering us — HackNotts is only
-                    possible because of our amazing sponsors.
+                <p className="text-muted">
+                    <span className="bold">P.S.</span> A special thanks to our returning sponsors at Frasers Group and Capital One, and a warm welcome to Intel who are sponsoring
+                    for the first time!
                 </p>
             </div>
         </Container>
