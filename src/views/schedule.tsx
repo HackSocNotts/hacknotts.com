@@ -2,25 +2,31 @@ import HackNottsDecoratedPage from "@components/shared/HackNottsDecoratedPage";
 import HackNottsSectionHeader from "@components/shared/HackNottsSectionHeader";
 import { Container } from "react-bootstrap";
 
-function Schedule() : JSX.Element {
+function Schedule(): JSX.Element {
     return <HackNottsDecoratedPage>
         <Container>
             <HackNottsSectionHeader
                 title="Schedule"
                 id="schedule"
             />
-            <div className="text-center fw-bold fst-italic">
-                <p>
-                    From the moment I understood the weakness of my flesh, it disgusted me. I craved the strength and certainty of steel. I aspired to the purity of the blessed machine.
-                </p>
-                <p>
-                    Your kind cling to your flesh as if it will not decay and fail you. One day the crude biomass you call a temple will wither and you will beg my kind to save you.
-                </p>
-                <p>
-                    But I am already saved. For the Machine is Immortal.
-                </p>
-            </div>
-            <p className="text-end text-muted fst-italic">&mdash; Bruce Bernard II</p>
+            <h2>Saturday 4th</h2>
+            <ul>
+                <li><b>1000</b> Doors open</li>
+                <li><b>1120</b> Opening ceremony</li>
+                <li><b>1200</b> Hacking starts!</li>
+                <li><b>1230</b> Lunch</li>
+                <li><b>1330</b> Capital One workshop</li>
+                <li><b>1430</b> Frasers workshop</li>
+                <li><b>1530</b> Intel workshop</li>
+                <li><b>1900</b> Dinner</li>
+            </ul>
+            <h2>Sunday 5th</h2>
+            <ul>
+                <li><b>0700</b> Breakfast</li>
+                <li><b>1200</b> Hacking ends!</li>
+                <li><b>1300</b> Judging starts</li>
+                <li><b>1500</b> Closing ceremony</li>
+            </ul>
         </Container>
     </HackNottsDecoratedPage>
 }
