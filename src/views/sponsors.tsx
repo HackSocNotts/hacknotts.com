@@ -1,7 +1,7 @@
 import HackNottsDecoratedPage from "@components/shared/HackNottsDecoratedPage";
 import HackNottsSectionHeader from "@components/shared/HackNottsSectionHeader";
 import { Container, Stack } from "react-bootstrap";
-import sponsorDoc from "@assets/sponsor-info.pdf"
+// import sponsorDoc from "@assets/sponsor-info.pdf"
 
 import {ReactComponent as CapOneLogo} from "@assets/sponsors/capitalone.svg";
 import FrasersLogo from "@assets/sponsors/frasers.png";
@@ -9,7 +9,7 @@ import {ReactComponent as IntelLogo } from "@assets/sponsors/intel.svg";
 import {ReactComponent as HackUkLogo } from "@assets/sponsors/hackuk.svg";
 
 function Sponsors(): JSX.Element {
-    let sponsorDocUrl = new URL(sponsorDoc, import.meta.url).href;
+    // let sponsorDocUrl = new URL(sponsorDoc, import.meta.url).href;
 
     return <HackNottsDecoratedPage>
         <Container>
