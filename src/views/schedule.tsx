@@ -14,10 +14,10 @@ function Schedule(): JSX.Element {
                 <li><b>1000</b> Doors open</li>
                 <li><b>1120</b> Opening ceremony</li>
                 <li><b>1200</b> Hacking starts!</li>
-                <li><b>1230</b> Lunch</li>
+                <li><b>1200</b> Lunch</li>
+                <li><b>1230</b> Intel workshop</li>
                 <li><b>1330</b> Capital One workshop</li>
                 <li><b>1430</b> Frasers workshop</li>
-                <li><b>1530</b> Intel workshop</li>
                 <li><b>1900</b> Dinner</li>
             </ul>
             <h2>Sunday 5th</h2>
