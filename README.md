@@ -8,3 +8,9 @@ It's deployed using GitHub pages.
 npm install --include=dev
 npm run dev
 ```
+
+## Images
+
+Images have been manually resized to be 50% size, with 90% quality. The command used was:
+
+`find . -name "FINAL.png" | parallel convert -resize 50% -quality 90 {} {.}-50.<format>`

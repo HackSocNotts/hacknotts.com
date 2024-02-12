@@ -4,9 +4,10 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom"
-import { Home, Sponsors, Schedule, About, FAQ} from '@views'
+import { Home, Sponsors, Schedule, About, FAQ } from '@views'
 import './index.scss'
 import { ColorModeProvider } from "./utils/ColorModeContext.tsx";
+import Gallery from '@views/gallery.tsx'
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
     path: "/faq",
     element: <FAQ />,
   },
+  {
+    path: "/gallery",
+    element: <Gallery />
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
