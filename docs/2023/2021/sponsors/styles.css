@@ -1,0 +1,12 @@
+article {
+    font-size: 60pt;
+    text-align: center;
+}
+
+a.sponsor {
+    width: 100%;
+}
+
+a.sponsor img {
+    width: 60%;
+}
