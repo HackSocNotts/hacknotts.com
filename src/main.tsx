@@ -34,7 +34,9 @@ const router = createBrowserRouter([
     path: "/gallery",
     element: <Gallery />
   }
-]);
+], {
+  basename: "/2023",
+});
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>

@@ -7,7 +7,7 @@
     "dev": "run-p dev:**",
     "dev:vite": "vite",
     "build": "run-p build:**",
-    "build:vite": "tsc && vite build",
+    "build:vite": "tsc && vite build --base=/2023",
     "deploy": "gh-pages -d dist",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
