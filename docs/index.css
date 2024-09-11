@@ -2,10 +2,5 @@ html {
     background-color: #101010;
     color: white;
     font-family: monospace;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
     text-align: center;
 }
