@@ -1,0 +1,290 @@
+html {
+  scroll-timeline: --page-scroll;
+}
+
+body {
+  max-width: 800px;
+  padding: 2rem;
+  margin: auto;
+}
+
+/*gives components black background and white text*/
+body, .container, .container-fluid, .row, .col, .card, .dropdown-menu, .modal-content, .alert, .table, .form-control, .btn, .navbar-custom .navbar-brand, .navbar-custom .nav-link, .item {
+    background-color: #00081C;
+    color: #fff;
+    padding: 4px;
+    font-family: "Hack", "monospace";
+    font-size: 14pt;
+  }
+
+  .navbar, .navbar-custom {
+  background-color: #00081C;
+  color: #fff;
+  padding: 4px;
+  border-bottom:5px solid #fd7801;
+  }
+
+  footer{
+    border-top:5px solid #fd7801;
+  }
+
+  @font-face {
+    font-family: "Magnificent Serif";
+    src: url("fonts/MagnificentSerif.ttf");
+  }
+
+  @keyframes grow-progress {
+    from {transform: translateY(0vw);}
+    to {transform: translateY(50vw);}
+  }
+
+.mainTitle {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    font-size: 3em;
+    font-family: "Magnificent Serif";
+    color: #fd7801;
+    text-align: center;
+  }
+
+.place-info {
+  text-align: center;
+}
+
+.h-5 {
+  height: 5%;
+}
+
+.h-10 {
+  height: 10%;
+}
+
+.h-15 {
+  height: 15%;
+}
+
+.h-25 {
+  height: 25%;
+}
+
+.h-40 {
+  height: 40%;
+}
+
+.h-80 {
+  height: 80%;
+}
+
+.h-200 {
+  height: 200%;
+}
+
+.mainAbout {
+  font-family: "Magnificent Serif";
+  text-align: center;
+  font-size: 3em;
+  color: #fd7801;
+}
+
+.highlight{
+  color: #fd7801;
+  font-weight: bold;
+}
+
+.img1 {
+  width: 22vw;
+  height: 10vw;
+  rotate: 12deg;
+  position: relative;
+  top: -3vw;
+  left: 35vw;
+}
+
+.spider {
+  width: 10vw;
+  height: 10vw;
+  position: relative;
+  top: 4vw;
+  left: 17vw;
+
+  animation: grow-progress auto linear;
+  animation-timeline: --page-scroll;
+}
+
+.subTitle {
+  text-align: center;
+  font-size: 2em;
+  color: #fd7801;
+  font-family: "Magnificent Serif";
+}
+
+.FAQTitle {
+  text-align: center;
+  font-size: 2em;
+  color: #fd7801;
+  font-family: "Hack", "monospace";
+  font-weight: bold;
+}
+
+.dayTitle {
+  text-align: center;
+  font-size: 1.5em;
+  color: #fd7801;
+  font-family: "Magnificent Serif";
+}
+
+.map {
+  align-self: center;
+  position: relative;
+  left: 12px;
+}
+.explanation {
+  text-align: center;
+}
+
+.FAQexplanation {
+  text-align: center;
+  font-size: 14pt;
+}
+
+.inLinks {
+  color: white;
+}
+
+.highlightLink{
+  color:#fd7801;
+  font-weight: bold;
+}
+
+.footerLink{
+  color:white;
+}
+
+.line {
+  background-color: #fd7801;
+  height: 1px;
+
+}
+
+.listSchedule {
+  list-style-type: none;
+  text-align: center;
+}
+
+.item{
+  padding: 10px 10px 10px 10px;
+}
+
+.subTitleLeft {
+  text-align: left;
+  font-size: 2vw;
+  color: #fd7801;
+  font-family: "Magnificent Serif";
+}
+
+.explanationLeft {
+  text-align: left;
+  font-size: 14pt;
+}
+
+.subTitleRight {
+  text-align: right;
+  font-size: 2vw;
+  color: #fd7801;
+  font-family: "Magnificent Serif";
+}
+
+.explanationRight {
+  text-align: right;
+  font-size: 14pt;
+}
+
+.imgActivityLeft {
+ height: 500px;
+  align-self: center;
+}
+
+.cornerWeb {
+  rotate: 180deg;
+  width: 20vw;
+  height: 20vw;
+}
+
+.cap1LogoImg {
+  height: auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.witchShootingGifLeft {
+  height: 4em;
+  position: relative;
+}
+
+.witchShootingGifRight {
+  height: 4em;
+  position: relative;
+  transform: scaleX(-1);
+  left: -5px;
+}
+
+.cupGifLeft {
+  height: 3em;
+  position: relative;
+  left: -10px;
+}
+
+.cupGifRight {
+  height: 3em;
+  position: relative;
+  left: -10px;
+  transform: scaleX(-1);
+}
+
+.chessGifLeft {
+  height: 4em;
+  position: relative;
+  left: -10px;
+}
+
+.chessGifRight {
+  height: 4em;
+  position: relative;
+  left: -10px;
+  transform: scaleX(-1);
+}
+
+.org-photo{
+  width: 250px;
+  height: 250px;
+  padding: 5px;
+  margin: auto;    
+  display: block;
+}
+
+a.name{
+  display:block;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #fd7801;
+}
+
+.role{
+  text-align: center;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-size: 1.1em;
+  color: #fcebdc;
+}
+
+.org-title{
+  color: #fd7801;
+  text-align: center;
+  font-size: 3em;
+  font-family: "Magnificent Serif";
+}
