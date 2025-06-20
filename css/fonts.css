@@ -1,0 +1,18 @@
+
+@font-face {
+    font-family: 'ABC Marist';
+    src: url('/fonts/abcmaristbook/ABCMaristVariable-Trial.woff2') format('woff2');
+    font-weight: 100 900; 
+    font-style: normal;   
+    font-display: swap;   
+  }
+
+
+  @font-face {
+    font-family: 'ABC Marist';
+    src: url('/fonts/abcmaristbook/ABCMaristItalitcVariable-Trial.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: italic;
+  }
+  
+  
