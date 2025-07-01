@@ -1,0 +1,114 @@
+body {
+    padding: 5em;
+    background-color: #353535;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    font-size: 10px;
+
+    text-decoration: none;
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.contents-button {
+    
+    position: relative;
+    min-width: 60em;
+    min-height: 5em;
+    background-color: rgba(15,15,15,0.8);
+    border-radius: 0.25rem;
+    color: white;
+    border: none;
+    box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.contents-button:hover {
+    background-color: rgba(30,30,30,0.8);
+}
+
+.contents-menu {
+    position: relative;
+    display: block;
+    top: 0.5rem;
+
+    background-color: rgba(15,15,15,0.8);
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.25);
+
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+
+    transform: translateY(-10px);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.contents-menu.active {
+    opacity: 1;
+    transform: translateY(0px);
+    height: auto;
+}
+
+.contents-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+/* li.contents-item {
+    padding: 1rem;
+    margin: 0.25rem;
+    border-radius: 0.25rem;
+} */
+
+li.contents-item > a:hover {
+    background-color: rgba(30,30,30,0.8);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+li.contents-item > a {
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    text-align: center;
+    display: flex;
+
+    
+    padding: 1rem;
+    margin: 0.25rem;
+    border-radius: 0.25rem;
+    
+    
+    margin-left: auto;
+    margin-right: auto;
+
+    text-decoration: none;
+    color: white;
+}
+
+.up-button {
+    position: fixed;
+    bottom: 0;
+    right: 2rem;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    position: relative;
+    top: 1.5rem;
+}
