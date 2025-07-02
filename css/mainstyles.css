@@ -76,17 +76,17 @@ hr {
     box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
 
     opacity: 0;
-    height: 0;
+    max-height: 0;
     overflow: hidden;
 
     transform: translateY(-10px);
-    transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out, max-height 0.5s ease-in-out;
 }
 
 .contents-menu.active {
     opacity: 1;
     transform: translateY(0px);
-    height: auto;
+    max-height: 50em;
 }
 
 ul {
@@ -130,6 +130,10 @@ li.contents-item > a {
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
+.up-button:hover {
+    background-color: rgba(10, 10, 10, 0.8);
+}
+
 main {
     position: relative;
     top: 1rem;
@@ -168,6 +172,7 @@ h3 {
     grid-column: 1;
     padding: 1rem;
     margin: 0.25rem;
+    border-radius: 0.25rem;
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
     border: none;
@@ -184,7 +189,7 @@ h3 {
     margin: 0.2rem;
 
     opacity: 0;
-    height: 0;
+    /* max-width: 0; */
     overflow: hidden;
 
     transform: translateX(-1.5rem);
@@ -192,8 +197,14 @@ h3 {
     
 }
 
+.activity-content.starter {
+    opacity: 1;
+    transform: translateX(-1.5rem);
+    transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out; 
+}
+
 .activity-content.active {
     opacity: 1;
     transform: translateX(0rem);
-    height: auto;
+    max-width: 50em;
 }

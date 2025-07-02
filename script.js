@@ -26,6 +26,7 @@ const activityParagraphs = [
     /* Chess */ "Chess connoisseur? Complete beginner? Join our Chess tournament to test out your chess skills or improve your game! Consisting of multiple rounds with the first being on Chess.com and the following rounds being physical, make it to the top to win our Chess prize!",
     /* Poker */ "New for 2024, Poker! Enjoy casual games (no real money) and defeat your fellow hackers to become HackNotts's best poker player!"
 ]
+var currentActivitySelected = -1;
 // ============================================================================
 
 contentsButton.addEventListener("click", showContents);
@@ -55,10 +56,20 @@ function goUp()
 
 function selectActivity(buttonIndex)
 {
-    
-    console.log(buttonIndex)
-    activityContent.classList.remove("active");
+    if(!(buttonIndex == currentActivitySelected))
+    {
+        // for animating out
+        activityContent.classList.remove("active");
+        activityContent.classList.remove("starter");
+        
+        currentActivitySelected = buttonIndex;
+        // 200ms delay before we change content and reactivate to animate back in
+        setTimeout(() => switchActivity(buttonIndex), 200);
+    }
+}
 
+function switchActivity(buttonIndex)
+{
     activityContentHeader.innerHTML = activityTitles[buttonIndex];
     activityContentText.innerHTML = activityParagraphs[buttonIndex];
 
