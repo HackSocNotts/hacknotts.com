@@ -46,14 +46,11 @@ var activityShowing = false;
 // ============================================================================
 
 // ============================= FAQs SECTION =============================
-
 const faqsContent = document.querySelector(".faqs-content");
 const faqsChildren = faqsContent.children;
-for(let i = 0; i < faqsChildren.length; i += 2)
-{
-    faqsChildren[i].addEventListener("click", () => toggleDropdown(faqsChildren[i + 1]));
-}
 
+for(let i = 0; i < faqsChildren.length; i += 2)
+    faqsChildren[i].addEventListener("click", () => toggleDropdown(faqsChildren[i + 1]));
 // ========================================================================
 
 function toggleDropdown(element)
