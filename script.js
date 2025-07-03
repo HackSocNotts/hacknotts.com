@@ -1,13 +1,23 @@
+
+// ============================= CONTENTS =============================
 const contentsButton = document.querySelector(".contents-button");
 const contentsMenu = document.querySelector(".contents-menu");
 
+contentsButton.addEventListener("click", () => toggleDropdown(contentsMenu));
+var contentsIsShowing = false;
+// ====================================================================
+
+// ========================== UP BUTTON ==========================
 const upButton = document.querySelector(".up-button");
+upButton.addEventListener("click", goUp);
+// ===============================================================
 
 // ============================= ACTIVITY SECTION =============================
 const activityButtons = (document.querySelectorAll(".activity-sidebar-button"))
 const activityContent = document.querySelector(".activity-content");
 const activityContentHeader = activityContent.children[0];
 const activityContentText = activityContent.children[1];
+
 const activityTitles = [
     "HNTV",
     "GAMING LEAGUE",
@@ -26,27 +36,29 @@ const activityParagraphs = [
     /* Chess */ "Chess connoisseur? Complete beginner? Join our Chess tournament to test out your chess skills or improve your game! Consisting of multiple rounds with the first being on Chess.com and the following rounds being physical, make it to the top to win our Chess prize!",
     /* Poker */ "New for 2024, Poker! Enjoy casual games (no real money) and defeat your fellow hackers to become HackNotts's best poker player!"
 ]
-var currentActivitySelected = -1;
-// ============================================================================
 
-contentsButton.addEventListener("click", showContents);
-upButton.addEventListener("click", goUp);
+var currentActivitySelected = -1;
 
 for(let i = 0; i < activityButtons.length; i++)
     activityButtons[i].addEventListener("click", () => selectActivity(i));
 
-var contentsIsShowing = false;
-
 var activityShowing = false;
+// ============================================================================
 
-function showContents()
+// ============================= FAQs SECTION =============================
+
+const faqsContent = document.querySelector(".faqs-content");
+const faqsChildren = faqsContent.children;
+for(let i = 0; i < faqsChildren.length; i += 2)
 {
-    if(!contentsIsShowing)
-        contentsMenu.classList.add("active");
-    else
-        contentsMenu.classList.remove("active");
+    faqsChildren[i].addEventListener("click", () => toggleDropdown(faqsChildren[i + 1]));
+}
 
-    contentsIsShowing = !contentsIsShowing;
+// ========================================================================
+
+function toggleDropdown(element)
+{
+    element.classList.toggle("active");
 }
 
 function goUp()

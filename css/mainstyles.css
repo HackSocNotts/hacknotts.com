@@ -1,5 +1,7 @@
 :root {
   --bgcolour: rgba(15,15,15,0.9);
+  --buttoncolour: rgba(0, 0, 0, 0.5);
+  --buttonhovercolour: rgba(30, 30, 30, 0.65);
 }
 
 * {
@@ -9,8 +11,8 @@
 }
 
 body {
-    padding: 5em;
-    background-color: #353535;
+    /* padding: 5em; */
+    padding-top: 5em;
     align-items: center;
     justify-content: center;
     justify-items: center;
@@ -74,16 +76,18 @@ hr {
     background-color: var(--bgcolour);
     border-radius: 0.2rem;
     box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
+}
 
+.dropdown {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
 
     transform: translateY(-10px);
-    transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out, max-height 0.5s ease-in-out;
+    transition: opacity 0.25s ease-in-out, transform 0.3s ease-in-out, max-height 0.3s ease-in-out;
 }
 
-.contents-menu.active {
+.dropdown.active {
     opacity: 1;
     transform: translateY(0px);
     max-height: 50em;
@@ -168,18 +172,19 @@ h3 {
 }
 
 .activity-sidebar-button {
-    width: 10rem;
+    width: 100%;
     grid-column: 1;
     padding: 1rem;
     margin: 0.25rem;
     border-radius: 0.25rem;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--buttoncolour);
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
     border: none;
+    font-size: 1.1rem;
 }
 
 .activity-sidebar-button:hover {
-    background-color: rgba(30, 30, 30, 0.65);
+    background-color: var(--buttonhovercolour);
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
@@ -207,4 +212,58 @@ h3 {
     opacity: 1;
     transform: translateX(0rem);
     max-width: 50em;
+}
+
+.faqs-content {
+    padding: 0.2rem;
+    margin: 0.2rem;
+}
+
+.faqs-question {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.3rem;
+    border-radius: 0.25rem;
+    background-color: var(--buttoncolour);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+    border: none;
+    font-size: 1.1rem;
+}
+
+.faqs-question:hover {
+    background-color: var(--buttonhovercolour);
+}
+
+.faqs-answer {
+    margin: 0.3rem;
+}
+
+footer {
+    width: 97%;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: var(--bgcolour);
+    
+    border-radius: 0.25rem;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+footer > hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 1.5rem;
+    padding: 0.25rem;
+}
+
+.footer-links {
+    grid-column: 2;
+}
+
+.footer-credits {
+    grid-column: 3;
 }
