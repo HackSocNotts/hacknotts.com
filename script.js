@@ -4,13 +4,14 @@ const contentsButton = document.querySelector(".contents-button");
 const contentsMenu = document.querySelector(".contents-menu");
 
 contentsButton.addEventListener("click", () => toggleDropdown(contentsMenu));
-var contentsIsShowing = false;
 // ====================================================================
+
 
 // ========================== UP BUTTON ==========================
 const upButton = document.querySelector(".up-button");
-upButton.addEventListener("click", goUp);
+upButton.addEventListener("click", () => scrollTo(0, 0));
 // ===============================================================
+
 
 // ============================= ACTIVITY SECTION =============================
 const activityButtons = (document.querySelectorAll(".activity-sidebar-button"))
@@ -45,6 +46,7 @@ for(let i = 0; i < activityButtons.length; i++)
 var activityShowing = false;
 // ============================================================================
 
+
 // ============================= FAQs SECTION =============================
 const faqsContent = document.querySelector(".faqs-content");
 const faqsChildren = faqsContent.children;
@@ -56,11 +58,6 @@ for(let i = 0; i < faqsChildren.length; i += 2)
 function toggleDropdown(element)
 {
     element.classList.toggle("active");
-}
-
-function goUp()
-{
-    scrollTo(0,0);
 }
 
 function selectActivity(buttonIndex)

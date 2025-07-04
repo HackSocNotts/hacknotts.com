@@ -8,10 +8,11 @@
     font-family: 'Source Code Pro', monospace;
     color: white;
     font-size: 1em;
+    scroll-behavior: smooth;
+    scroll-padding: 0.5rem;
 }
 
 body {
-    /* padding: 5em; */
     padding-top: 5em;
     align-items: center;
     justify-content: center;
@@ -49,15 +50,13 @@ hr {
 }
 
 .contents-button {
-    
-    position: relative;
-    width: 60em;
-    height: 5em;
+    width: 60rem;
+    height: 5rem;
 
     background-color: var(--bgcolour);
     color: white;
 
-    border-radius: 0.2rem;
+    border-radius: 0.25rem;
     border: none;
 
     box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.5);
@@ -74,7 +73,7 @@ hr {
     top: 0.5rem;
 
     background-color: var(--bgcolour);
-    border-radius: 0.2rem;
+    border-radius: 0.25rem;
     box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
@@ -95,6 +94,10 @@ hr {
 
 ul {
     padding: 0;
+    list-style-position: inside;
+}
+
+.contents-list, .activity-sidebar {
     list-style-type: none;
 }
 
@@ -155,10 +158,51 @@ h3 {
 .main-section {
     padding: 1rem;
     margin: .75rem;
+    text-align: center;
 
     background-color: var(--bgcolour);
     border-radius: 0.25rem;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.schedule-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.schedule-list {
+    list-style-type: none;
+}
+
+.schedule-saturday {
+    grid-column: 1;
+}
+
+.schedule-sunday {
+    grid-column: 2;
+}
+
+.lead-organisers {
+    display: flex;
+    padding: 0.5rem;
+    margin: 0.25rem;
+}
+
+.organiser > img {
+    max-width: 80%;
+    border-radius: 0.25rem;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.lead-organisers > .organiser > img {
+    max-width: 60%;
+}
+
+.organisers-content {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 0.25rem;
+    margin: 0.25rem;
 }
 
 .activity-section {
@@ -193,7 +237,6 @@ h3 {
     margin: 0.2rem;
 
     opacity: 0;
-    /* max-width: 0; */
     overflow: hidden;
 
     transform: translateX(-1.5rem);
@@ -238,6 +281,7 @@ h3 {
 }
 
 .faqs-answer.active {
+    /* for smoother animations */
     max-height: 6em;
 }
 
@@ -249,6 +293,8 @@ footer {
     
     border-radius: 0.25rem;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+    font-size: 1.1rem;
 }
 
 footer > hr {
@@ -263,10 +309,23 @@ footer > hr {
     padding: 0.25rem;
 }
 
+.footer-links > h3, .footer-credits > h3 {
+    font-size: 1.3rem;
+}
+
 .footer-links {
     grid-column: 2;
 }
 
 .footer-credits {
     grid-column: 3;
+}
+
+.privacy-policy {
+    align-items: left;
+    justify-content: left;
+    justify-items: left;
+    text-align: left;
+    padding: 1.5rem;
+    margin: 1.5rem;
 }
