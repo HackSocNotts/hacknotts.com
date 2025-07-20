@@ -3,21 +3,36 @@ import LetterGlitch from "./LetterGlitch"
 import Countdown from "../components/Countdown"
 ---
 <div class="feature">
-
-  <Countdown targetDate="2025-10-31" client:only="react"/>
-  <h3>Until</h3>
-
-  <img class="logo" src="hn25logo.png" alt="" srcset="">
-
-  <div class="feature-text">
-    <h1 class="text-">HackNotts is returning <br> on 25th October 2025!</h1>
-    <h2>We are preparing for Nottingham's <br> biggest ever hackathon so stay tuned :D</h2>  
-  </div>
+    <Countdown targetDate="2025-10-25" client:only="react"/>
+    <h3>Until</h3>
   
-  <tito-register-interest event="hacksocnottingham/hacknotts25"></tito-register-interest>
+    <img class="logo" src="hn25logo.png" alt="" srcset="">
+  
+    <div class="feature-text">
+      <h1>HackNotts is returning <br> on 25th October 2025!</h1>
+      <h2>We are preparing for Nottingham's <br> biggest ever hackathon so stay tuned :D</h2>  
+    </div>  
+  
+    <div class="message-box">
+      <div class="title-bar">
+        <span>Register Interest</span>
+        <div class="close-btn">×</div>
+      </div>
+      <div class="content">
+        <tito-register-interest event="hacksocnottingham/hacknotts-25"></tito-register-interest>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Looking for previous HackNotts? <a href="/directory">Look here!</a>
+        <br><br>
+        HackNotts is ran by <a href="http://hacksocnotts.co.uk">HackSoc Nottingham</a> - a society from the University of Nottingham Student Union.
+      </p>
+    </div>
 </div>
 
-<div style={{ width: '100%', height: '100vh', position: 'fixed', top:'0', zIndex:'-1' }}>  
+<div style={{ width: '100%', height: '100%', position: 'fixed', top:'0', zIndex:'-1' }}>  
   <LetterGlitch
     glitchSpeed={375}
     centerVignette={true}
@@ -26,3 +41,34 @@ import Countdown from "../components/Countdown"
     client:only="react"
   />
 </div>
+
+<style>
+  
+  .message-box {
+      border: 2px solid #808080;
+      box-shadow: 2px 2px #808080;
+      background-color: #C0C0C0;
+    }
+
+    .title-bar {
+      background-color: navy;
+      color: white;
+      padding: 4px 8px;
+      font-weight: bold;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .title-bar .close-btn {
+      background-color: #C0C0C0;
+      color: black;
+      border: 2px outset #fff;
+      width: 16px;
+      height: 16px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+</style>

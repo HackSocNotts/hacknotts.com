@@ -2,6 +2,47 @@
     font-family: 'Mondwest';
     src: url('/fonts/PPMondwest-Regular.otf');
 }
+@font-face {
+    font-family: 'Neuebit';
+    src: url('/fonts/PPNeueBit-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Monaspace Radon VF';
+    src: url('/fonts/MonaspaceRadonVarVF[wght,wdth,slnt].woff2') format('woff2'),
+         url('/fonts/MonaspaceRadonVarVF[wght,wdth,slnt].woff') format('woff');
+    font-weight: 100 900;
+    font-stretch: 75% 125%;
+    font-style: oblique 0deg 10deg;
+  }
+  
+  @font-face {
+    font-family: 'Monaspace Argon VF';
+    src: url('/fonts/MonaspaceArgonVarVF[wght,wdth,slnt].woff2') format('woff2'),
+         url('/fonts/MonaspaceArgonVarVF[wght,wdth,slnt].woff') format('woff');
+    font-weight: 100 900;
+    font-stretch: 75% 125%;
+    font-style: oblique 0deg 10deg;
+  }
+  
+  @font-face {
+    font-family: 'Monaspace Krypton VF';
+    src: url('/fonts/MonaspaceKryptonVarVF[wght,wdth,slnt].woff2') format('woff2'),
+         url('/fonts/MonaspaceKryptonVarVF[wght,wdth,slnt].woff') format('woff');
+    font-weight: 100 900;
+    font-stretch: 75% 125%;
+    font-style: oblique 0deg 10deg;
+  }
+  
+  @font-face {
+    font-family: 'Monaspace Neon VF';
+    src: url('/fonts/MonaspaceNeonVarVF[wght,wdth,slnt].woff2') format('woff2'),
+         url('/fonts/MonaspaceNeonVarVF[wght,wdth,slnt].woff') format('woff');
+    font-weight: 100 900;
+    font-stretch: 75% 125%;
+    font-style: oblique 0deg 10deg;
+  }
+  
 
 * {
     box-sizing: border-box;
@@ -26,6 +67,7 @@ body {
     color: #eee;
     font-family: 'Mondwest';
     font-size: 4em;
+    text-align: center;
 }
 
 h1,
@@ -38,6 +80,7 @@ h6 {
     text-align: center;
     color: #eee;
     font-family: 'Mondwest';
+    text-shadow: 2px 2px 2px #000;
 }
 
 h1 {
@@ -51,6 +94,18 @@ h2 {
 
 h3 {
     font-size: 1.50em;
+}
+
+p{
+    font-family: 'Mondwest';
+    color: #eee;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000;
+}
+
+a {
+    color: #019e18;
+    text-shadow: 2px 2px 2px #000;
 }
 
 .feature {
@@ -76,4 +131,95 @@ h3 {
 
 .logo {
     width: 58em;
+    margin: 0 auto;
+}
+
+.footer{
+    margin-top: 1em;
+}
+
+@media only screen and (max-width: 570px) {
+    h1 {
+        font-size: 1.875em;
+    }
+    
+    h2 {
+        margin-top: 0.472em;
+        margin-bottom: .125em;
+        font-size:  1.171875em;
+    }
+    
+    h3 {
+        font-size: 1.5625em;
+    }
+
+    .countdown{
+        font-size: 3.25em;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .logo {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+
+.tito-register-interest-form{
+    display: flex;
+    flex-direction: column;
+
+    padding: 2em;
+
+    font-family: 'Mondwest';
+}
+
+.tito-register-interest-form label{
+    margin: .5em 0;
+    font-size: large;
+}
+
+
+.tito-register-interest-form label > input{
+    margin: .5em 0;
+}
+
+.tito-register-interest-form input[type="text"],
+.tito-register-interest-form input[type="password"],
+.tito-register-interest-form input[type="email"],
+.tito-register-interest-form textarea,
+.tito-register-interest-form select {
+  width: 100%;
+  padding: 2px;
+  font-size: 13px;
+  font-family: inherit;
+  background-color: #fff;
+  color: black;
+  border: 2px inset #fff;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  font-size: .75em;
+}
+
+.tito-register-interest-form input[type="text"]:focus,
+.tito-register-interest-form input[type="email"]:focus,
+.tito-register-interest-form input[type="password"]:focus,
+.tito-register-interest-form textarea:focus {
+  outline: none;
+  border: 2px inset #000;
+}
+
+.tito-register-interest-form button:active {
+    border: 2px inset #000;
+}
+
+.tito-register-interest-form button{
+    padding: 2px 16px;
+    font-size: 13px;
+    border: 2px outset #fff;
+    background-color: #C0C0C0;
+    cursor: pointer;
+
+    margin-top: 18px;
 }
