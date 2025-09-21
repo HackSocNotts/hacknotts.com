@@ -97,6 +97,19 @@ ul {
     list-style-position: inside;
 }
 
+sup {
+    font-size: 0.8rem;
+}
+
+.sponsor-company {
+    padding: 0.25rem;
+    margin: 0.25rem;
+}
+
+.company-logo {
+    width: 50%;
+}
+
 .contents-list, .activity-sidebar {
     list-style-type: none;
 }

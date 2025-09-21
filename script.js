@@ -21,21 +21,21 @@ const activityContentText = activityContent.children[1];
 
 const activityTitles = [
     "HNTV",
-    "GAMING LEAGUE",
-    "KARAOKE",
-    "CUP STACKING",
-    "WEREWOLF",
+    "WIZARDS vs DRAGONS",
+    "CASTLE BUILDING",
     "CHESS",
-    "POKER"
+    "WEREWOLF",
+    "CUP STACKING",
+    "KARAOKE"
 ]
 const activityParagraphs = [
-    /* HNTV */ "HNTV is our 24hr stream that runs throughout the event, keeping you company as you work. We broadcast the entire event and cover a range of content, including midnight shitposting, Hacker interviews, game commentary and more! We also put important announcements up on the screens using the stream, enabling us to keep you updated throught the event!",
-    /* Gaming League */ "New this year, we are running a Gaming League! A tournament style competition where the winning team will earn themselves a tasty prize! Grab a ticket to join our Discord server and help us decide on a game! Current games being considered are Valorant, CS2, League etc.",
-    /* Karaoke */ "New this year, we're debuting a Karaoke room! Take some time off from your coding to sing along to your favourite tunes, open to all! The current plans for the room are to include mood lighting, mics and a projector screen for you to jam out.",
-    /* Cup Stacking */ "HackNott's cup stacking is an event held every year where you can show off your cup stacking skills. Want to compete to build the tallest tower or simply learn more about cup stacking? HackNotts is for you!",
-    /* Werewolf */ "Werewolf is held every HackNotts just after midnight, and is a game consisting of befuddlement and betrayal. Even if you haven't playe Werewolf before, you would have played other games similar like Among Us, Mafia or Town of Salem - feel free to try it out!",
-    /* Chess */ "Chess connoisseur? Complete beginner? Join our Chess tournament to test out your chess skills or improve your game! Consisting of multiple rounds with the first being on Chess.com and the following rounds being physical, make it to the top to win our Chess prize!",
-    /* Poker */ "New for 2024, Poker! Enjoy casual games (no real money) and defeat your fellow hackers to become HackNotts's best poker player!"
+    /* HNTV */ "HNTV is a 24hr stream that runs throughout our event. We broadcast the entire event and cover a range of content, including hacker interviews, commentary, games, and (some) shitposting. We also use the stream to broadcast any important announcements, keeping you updated throughout the event!",
+    /* Wizards vs Dragons */ "New to HackNotts this year, we will be running a friendly competition between our hackers. Each team can earn gold coins by completing quick challenges (or impressing one of our organisers with something funny!) - these coins will go in your teams chest, and by the end of the Hackathon, the winning team will receive an extra special piece of merch to take home! ",
+    /* Castle Building */ "What do you get when you combine marshmallows with spaghetti? An architectural masterpiece? That is for you to decide! This year at HackNotts we are debuting castle building! Work alone or in a team, patience and a keen eye is essential for this challenge.",
+    /* Chess */ "Chess connoisseur? Complete beginner? Join our Chess tournament to test out your chess skills or improve your game - and make it to the top to win a special prize!",
+    /* Werewolf */ "Werewolf is held every HackNotts just after midnight - this year with a medival twist! It is a game filled with befuddlement and betrayal - even if you haven't played Werewolf before, you will have played games like Mafia and Among Us - so why not give that a go in real life?",
+    /* Cup Stacking */ "A Hackathons UK classic - cup stacking is an event held every year where you can show off your skills. Can you build the tallest tower and be crowned the HackNotts cupstaking champion, or will it all come falling down?",
+    /* Karaoke */ "We are bringing back our karaoke room! Take some time off from your coding to sing along to your favourite tunes, open to all! We are looking forward to seeing any performances, bonus points for dragging the rest of your team along!"
 ]
 
 var currentActivitySelected = -1;
