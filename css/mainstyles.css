@@ -31,9 +31,7 @@ body {
 
     text-decoration: none;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('../images/background-lighting.png');
-    image-rendering: pixelated;
-    background-size: 400px 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('../images/background.png');
 }
 
 .title {
