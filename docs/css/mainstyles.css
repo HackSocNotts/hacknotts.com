@@ -63,7 +63,12 @@ body {
 
 h1 {
     font-family: "Mondwest";
-    font-size: 4.5em;
+    font-size: 5em;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.9));    
+}
+
+span {
+    font-family: "Mondwest";
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.9));    
 }
 
@@ -77,31 +82,31 @@ header {
     justify-content: center;
     justify-items: center;
     text-align: center;
-    width: 61rem;
+    width: 69rem;
     margin: auto;
 }
 
 .header-text {
-    padding: 1rem;
+    padding: 2rem;
     margin: 1.5rem;
 
     border-radius: 0.5rem;
     background-color: var(--bgcolour);
-    max-width: 58rem;
+    max-width: 69rem;
     font-size: 1.25rem;
 
     box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
-    margin: auto;
+    /*margin: auto;*/
 }
 
 nav.contents {
     margin: auto;
-    width: 61rem;
+    width: 69rem;
     padding-top: 1.5rem;
 }
 
 .contents-button {
-    width: 60rem;
+    width: 68.5rem;
     height: 5rem;
 
     background-color: var(--bgcolour);
@@ -209,7 +214,7 @@ li.contents-item > a {
 main {
     position: relative;
     top: 1rem;
-    width: 61rem;
+    width: 69rem;
     margin:auto;
 }
 
@@ -222,7 +227,7 @@ h3 {
 }
 
 .main-section {
-    padding: 1rem;
+    padding: 2rem;
     margin: .75rem;
     text-align: center;
 
@@ -407,4 +412,24 @@ footer > hr {
 
 .hidden {
     display: none;
+}
+
+.highlight {
+    color: #6bcb51;
+    font-family: 'Source Code Pro', monospace;
+}
+
+a {
+    color: #6bcb51;;
+    font-family: 'Source Code Pro', monospace;
+}
+
+h2 {
+    color: #6bcb51;;
+    font-family: 'Source Code Pro', monospace;
+}
+
+h3 {
+    color: #6bcb51;;
+    font-family: 'Source Code Pro', monospace;
 }
