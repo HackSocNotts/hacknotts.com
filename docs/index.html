@@ -25,6 +25,8 @@
             <div class="header-text">
                 <h2>HackNotts is back on 25th-26th October 2025!</h2>
                 <hr>
+                <div id="timer"></div>
+                Until hacking starts!
                 <p>
                 HackNotts is an annual hackathon held by HackSoc at the University of Nottingham. 
                 It's a two-day overnight hackathon for all skill levels where you can engage in friendly competition to create an exciting
@@ -50,6 +52,14 @@
         </nav>
 
         <main>
+
+            <div id="Tickets" class="main-section">
+                <h2>TICKETS</h2>
+                <p>Tickets are now available :D <br> First come first serve!</p>
+                <hr>
+                <tito-widget event="hacksocnottingham/hacknotts-25"></tito-widget>
+            </div>
+            
             
             <div id="About" class="main-section">
                 <h2>ABOUT</h2>
@@ -271,12 +281,6 @@
                 <p>this is gallery</p>
             </div>
 
-            <div id="Tickets" class="main-section">
-                <h2>TICKETS</h2>
-                <hr>
-                <tito-widget event="hacksocnottingham/hacknotts-25"></tito-widget>
-            </div>
-            
         </main>
 
         <footer>
@@ -296,5 +300,25 @@
             </div>
             <hr>
         </footer>
+                            <script>
+                    var countDownDate = new Date("Oct 25, 2025 12:00:00").getTime();
+
+                    var x = setInterval(function() {
+                    var now = new Date().getTime();
+                    var distance = countDownDate - now;
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+                    + minutes + "m " + seconds + "s ";
+
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("timer").innerHTML = "EXPIRED";
+                    }
+                    }, 1000);
+                    </script>
     </body>
 </html>
