@@ -97,6 +97,7 @@ header {
 nav.contents {
     margin: auto;
     width: 61rem;
+    padding-top: 1.5rem;
 }
 
 .contents-button {
@@ -335,7 +336,7 @@ h3 {
     margin: 0.2rem;
 }
 
-.faqs-question {
+.faqs-question, .about-question-button {
     width: 100%;
     padding: 1rem;
     margin: 0.3rem;
@@ -346,7 +347,7 @@ h3 {
     font-size: 1.1rem;
 }
 
-.faqs-question:hover {
+.faqs-question:hover, .about-question-button:hover {
     background-color: var(--buttonhovercolour);
 }
 

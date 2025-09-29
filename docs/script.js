@@ -46,6 +46,18 @@ for(let i = 0; i < activityButtons.length; i++)
 var activityShowing = false;
 // ============================================================================
 
+// ============================= ABOUT SECTION =============================
+
+const aboutContent = document.querySelector(".about-contents");
+const aboutContentChildren = aboutContent.children;
+for(let i = 0; i < aboutContentChildren.length; i += 2)
+{
+    console.log("bingus");
+    aboutContentChildren[i].addEventListener("click", () => toggleDropdown(aboutContentChildren[i + 1]));
+}
+
+// =========================================================================
+
 
 // ============================= FAQs SECTION =============================
 const faqsContent = document.querySelector(".faqs-content");
