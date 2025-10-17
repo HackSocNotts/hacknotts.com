@@ -290,6 +290,11 @@ h3 {
     grid-template-columns: 20% 80%;
 }
 
+#uon {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
 .activity-sidebar-button {
     width: 100%;
     grid-column: 1;
