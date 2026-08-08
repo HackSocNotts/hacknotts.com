@@ -1,0 +1,47 @@
+---
+import LetterGlitch from './LetterGlitch';
+import Countdown from './Countdown.astro';
+---
+<div class="feature">
+    <Countdown targetDate="2026-10-24T12:00:00+01:00" />
+    <h3>Until</h3>
+
+    <img class="logo" src="/hn26logo.png" alt="HackNotts '26">
+
+    <div class="feature-text">
+      <h1>HackNotts is returning <br> on 24th October 2026!</h1>
+      <br>
+      <h2>We are preparing for Nottingham's <br> biggest ever hackathon, stay tuned!</h2>
+    </div>
+
+    <div class="footer">
+      <p>
+        Looking for previous HackNotts? <a href="/directory">Look here!</a>
+        <br><br>
+        HackNotts is ran by <a href="http://hacksocnotts.co.uk">HackSoc Nottingham</a> - a part of the <a href="https://su.nottingham.ac.uk">University of Nottingham Student Union</a>.
+      </p>
+    </div>
+</div>
+
+<div class="waiting-background" aria-hidden="true">
+  <LetterGlitch
+    glitchSpeed={375}
+    centerVignette
+    client:load
+  />
+</div>
+
+<style>
+  .feature {
+    position: relative;
+    z-index: 1;
+  }
+
+  .waiting-background {
+    position: fixed;
+    z-index: 0;
+    inset: 0;
+    background: #131313;
+    pointer-events: none;
+  }
+</style>
