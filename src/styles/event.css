@@ -92,17 +92,36 @@ a:focus-visible {
 
 .site-logo {
   display: flex;
-  width: min(15.5rem, 28vw);
-  padding: 0.5rem 0.65rem;
+  align-items: center;
+  gap: 0.55rem;
+  width: min(19rem, 31vw);
+  padding: 0.5rem 0.7rem;
   border: 1px solid #17557a;
-  border-radius: 0.45rem;
-  background: linear-gradient(180deg, #164a61 0%, #082a38 55%, #061e29 100%);
+  border-radius: 0.55rem;
+  background: linear-gradient(180deg, #164a61 0%, #082a38 58%, #061e29 100%);
   box-shadow: inset 0 1px #72d7f1, 0 2px 4px rgba(0, 0, 0, 0.28);
+  text-decoration: none;
 }
 
 .site-logo img {
-  width: 100%;
+  width: 4.5rem;
   height: auto;
+}
+
+.site-logo-text {
+  color: #c5dbe4;
+  font-family: var(--heading-font);
+  font-size: 2.7rem;
+  line-height: 0.75;
+  white-space: nowrap;
+}
+
+.site-logo-text > span:first-child {
+  color: #6bc0df;
+}
+
+.site-logo-year {
+  margin-left: 0.8rem;
 }
 
 .site-header nav {
@@ -149,19 +168,15 @@ a:focus-visible {
   outline: none;
 }
 
-.link-button {
+.link-button,
+.ticket-form .tito-register-interest-form button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 3.4rem;
-  padding: 0.8rem 1.25rem;
-  border: 1px solid #24537d;
+  padding-block: 0.8rem;
+  border: 1px solid;
   border-radius: 0.38rem;
-  background: linear-gradient(180deg, #fff 0%, #f5f7fa 45%, #d6deea 52%, #edf2f8 100%);
-  box-shadow: inset 0 1px #fff, inset 0 -1px #afbdd0, 0 3px 7px rgba(0, 31, 62, 0.3);
-  color: var(--ink);
   font-family: var(--body-font);
-  font-size: 0.82rem;
   font-weight: 800;
   letter-spacing: 0.04em;
   line-height: 1.25;
@@ -170,8 +185,27 @@ a:focus-visible {
   transition: transform 160ms ease, box-shadow 160ms ease;
 }
 
+.sponsor-text .link-button {
+  min-height: 3.4rem;
+  padding-inline: 1.25rem;
+  border-color: #24537d;
+  background: linear-gradient(180deg, #fff 0%, #f5f7fa 45%, #d6deea 52%, #edf2f8 100%);
+  box-shadow: inset 0 1px #fff, inset 0 -1px #afbdd0, 0 3px 7px rgba(0, 31, 62, 0.3);
+  color: var(--ink);
+  font-size: 0.82rem;
+}
+
+.sponsor-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
 .link-button:hover,
-.link-button:focus-visible {
+.link-button:focus-visible,
+.ticket-form .tito-register-interest-form button:hover,
+.ticket-form .tito-register-interest-form button:focus-visible {
   transform: translateY(-1px);
   border-color: #0c65bd;
   background: linear-gradient(180deg, #fff 0%, #e5f5ff 43%, #9fd4fa 52%, #d9efff 100%);
@@ -180,7 +214,8 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
-.link-button:active {
+.link-button:active,
+.ticket-form .tito-register-interest-form button:active {
   transform: translateY(1px);
   border-color: #17466f;
   box-shadow: inset 0 2px 4px rgba(0, 45, 90, 0.32);
@@ -188,6 +223,10 @@ a:focus-visible {
 
 .site-header > .link-button {
   justify-self: end;
+}
+
+.site-header > .link-button,
+.ticket-form .tito-register-interest-form button {
   min-height: 2.9rem;
   padding-inline: 1rem;
   border-color: #28733c;
@@ -718,22 +757,14 @@ a:focus-visible {
 }
 
 .ticket-form .tito-register-interest-form input:focus-visible,
-.ticket-form .tito-register-interest-form button:focus-visible {
+.ticket-form .tito-widget :is(input, button):focus-visible,
+.tito-overlay :is(input, select, textarea, button, a):focus-visible {
   outline: 3px dotted #0c6fa6;
   outline-offset: 2px;
 }
 
 .ticket-form .tito-register-interest-form button {
-  min-height: 3rem;
-  padding: 0.65rem 1.1rem;
-  border: 2px solid;
-  border-color: #e9ffd0 #28733c #28733c #e9ffd0;
-  border-radius: 0;
-  background: linear-gradient(180deg, #b8ee79 0%, #61bb3b 48%, #3c9529 52%, #74c64c 100%);
-  color: #123216;
   cursor: pointer;
-  font: 800 0.76rem/1 var(--body-font);
-  text-transform: uppercase;
 }
 
 .ticket-form .tito-register-interest-success {
@@ -784,11 +815,6 @@ a:focus-visible {
   border-color: #f4ffdc #1d6330 #1d6330 #f4ffdc;
   background: linear-gradient(180deg, #caff89 0%, #72cc4b 48%, #4ba738 52%, #86d55e 100%);
   color: #123216;
-}
-
-.ticket-form .tito-widget :is(input, button):focus-visible {
-  outline: 3px dotted #0c6fa6;
-  outline-offset: 2px;
 }
 
 .tito-overlay {
@@ -872,11 +898,6 @@ a:focus-visible {
 
 .tito-overlay .tito-company-name-toggle {
   display: none;
-}
-
-.tito-overlay :is(input, select, textarea, button, a):focus-visible {
-  outline: 3px dotted #0c6fa6;
-  outline-offset: 2px;
 }
 
 .tito-overlay .tito-registration .tito-payment-option,
@@ -1684,10 +1705,6 @@ a:focus-visible {
   line-height: 1.68;
 }
 
-.sponsor-text .link-button {
-  margin-top: 2rem;
-}
-
 .sponsor-window {
   padding: 3px;
   overflow: hidden;
@@ -1876,7 +1893,15 @@ a:focus-visible {
   }
 
   .site-logo {
-    width: min(13.5rem, 23vw);
+    width: min(17rem, 27vw);
+  }
+
+  .site-logo img {
+    width: 3.8rem;
+  }
+
+  .site-logo-text {
+    font-size: 2.35rem;
   }
 }
 
@@ -1889,7 +1914,7 @@ a:focus-visible {
   }
 
   .site-logo {
-    width: min(13rem, 52vw);
+    width: min(19rem, 86vw);
   }
 
   .site-header nav {
@@ -2038,7 +2063,15 @@ a:focus-visible {
   }
 
   .site-logo {
-    width: min(12rem, 68vw);
+    width: min(18rem, 88vw);
+  }
+
+  .site-logo img {
+    width: 4rem;
+  }
+
+  .site-logo-text {
+    font-size: 2.4rem;
   }
 
   .site-header nav a {

@@ -6,7 +6,7 @@ import Countdown from './Countdown.astro';
     <Countdown targetDate="2026-10-24T12:00:00+01:00" />
     <h3>Until</h3>
 
-    <img class="logo" src="/hn26logo.png" alt="HackNotts '26">
+    <img class="logo" src="/hn26logo.png" width="5284" height="794" alt="HackNotts '26">
 
     <div class="feature-text">
       <h1>HackNotts is returning <br> on 24th October 2026!</h1>
@@ -43,5 +43,11 @@ import Countdown from './Countdown.astro';
     inset: 0;
     background: #131313;
     pointer-events: none;
+  }
+
+  .waiting-background :global(astro-island) {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 </style>

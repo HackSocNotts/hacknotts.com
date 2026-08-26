@@ -101,6 +101,7 @@ a {
 
 .logo {
     width: 58em;
+    height: auto;
     margin: 0 auto;
 }
 

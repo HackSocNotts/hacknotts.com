@@ -45,13 +45,13 @@ const sponsors = [
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content={description} />
   <meta name="theme-color" content="#071018" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" href="/favicon.ico?v=5" />
   <link rel="canonical" href={canonicalURL} />
   <meta property="og:type" content="website" />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonicalURL} />
-  <meta property="og:image" content={new URL('/hn26logo.png', canonicalURL)} />
+  <meta property="og:image" content={new URL('/logo.png', canonicalURL)} />
   <meta name="twitter:card" content="summary_large_image" />
   <title>{title}</title>
 </head>
@@ -60,7 +60,8 @@ const sponsors = [
 
   <header class="site-header">
     <a class="site-logo" href="#top">
-      <img src="/hn26logo.png" width="2048" height="288" />
+      <img src="/logo.png" width="4776" height="3000" alt="" />
+      <span class="site-logo-text"><span>Hack</span>Notts <span class="site-logo-year">'26</span></span>
     </a>
 
     <nav>
@@ -351,8 +352,11 @@ const sponsors = [
       <div class="sponsor-text">
         <p class="section-label">SPONSORS_PARTNERS.MD</p>
         <h2>Sponsors and Partners</h2>
-        <p>Thank you to those who are helping us make this event the best it can possibbly be! Want to join them in supporting us? Just press the button below to reach out!</p>
-        <a class="link-button" href="mailto:hacknotts@hacksocnotts.co.uk?subject=HackNotts%202026%20sponsorship">Support HackNotts</a>
+        <p>Thank you to those who are helping us make this event the best it can possibly be! Want to join them in supporting us? Get in touch or download our sponsor pack below.</p>
+        <div class="sponsor-actions">
+          <a class="link-button" href="mailto:hacknotts@hacksocnotts.co.uk?subject=HackNotts%202026%20sponsorship">Support HackNotts</a>
+          <a class="link-button" href="/HN26.pdf" download="HackNotts '26 Sponsor Document.pdf">Download Sponsor Document</a>
+        </div>
       </div>
 
       <div class="sponsor-window">
