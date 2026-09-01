@@ -1,9 +1,393 @@
 ---
-import Hero from '../components/Hero.astro';
-import Layout from '../layouts/Layout.astro';
-import '../styles/global.css'
+import '../styles/event.css';
+import Countdown from '../components/Countdown.astro';
+
+const title = "HackNotts '26";
+const description = 'HackNotts returns on 24 & 25 October 2026.';
+const canonicalURL = Astro.site;
+
+const photos = [
+  { file: 'HackNotts25-Opening.jpeg', width: 6000, height: 4000, wide: true },
+  { file: 'HackNotts25-Hardware.jpeg', width: 4000, height: 3253 },
+  { file: 'HackNotts25-Judging.jpeg', width: 6000, height: 4000 },
+  { file: 'HackNotts25-Prizes.jpeg', width: 6000, height: 4000, wide: true },
+];
+
+const programme = [
+  { time: '10:00', title: 'Doors Open', description: 'Arrive, check in and nab a table for your team.' },
+  { time: '11:20', title: 'Opening Ceremony', description: 'Opening words from our team and sponsors, as well as some information about the weekend.' },
+  { time: '12:00', title: 'Hacking Begins', description: 'Get started making something great!' },
+  { time: '13:00', title: 'Lunch', description: 'Grab a bite to eat and some refreshments to keep you going.' },
+  { time: '14:00 - 18:00', title: 'Workshops & Activities', description: 'Take part in workshops and activities run by us and our partners, with the opportunity to win extra prizes!', tbc: true },
+  { time: '18:30', title: 'Dinner', description: 'Take a break from hacking and share a meal with your team!' },
+  { time: '20:30 - 00:00', title: 'Activities', description: 'More activities run by us and our partners!', tbc: true },
+  { time: '08:00', title: 'Breakfast', description: "Whether you're fully rested or half-delirious, wake yourself up with breakfast!" },
+  { time: '12:00', title: 'Hacking Ends', description: 'Time to finish your projects!' },
+  { time: '12:15', title: 'Lunch', description: 'A quick food break before presenting your projects to our judges.' },
+  { time: '13:15', title: 'Judging Begins', description: 'Demonstrate what you made to our team of organisers, volunteers, sponsors and partners!' },
+  { time: '15:00', title: 'Closing Ceremony', description: 'Winners announced and prizes handed out!' },
+  { time: '16:30', title: 'End of HackNotts', description: 'Run off to catch the train on your Advance Single.' },
+];
+
+const sponsors = [
+  { file: 'cap1.jpg', name: 'Capital One', width: 900, height: 900 },
+  { file: 'huk.png', name: 'Hackathons UK', width: 225, height: 225 },
+  { file: 'nordvpn.png', name: 'NordVPN', width: 220, height: 520 },
+  { file: 'nordpass.png', name: 'NordPass', width: 320, height: 320 },
+  { file: 'ssojet-black.png', name: 'SSOJet', width: 320, height: 320 },
+  { file: 'nexus.png', name: 'nexos.ai', width: 320, height: 320 },
+  { file: 'saily.png', name: 'Saily', width: 320, height: 320 },
+  { file: 'incogni.png', name: 'Incogni', width: 461, height: 317 },
+  { file: 'su.png', name: 'University of Nottingham SU', width: 592, height: 592 },
+  { file: 'uoncs.jpg', name: 'University of Nottingham CS', width: 320, height: 320 },
+];
 ---
 
-<Layout>
-	<Hero />
-</Layout>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content={description} />
+  <meta name="theme-color" content="#071018" />
+  <link rel="icon" href="/favicon.ico?v=5" />
+  <link rel="canonical" href={canonicalURL} />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:image" content={new URL('/logo.png', canonicalURL)} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>{title}</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="site-logo" href="#top">
+      <img src="/logo.png" width="4776" height="3000" alt="" />
+      <span class="site-logo-text"><span>Hack</span>Notts <span class="site-logo-year">'26</span></span>
+    </a>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#photos">Photos</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#faq">FAQ</a>
+      <a href="#sponsors">Sponsors</a>
+    </nav>
+
+    <button class="link-button" type="button" aria-disabled="true">
+      <span>Join Discord</span>
+      <span class="discord-soon">Coming Soon</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="main-page" id="top">
+      <div class="main-page-grid"></div>
+
+      <div class="main-page-text">
+        <h1>
+          <span>HackNotts</span> is back!
+        </h1>
+        <p class="event-description">
+          HackNotts is an annual hackathon held by HackSoc at the University of Nottingham.
+          It's a two-day overnight hackathon for all skill levels where you can engage in friendly
+          competition to create an exciting and new project within a 24-hour period, with a chance
+          to win some of our amazing prizes!
+        </p>
+      </div>
+
+      <div class="event-player">
+        <div class="player-titlebar">
+          <span><b>+</b> AMPNOTTS</span>
+          <div><i>_</i><i>×</i></div>
+        </div>
+
+        <div class="player-content">
+          <div class="player-display">
+            <time class="player-date">--:--:--</time>
+            <div class="player-title">
+              <b>01.</b>
+              <p>HACKNOTTS '26</p>
+            </div>
+            <div class="player-bars">
+              {Array.from({ length: 16 }, () => <i />)}
+            </div>
+            <div class="player-format"><span>256 kbps</span><span>44.1 kHz</span><span>stereo</span></div>
+          </div>
+
+          <div class="player-progress"><span></span></div>
+
+          <div class="player-controls">
+            <div class="player-buttons">
+              <span>◀◀</span><span class="player-play-symbol">▶</span><span>Ⅱ</span><span>■</span><span>▶▶</span><span>⏏</span>
+            </div>
+            <div class="player-volume"><b>VOL</b><span><i></i></span></div>
+          </div>
+
+          <div class="player-equaliser">
+            <strong>EQ</strong>
+            <div>{Array.from({ length: 8 }, () => <i />)}</div>
+            <small>AUTO</small>
+          </div>
+
+          <ol class="event-details-list">
+            <li><span>02.</span><strong>24-25 October 2026</strong><time>2:40</time></li>
+            <li><span>03.</span><strong>University of Nottingham, Jubilee Campus</strong><time>3:12</time></li>
+            <li><span>04.</span><strong data-ticket-track>Register your interest</strong><time>0:26</time></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="ticket-section">
+        <div class="ticket-state" data-ticket-interest>
+          <div class="ticket-text">
+            <p class="section-label">Tickets</p>
+            <h2>Register your interest.</h2>
+            <p>
+              Tickets are not live yet. Leave your details here and we'll update you when that changes!
+            </p>
+          </div>
+          <div class="ticket-form">
+            <tito-register-interest
+              event="hacksocnottingham/hacknotts-26"
+              name-placeholder="John HackNotts"
+              email-placeholder="john@hacknotts.com"
+              button-label="Register"
+            ></tito-register-interest>
+          </div>
+        </div>
+
+        <div class="ticket-state" data-ticket-checkout hidden>
+          <div class="ticket-text">
+            <p class="section-label">Tickets</p>
+            <h2>Tickets are live!</h2>
+            <p>Sign up now to secure your tickets.</p>
+          </div>
+          <div class="ticket-form">
+            <tito-widget
+              event="hacksocnottingham/hacknotts-26"
+              releases="hacker"
+              name-placeholder="Your name"
+              email-placeholder="you@example.com"
+            ></tito-widget>
+          </div>
+        </div>
+
+      </div>
+
+      <script is:inline>
+        const playerTime = document.querySelector('.player-date');
+        const updatePlayerTime = function () {
+          const now = new Date();
+          playerTime.textContent = now.toTimeString().slice(0, 8);
+          playerTime.dateTime = now.toISOString();
+        };
+
+        updatePlayerTime();
+        setInterval(updatePlayerTime, 1000);
+
+        const interest = document.querySelector('[data-ticket-interest]');
+        const checkout = document.querySelector('[data-ticket-checkout]');
+        const track = document.querySelector('[data-ticket-track]');
+
+        window.tito = window.tito || function () {
+          (window.tito.q = window.tito.q || []).push(arguments);
+        };
+
+        window.tito('on:widget:loaded', function (event) {
+          if (!event || event.path !== 'hacksocnottingham/hacknotts-26') return;
+
+          const ticketsAreLive = Array.isArray(event.releases) && event.releases.some(function (release) {
+            return release.slug === 'hacker' && release.display_state === 'available';
+          });
+
+          interest.hidden = ticketsAreLive;
+          checkout.hidden = !ticketsAreLive;
+          track.textContent = ticketsAreLive ? 'Hacker tickets available' : 'Register your interest';
+        });
+
+        const localHost = ['localhost', '127.0.0.1', '0.0.0.0', '[::1]'].includes(window.location.hostname);
+        const titoLoader = document.createElement('script');
+        titoLoader.src = 'https://js.tito.io/v2/with/inline' + (localHost ? ',development_mode' : '');
+        document.head.append(titoLoader);
+      </script>
+
+      <div class="main-page-countdown">
+        <span class="section-label">Countdown</span>
+        <Countdown targetDate="2026-10-24T12:00:00+01:00" announce={false} />
+      </div>
+    </section>
+
+    <div class="event-bar">
+      <strong>Start</strong>
+      <div>HackNotts '26</div>
+      <time>24/10/26</time>
+    </div>
+
+    <section class="page-section about-section" id="about">
+      <div class="section-heading">
+        <p class="section-label">README.TXT</p>
+        <h2>HackSoc's 13th Student Hackathon</h2>
+      </div>
+      <div class="about-text">
+        <p>
+          HackNotts is our annual hackathon, running this year for its 13th time! All current students from all over the UK are able to take part, as well as anybody who has graduated in the past year!
+        </p>
+        <p>
+          Any and all ideas are welcome! Maybe you're an artist who can draw some assets? Have some experience in FL Studio and can make some background music for a game? Whether you're a hackathon expert, or you have no idea what a command line is, everyone is welcome to get involved!
+        </p>
+        <aside class="about-note">
+          <strong>note.txt</strong>
+          Teams have a maximum of 4 people!
+        </aside>
+      </div>
+    </section>
+
+    <section class="page-section photo-section" id="photos">
+      <div class="section-heading">
+        <p class="section-label">PAST_PHOTOS/</p>
+        <h2>Previously at HackNotts:</h2>
+      </div>
+
+      <div class="photo-grid">
+        {photos.map((photo) => (
+          <figure class={`photo-viewer${photo.wide ? ' photo-viewer-wide' : ''}`}>
+            <div class="photo-titlebar">
+              <span>{photo.file} - Preview</span>
+              <span class="photo-window-buttons"><i>-</i><i>□</i><i>×</i></span>
+            </div>
+            <div class="photo-menubar"><span>File</span><span>Edit</span><span>View</span><span>Help</span></div>
+            <div class="photo-toolbar"><span>‹ Back</span><span>Next ›</span><span>+</span><span>-</span><span>Actual size</span></div>
+            <div class="photo-image">
+              <img src={`/images/event-gallery/${photo.file}`} width={photo.width} height={photo.height} loading="lazy" />
+            </div>
+          </figure>
+        ))}
+      </div>
+    </section>
+
+    <section class="page-section event-schedule" id="schedule">
+      <div class="date-calendar">
+        <time class="calendar-heading" datetime="2026-10">October</time>
+        <div class="calendar-date-range">
+          <time datetime="2026-10-24">24</time>
+          <span>+</span>
+          <time datetime="2026-10-25">25</time>
+        </div>
+        <div class="calendar-footer">
+          <time datetime="2026">2026</time>
+          <small>Nottingham - Jubilee Campus</small>
+        </div>
+      </div>
+
+      <div class="schedule-text">
+        <p class="section-label">CALENDAR.ICS</p>
+        <h2>24-25 October</h2>
+        <p>
+          Interested in what's going on during the weekend? Take a look at our provisional timetable below! Information here will get updated as we confirm things!
+        </p>
+
+        <section class="timetable">
+          <div class="timetable-titlebar">timetable.txt</div>
+          <ol class="timetable-list">
+            {programme.map((item) => (
+              <li>
+                <time>{item.time}</time>
+                <div><strong>{item.title}</strong><span>{item.description}{item.tbc && <> <strong>Details TBC!</strong></>}</span></div>
+              </li>
+            ))}
+          </ol>
+        </section>
+      </div>
+    </section>
+
+    <section class="page-section faq-section" id="faq">
+      <div class="section-heading">
+        <p class="section-label">FAQ.TXT</p>
+        <h2>Frequenty Asked Questions</h2>
+      </div>
+
+      <div class="faq-window">
+        <div class="faq-titlebar">
+          <span>HackNotts Community Board - Help Desk</span>
+          <span class="faq-window-buttons"><i>_</i><i>□</i><i>×</i></span>
+        </div>
+        <div class="faq-menubar"><span>FAQ</span><span>Search</span><span>Members</span></div>
+        <div class="faq-breadcrumbs">Frequently Asked Questions</div>
+
+        <div class="faq-list">
+          <details>
+            <summary>
+              <span class="faq-question-icon">»</span>
+              <span class="faq-question-text"><strong>What is HackNotts?</strong><small>About the event</small></span>
+              <span class="faq-toggle">+</span>
+            </summary>
+            <div class="faq-answer"><p>HackNotts is an annual hackathon held by HackSoc at the University of Nottingham. It's a two-day overnight hackathon for all skill levels taking place on 24-25 October 2026.<br /><br />This is a great opportunity to connect with like-minded people and discuss new ideas and projects. Teams are not mandatory and there will be plenty of opportunities to find one, including a team-building activity on the day and a #find-a-team Discord channel. Alongside hacking, there will be workshops, excellent free food, games and other events to keep you entertained. Check out the Activities page for a list of activities! There's something for everyone.<br /><br />There will be numerous workshops during the event with topics ranging from hardware and software to life skills. Our sponsors will also be holding workshops. All meals and drinks will be provided free of charge - just be mindful of other people's allergies.</p></div>
+          </details>
+          <details>
+            <summary>
+              <span class="faq-question-icon">»</span>
+              <span class="faq-question-text"><strong>When and where is HackNotts '26?</strong><small>Date and venue</small></span>
+              <span class="faq-toggle">+</span>
+            </summary>
+            <div class="faq-answer"><p>HackNotts is held at the University of Nottingham and will take place in the Computer Science building on Jubilee Campus. More information about directions and travel can be found our the Discord server, which will go live alongside tickets.</p></div>
+          </details>
+          <details>
+            <summary>
+              <span class="faq-question-icon">»</span>
+              <span class="faq-question-text"><strong>When can I register?</strong><small>Tickets</small></span>
+              <span class="faq-toggle">+</span>
+            </summary>
+            <div class="faq-answer"><p>Tickets will go live in late September, in the meantime you can use the form at the top of the page to be alerted when tickets are avaliable!</p></div>
+          </details>
+          <details>
+            <summary>
+              <span class="faq-question-icon">»</span>
+              <span class="faq-question-text"><strong>I have another question. Who do I contact?</strong><small>Contact the organisers</small></span>
+              <span class="faq-toggle">+</span>
+            </summary>
+            <div class="faq-answer"><p>Email <a href="mailto:hacknotts@hacksocnotts.co.uk">hacknotts@hacksocnotts.co.uk</a>. We aim to get back to you as soon as possible!</p></div>
+          </details>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="sponsor-section" id="sponsors">
+      <div class="sponsor-text">
+        <p class="section-label">SPONSORS_PARTNERS.MD</p>
+        <h2>Sponsors and Partners</h2>
+        <p>Thank you to those who are helping us make this event the best it can possibly be! Want to join them in supporting us? Get in touch or download our sponsor pack below.</p>
+        <div class="sponsor-actions">
+          <a class="link-button" href="mailto:hacknotts@hacksocnotts.co.uk?subject=HackNotts%202026%20sponsorship">Support HackNotts</a>
+          <a class="link-button" href="/HN26.pdf" download="HackNotts '26 Sponsor Document.pdf">Download Sponsor Document</a>
+        </div>
+      </div>
+
+      <div class="sponsor-window">
+        <div class="sponsor-titlebar">Sponsors and Partners</div>
+        <div class="sponsor-address"><strong>Address</strong><span>~/HackNotts/Sponsors</span><i>Go</i></div>
+        <div class="sponsor-grid">
+          {sponsors.map((sponsor) => (
+            <div><img src={`/images/sponsors/${sponsor.file}`} width={sponsor.width} height={sponsor.height} loading="lazy" /><span>{sponsor.name}</span></div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-logo" href="#top">HN<span>26</span></a>
+    <p>HackSoc Nottingham is a part of University of Nottingham Students' Union</p>
+    <div>
+      <a href="/directory">HackNotts Archive</a>
+      <a href="https://su.nottingham.ac.uk/">UoN Students' Union</a>
+    </div>
+    <span>© 2026 HackSoc</span>
+  </footer>
+</body>
+</html>

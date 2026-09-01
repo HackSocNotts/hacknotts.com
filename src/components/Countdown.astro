@@ -1,0 +1,48 @@
+---
+const { targetDate, announce = true } = Astro.props;
+const labels = ['days', 'hours', 'minutes', 'seconds'];
+---
+
+<div
+  class="countdown"
+  data-countdown={targetDate}
+  aria-label={announce ? 'Time until HackNotts begins' : undefined}
+  aria-live={announce ? 'polite' : undefined}
+>
+  {labels.map((label) => (
+    <span class="countdown-unit">
+      <strong>--</strong>
+      <span>{label}</span>
+    </span>
+  ))}
+</div>
+
+<script>
+  const unitLengths = [86400000, 3600000, 60000, 1000];
+
+  document.querySelectorAll('[data-countdown]').forEach((countdown) => {
+    const target = new Date(countdown.getAttribute('data-countdown')).getTime();
+    const values = countdown.querySelectorAll('.countdown-unit > strong');
+
+    const update = () => {
+      let remaining = target - Date.now();
+
+      if (remaining <= 0) {
+        if (countdown.ariaLabel) countdown.ariaLabel = 'HackNotts has started';
+        countdown.innerHTML = '<span class="countdown-unit" style="grid-column: 1 / -1"><strong>HackNotts has started</strong></span>';
+        return true;
+      }
+
+      values.forEach((value, index) => {
+        value.textContent = String(Math.floor(remaining / unitLengths[index])).padStart(2, '0');
+        remaining %= unitLengths[index];
+      });
+
+      return false;
+    };
+
+    if (!update()) {
+      const timer = setInterval(() => update() && clearInterval(timer), 1000);
+    }
+  });
+</script>
