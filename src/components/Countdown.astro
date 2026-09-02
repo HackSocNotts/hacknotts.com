@@ -1,14 +1,16 @@
 ---
-const { targetDate, announce = true } = Astro.props;
+const { targetDate, endDate, announce = true, showPhase = false } = Astro.props;
 const labels = ['days', 'hours', 'minutes', 'seconds'];
 ---
 
 <div
   class="countdown"
   data-countdown={targetDate}
+  data-countdown-end={endDate}
   aria-label={announce ? 'Time until HackNotts begins' : undefined}
   aria-live={announce ? 'polite' : undefined}
 >
+  {showPhase && <span class="countdown-phase">Until HackNotts begins</span>}
   {labels.map((label) => (
     <span class="countdown-unit">
       <strong>--</strong>
@@ -21,21 +23,39 @@ const labels = ['days', 'hours', 'minutes', 'seconds'];
   const unitLengths = [86400000, 3600000, 60000, 1000];
 
   document.querySelectorAll('[data-countdown]').forEach((countdown) => {
-    const target = new Date(countdown.getAttribute('data-countdown')).getTime();
+    const start = Date.parse(countdown.getAttribute('data-countdown'));
+    const endAttribute = countdown.getAttribute('data-countdown-end');
+    const end = endAttribute ? Date.parse(endAttribute) : null;
+    const units = countdown.querySelectorAll('.countdown-unit');
     const values = countdown.querySelectorAll('.countdown-unit > strong');
+    const phaseLabel = countdown.querySelector('.countdown-phase');
 
     const update = () => {
-      let remaining = target - Date.now();
+      const now = Date.now();
+      const target = now < start ? start : end;
+      const phase = now < start ? 'begins' : 'ends';
 
-      if (remaining <= 0) {
-        if (countdown.ariaLabel) countdown.ariaLabel = 'HackNotts has started';
-        countdown.innerHTML = '<span class="countdown-unit" style="grid-column: 1 / -1"><strong>HackNotts has started</strong></span>';
+      if (!target || now >= target) {
+        const status = end ? 'ended' : 'started';
+        const followUp = end ? '<small>Judging will begin shortly...</small>' : '';
+        const announcement = end ? 'HackNotts has ended. Judging will begin shortly.' : 'HackNotts has started';
+        if (countdown.hasAttribute('aria-label')) countdown.setAttribute('aria-label', announcement);
+        countdown.innerHTML = `<span class="countdown-unit countdown-finished"><strong>HackNotts has ${status}</strong>${followUp}</span>`;
         return true;
       }
 
-      values.forEach((value, index) => {
-        value.textContent = String(Math.floor(remaining / unitLengths[index])).padStart(2, '0');
-        remaining %= unitLengths[index];
+      if (countdown.hasAttribute('aria-label')) countdown.setAttribute('aria-label', `Time until HackNotts ${phase}`);
+      if (phaseLabel) phaseLabel.textContent = `Until HackNotts ${phase}`;
+
+      let remaining = target - now;
+      const showDays = phase === 'begins';
+      if (units[0]) units[0].hidden = !showDays;
+      const visibleValues = showDays ? values : Array.from(values).slice(1);
+      const visibleLengths = showDays ? unitLengths : unitLengths.slice(1);
+
+      visibleValues.forEach((value, index) => {
+        value.textContent = String(Math.floor(remaining / visibleLengths[index])).padStart(2, '0');
+        remaining %= visibleLengths[index];
       });
 
       return false;

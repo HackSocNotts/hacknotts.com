@@ -1799,7 +1799,7 @@ a:focus-visible {
   padding: 0.5rem;
 }
 
-.sponsor-grid > div {
+.sponsor-grid > a {
   display: grid;
   place-items: center;
   align-content: center;
@@ -1812,6 +1812,7 @@ a:focus-visible {
     rgba(255, 255, 255, 0.68);
   color: #607b90;
   text-align: center;
+  text-decoration: none;
 }
 
 .sponsor-grid img {
