@@ -30,16 +30,16 @@ const programme = [
 ];
 
 const sponsors = [
-  { file: 'cap1.jpg', name: 'Capital One', width: 900, height: 900 },
-  { file: 'huk.png', name: 'Hackathons UK', width: 225, height: 225 },
-  { file: 'nordvpn.png', name: 'NordVPN', width: 220, height: 520 },
-  { file: 'nordpass.png', name: 'NordPass', width: 320, height: 320 },
-  { file: 'ssojet-black.png', name: 'SSOJet', width: 320, height: 320 },
-  { file: 'nexus.png', name: 'nexos.ai', width: 320, height: 320 },
-  { file: 'saily.png', name: 'Saily', width: 320, height: 320 },
-  { file: 'incogni.png', name: 'Incogni', width: 461, height: 317 },
-  { file: 'su.png', name: 'University of Nottingham SU', width: 592, height: 592 },
-  { file: 'uoncs.jpg', name: 'University of Nottingham CS', width: 320, height: 320 },
+  { file: 'cap1.jpg', name: 'Capital One', width: 900, height: 900, url: 'https://www.capitalone.co.uk' },
+  { file: 'huk.png', name: 'Hackathons UK', width: 225, height: 225, url: 'https://hackathons.org.uk' },
+  { file: 'nordvpn.png', name: 'NordVPN', width: 220, height: 520, url: 'https://nordvpn.com/hackathons' },
+  { file: 'nordpass.png', name: 'NordPass', width: 320, height: 320, url: 'https://nordpass.com/' },
+  { file: 'ssojet-black.png', name: 'SSOJet', width: 320, height: 320, url: 'https://ssojet.com' },
+  { file: 'nexus.png', name: 'nexos.ai', width: 320, height: 320, url: 'https://nexos.ai/' },
+  { file: 'saily.png', name: 'Saily', width: 320, height: 320, url: 'https://saily.com/' },
+  { file: 'incogni.png', name: 'Incogni', width: 461, height: 317, url: 'https://incogni.com/' },
+  { file: 'su.png', name: 'University of Nottingham SU', width: 592, height: 592, url: 'https://su.nottingham.ac.uk' },
+  { file: 'uoncs.jpg', name: 'University of Nottingham CS', width: 320, height: 320, url: 'https://www.nottingham.ac.uk/computerscience/index.aspx' },
 ];
 ---
 
@@ -372,7 +372,10 @@ const sponsors = [
         <div class="sponsor-address"><strong>Address</strong><span>~/HackNotts/Sponsors</span><i>Go</i></div>
         <div class="sponsor-grid">
           {sponsors.map((sponsor) => (
-            <div><img src={`/images/sponsors/${sponsor.file}`} width={sponsor.width} height={sponsor.height} loading="lazy" /><span>{sponsor.name}</span></div>
+            <a href={sponsor.url} target="_blank" rel="noopener noreferrer">
+              <img src={`/images/sponsors/${sponsor.file}`} width={sponsor.width} height={sponsor.height} loading="lazy" alt="" />
+              <span>{sponsor.name}</span>
+            </a>
           ))}
         </div>
       </div>

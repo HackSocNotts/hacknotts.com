@@ -35,6 +35,10 @@ body {
     gap: .1em;
 }
 
+.countdown-unit[hidden] {
+    display: none;
+}
+
 .countdown-unit > span {
     font-size: .3em;
     text-transform: uppercase;
