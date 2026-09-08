@@ -1219,6 +1219,23 @@ a:focus-visible {
   transform: rotate(-0.35deg);
 }
 
+.map {
+  grid-column: 1 / -1;
+}
+
+.map .section-heading {
+  margin-bottom: clamp(3rem, 5vw, 5rem);
+}
+
+.map .photo-viewer {
+  width: min(calc(100% - 1rem), 60rem);
+  margin-inline: auto;
+}
+
+.map .photo-image {
+  aspect-ratio: 4 / 3;
+}
+
 .photo-viewer:nth-child(3) {
   transform: rotate(-0.2deg);
 }
