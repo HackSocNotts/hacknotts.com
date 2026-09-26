@@ -1945,7 +1945,8 @@ a:focus-visible {
   }
 
   .site-logo {
-    width: min(19rem, 86vw);
+    justify-content: center;
+    width: 100%;
   }
 
   .site-header nav {
@@ -1961,11 +1962,11 @@ a:focus-visible {
   }
 
   .site-header > .link-button {
-    display: none;
+    justify-self: stretch;
   }
 
   .main-page {
-    padding-top: 11rem;
+    padding-top: 14.5rem;
   }
 
   .photo-grid {
@@ -1988,7 +1989,7 @@ a:focus-visible {
   }
 
   .main-page {
-    padding-top: 10.5rem;
+    padding-top: 14rem;
   }
 
   .main-page h1 {
@@ -2091,10 +2092,6 @@ a:focus-visible {
 @media (max-width: 480px) {
   .site-header {
     padding-inline: 0.8rem;
-  }
-
-  .site-logo {
-    width: min(18rem, 88vw);
   }
 
   .site-logo img {
