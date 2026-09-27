@@ -213,8 +213,8 @@ const sponsors = [
           checkout.hidden = !showCheckout;
           ticketHeading.textContent = soldOut ? 'Tickets are sold out!' : 'Tickets are live!';
           ticketDescription.textContent = waitingList
-            ? 'Sign up here to join the waitlist for the next wave.'
-            : soldOut ? 'Please check back for the next wave of tickets.' : 'Sign up now to secure your tickets.';
+            ? 'Sign up here to join the waitlist for any future tickets.'
+            : soldOut ? 'Please check back for any future tickets.' : 'Sign up now to secure your tickets.';
           track.textContent = waitingList ? 'Join the ticket waitlist'
             : soldOut ? 'Hacker tickets sold out'
             : showCheckout ? 'Hacker tickets available' : 'Register your interest';
