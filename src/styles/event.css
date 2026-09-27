@@ -812,7 +812,7 @@ a:focus-visible {
   padding-bottom: 0;
 }
 
-.ticket-form .tito-widget .tito-submit {
+.ticket-form .tito-widget :is(.tito-submit, .tito-choose-waiting-list-button) {
   min-height: 3rem;
   border: 2px solid;
   border-color: #e9ffd0 #28733c #28733c #e9ffd0;
@@ -824,7 +824,7 @@ a:focus-visible {
   text-transform: uppercase;
 }
 
-.ticket-form .tito-widget .tito-submit:not(:disabled):is(:hover, :focus, :active) {
+.ticket-form .tito-widget :is(.tito-submit, .tito-choose-waiting-list-button):not(:disabled):is(:hover, :focus, :active) {
   border-color: #f4ffdc #1d6330 #1d6330 #f4ffdc;
   background: linear-gradient(180deg, #caff89 0%, #72cc4b 48%, #4ba738 52%, #86d55e 100%);
   color: #123216;
