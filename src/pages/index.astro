@@ -162,8 +162,8 @@ const sponsors = [
         <div class="ticket-state" data-ticket-checkout hidden>
           <div class="ticket-text">
             <p class="section-label">Tickets</p>
-            <h2>Tickets are live!</h2>
-            <p>Sign up now to secure your tickets.</p>
+            <h2 data-ticket-heading>Tickets are live!</h2>
+            <p data-ticket-description>Sign up now to secure your tickets.</p>
           </div>
           <div class="ticket-form">
             <tito-widget
@@ -191,6 +191,8 @@ const sponsors = [
         const interest = document.querySelector('[data-ticket-interest]');
         const checkout = document.querySelector('[data-ticket-checkout]');
         const track = document.querySelector('[data-ticket-track]');
+        const ticketHeading = document.querySelector('[data-ticket-heading]');
+        const ticketDescription = document.querySelector('[data-ticket-description]');
 
         window.tito = window.tito || function () {
           (window.tito.q = window.tito.q || []).push(arguments);
@@ -199,13 +201,23 @@ const sponsors = [
         window.tito('on:widget:loaded', function (event) {
           if (!event || event.path !== 'hacksocnottingham/hacknotts-26') return;
 
-          const ticketsAreLive = Array.isArray(event.releases) && event.releases.some(function (release) {
-            return release.slug === 'hacker' && release.display_state === 'available';
-          });
+          const release = Array.isArray(event.releases)
+            ? event.releases.find(function (release) { return release.slug === 'hacker'; })
+            : undefined;
+          const state = release?.display_state;
+          const waitingList = state === 'waiting_list';
+          const soldOut = waitingList || state === 'sold_out';
+          const showCheckout = state === 'available' || soldOut;
 
-          interest.hidden = ticketsAreLive;
-          checkout.hidden = !ticketsAreLive;
-          track.textContent = ticketsAreLive ? 'Hacker tickets available' : 'Register your interest';
+          interest.hidden = showCheckout;
+          checkout.hidden = !showCheckout;
+          ticketHeading.textContent = soldOut ? 'Tickets are sold out!' : 'Tickets are live!';
+          ticketDescription.textContent = waitingList
+            ? 'Sign up here to join the waitlist for the next wave.'
+            : soldOut ? 'Please check back for the next wave of tickets.' : 'Sign up now to secure your tickets.';
+          track.textContent = waitingList ? 'Join the ticket waitlist'
+            : soldOut ? 'Hacker tickets sold out'
+            : showCheckout ? 'Hacker tickets available' : 'Register your interest';
         });
 
         const localHost = ['localhost', '127.0.0.1', '0.0.0.0', '[::1]'].includes(window.location.hostname);
