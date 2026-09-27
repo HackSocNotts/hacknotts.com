@@ -166,12 +166,28 @@ const sponsors = [
             <p data-ticket-description>Sign up now to secure your tickets.</p>
           </div>
           <div class="ticket-form">
-            <tito-widget
-              event="hacksocnottingham/hacknotts-26"
-              releases="hacker"
-              name-placeholder="Your name"
-              email-placeholder="you@example.com"
-            ></tito-widget>
+            <div data-ticket-widget>
+              <tito-widget
+                event="hacksocnottingham/hacknotts-26"
+                releases="hacker"
+                name-placeholder="Your name"
+                email-placeholder="you@example.com"
+              ></tito-widget>
+            </div>
+            <div data-ticket-waitlist hidden>
+              <form class="ticket-waitlist-form">
+                <div>
+                  <label for="waitlist-name">Name</label>
+                  <input id="waitlist-name" name="name" type="text" autocomplete="name" placeholder="John HackNotts" required />
+                </div>
+                <div>
+                  <label for="waitlist-email">Email</label>
+                  <input id="waitlist-email" name="email" type="email" autocomplete="email" placeholder="john@hacknotts.com" required />
+                </div>
+                <button type="submit">Join waitlist</button>
+              </form>
+              <p class="waitlist-status" role="status" tabindex="-1" data-waitlist-status></p>
+            </div>
           </div>
         </div>
 
@@ -193,6 +209,13 @@ const sponsors = [
         const track = document.querySelector('[data-ticket-track]');
         const ticketHeading = document.querySelector('[data-ticket-heading]');
         const ticketDescription = document.querySelector('[data-ticket-description]');
+        const ticketWidget = document.querySelector('[data-ticket-widget]');
+        const waitlist = document.querySelector('[data-ticket-waitlist]');
+        const waitlistForm = document.querySelector('.ticket-waitlist-form');
+        const waitlistStatus = document.querySelector('[data-waitlist-status]');
+        const waitlistButton = waitlistForm.querySelector('button');
+        let titoEvent;
+        let hackerRelease;
 
         window.tito = window.tito || function () {
           (window.tito.q = window.tito.q || []).push(arguments);
@@ -206,6 +229,11 @@ const sponsors = [
             : undefined;
           const state = release?.display_state;
           const waitingList = state === 'waiting_list';
+          titoEvent = event;
+          hackerRelease = release;
+          const inlineWaitlist = waitingList && typeof event.createWaitlistedPerson === 'function';
+          ticketWidget.hidden = inlineWaitlist;
+          waitlist.hidden = !inlineWaitlist;
           const soldOut = waitingList || state === 'sold_out';
           const showCheckout = state === 'available' || soldOut;
 
@@ -218,6 +246,40 @@ const sponsors = [
           track.textContent = waitingList ? 'Join the ticket waitlist'
             : soldOut ? 'Hacker tickets sold out'
             : showCheckout ? 'Hacker tickets available' : 'Register your interest';
+        });
+
+        waitlistForm.addEventListener('submit', async function (event) {
+          event.preventDefault();
+          if (waitlistButton.disabled || !waitlistForm.reportValidity()) return;
+          if (hackerRelease?.display_state !== 'waiting_list') {
+            waitlistStatus.textContent = 'The waitlist is not open. Please refresh to check ticket availability.';
+            return;
+          }
+
+          waitlistButton.disabled = true;
+          waitlistButton.textContent = 'Joining…';
+          waitlistStatus.textContent = '';
+          const fields = new FormData(waitlistForm);
+          try {
+            const person = await titoEvent.createWaitlistedPerson({
+              name: fields.get('name').trim(),
+              email: fields.get('email').trim(),
+              release_id: hackerRelease.slug,
+              locale: titoEvent.default_locale || 'en',
+            });
+            if (!person) throw new Error('No waitlist confirmation received');
+            waitlistForm.hidden = true;
+            waitlistStatus.textContent = "You're on the waiting list! We'll contact you if a ticket becomes available.";
+            waitlistStatus.focus();
+          } catch (error) {
+            const errors = error.response?.status === 422 && error.response.data?.errors;
+            waitlistStatus.textContent = errors
+              ? Object.entries(errors).map(([field, messages]) => `${field}: ${[].concat(messages).join(', ')}`).join(' ')
+              : 'Error, not added to waitlist.';
+          } finally {
+            waitlistButton.disabled = false;
+            waitlistButton.textContent = 'Join waitlist';
+          }
         });
 
         const localHost = ['localhost', '127.0.0.1', '0.0.0.0', '[::1]'].includes(window.location.hostname);

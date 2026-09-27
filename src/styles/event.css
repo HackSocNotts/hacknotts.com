@@ -169,7 +169,7 @@ a:focus-visible {
 }
 
 .link-button,
-.ticket-form .tito-register-interest-form button {
+.ticket-form :is(.tito-register-interest-form, .ticket-waitlist-form) button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -204,8 +204,8 @@ a:focus-visible {
 
 .link-button:hover,
 .link-button:focus-visible,
-.ticket-form .tito-register-interest-form button:hover,
-.ticket-form .tito-register-interest-form button:focus-visible {
+.ticket-form :is(.tito-register-interest-form, .ticket-waitlist-form) button:hover,
+.ticket-form :is(.tito-register-interest-form, .ticket-waitlist-form) button:focus-visible {
   transform: translateY(-1px);
   border-color: #0c65bd;
   background: linear-gradient(180deg, #fff 0%, #e5f5ff 43%, #9fd4fa 52%, #d9efff 100%);
@@ -215,7 +215,7 @@ a:focus-visible {
 }
 
 .link-button:active,
-.ticket-form .tito-register-interest-form button:active {
+.ticket-form :is(.tito-register-interest-form, .ticket-waitlist-form) button:active {
   transform: translateY(1px);
   border-color: #17466f;
   box-shadow: inset 0 2px 4px rgba(0, 45, 90, 0.32);
@@ -225,13 +225,13 @@ a:focus-visible {
   justify-self: end;
 }
 
-.ticket-form .tito-register-interest-form button {
+.ticket-form :is(.tito-register-interest-form, .ticket-waitlist-form) button {
   min-height: 2.9rem;
   padding-inline: 1rem;
   border-color: #28733c;
   background: linear-gradient(180deg, #b8ee79 0%, #61bb3b 48%, #3c9529 52%, #74c64c 100%);
   box-shadow: inset 0 1px #e9ffd0, 0 2px 5px rgba(23, 83, 31, 0.34);
-  color: #123216;
+  color: #fff;
   font-size: 0.72rem;
 }
 
@@ -736,29 +736,29 @@ a:focus-visible {
   display: block;
 }
 
-.ticket-form .tito-register-interest-form {
+.ticket-form :is(.tito-register-interest-form, .ticket-waitlist-form) {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr)) auto;
   gap: 0.8rem;
   align-items: end;
 }
 
-.ticket-form .tito-register-interest-form > div {
+.ticket-form :is(.tito-register-interest-form, .ticket-waitlist-form) > div {
   min-width: 0;
 }
 
-.ticket-form .tito-register-interest-form label {
+.ticket-form :is(.tito-register-interest-form, .ticket-waitlist-form) label {
   display: grid;
   gap: 0.35rem;
   font-size: 0.78rem;
   font-weight: 700;
 }
 
-.ticket-form .tito-register-interest-form label > svg {
+.ticket-form :is(.tito-register-interest-form, .ticket-waitlist-form) label > svg {
   display: none;
 }
 
-.ticket-form .tito-register-interest-form input {
+.ticket-form :is(.tito-register-interest-form, .ticket-waitlist-form) input {
   width: 100%;
   min-height: 3rem;
   padding: 0.65rem 0.75rem;
@@ -769,15 +769,32 @@ a:focus-visible {
   font: inherit;
 }
 
-.ticket-form .tito-register-interest-form input:focus-visible,
+.ticket-form :is(.tito-register-interest-form, .ticket-waitlist-form) input:focus-visible,
 .ticket-form .tito-widget :is(input, button):focus-visible,
 .tito-overlay :is(input, select, textarea, button, a):focus-visible {
   outline: 3px dotted #0c6fa6;
   outline-offset: 2px;
 }
 
-.ticket-form .tito-register-interest-form button {
+.ticket-form :is(.tito-register-interest-form, .ticket-waitlist-form) button {
   cursor: pointer;
+}
+
+.ticket-form .ticket-waitlist-form[hidden] {
+  display: none;
+}
+
+.ticket-form .ticket-waitlist-form button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.waitlist-status {
+  margin: 1rem 0 0;
+}
+
+.waitlist-status:empty {
+  display: none;
 }
 
 .ticket-form .tito-register-interest-success {
@@ -824,10 +841,10 @@ a:focus-visible {
   text-transform: uppercase;
 }
 
-.ticket-form .tito-widget :is(.tito-submit, .tito-choose-waiting-list-button):not(:disabled):is(:hover, :focus, :active) {
+.ticket-form .tito-widget :is(.tito-submit, .tito-choose-waiting-list-button):not(:disabled):is(:hover, :focus, :active),
+.ticket-form .ticket-waitlist-form button:not(:disabled):is(:hover, :focus, :active) {
   border-color: #f4ffdc #1d6330 #1d6330 #f4ffdc;
   background: linear-gradient(180deg, #caff89 0%, #72cc4b 48%, #4ba738 52%, #86d55e 100%);
-  color: #123216;
 }
 
 .tito-overlay {
@@ -2004,7 +2021,7 @@ a:focus-visible {
   }
 
   .ticket-state,
-  .ticket-form .tito-register-interest-form {
+  .ticket-form :is(.tito-register-interest-form, .ticket-waitlist-form) {
     grid-template-columns: 1fr;
   }
 
